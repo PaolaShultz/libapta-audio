@@ -27,6 +27,12 @@ static const float profiles[2][12] = {
 };
 static int emit_json;
 static unsigned rows;
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+#define PCM_CONDITIONS 6u
+#include "key_coverage_export.h"
+#else
+#define PCM_CONDITIONS 3u
+#endif
 
 #ifdef APTA_KEY_GAIN_DIAGNOSTIC
 static int gain_shift;
@@ -156,7 +162,7 @@ static int pcm(void)
 {
     unsigned mode, tonic, condition, window, p;
     for (mode = 0; mode < 2; ++mode) for (tonic = 0; tonic < 12; ++tonic)
-        for (condition = 0; condition < 3; ++condition) {
+        for (condition = 0; condition < PCM_CONDITIONS; ++condition) {
             apta_session_t session;
             float previous[12] = {0}, delta[12];
             uint32_t random = 0x243f6a88u;
@@ -178,12 +184,25 @@ static int pcm(void)
                 uint32_t frame;
                 for (p = 0; p < 3; ++p)
                     frequencies[p] = 440.0 * pow(2.0, ((double)notes[p] - 69.0 +
-                        (condition == 1 ? 1.0 / 3.0 : 0.0)) / 12.0);
+                        (condition == 1 ? 1.0 / 3.0 :
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+                         condition == 3 ? -1.0 / 3.0 :
+#endif
+                         0.0)) / 12.0);
                 for (frame = 0; frame < RATE; ++frame) {
                     uint64_t absolute = (uint64_t)window * RATE + frame;
                     double sample = 0.0;
                     for (p = 0; p < 3; ++p)
                         sample += 0.15 * sin(6.2831853071795864769 * frequencies[p] * (double)absolute / RATE);
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+                    if (condition == 5) sample = 0.0;
+                    if (condition >= 4) {
+                        unsigned harmonic;
+                        for (p = 0; p < 3; ++p) for (harmonic = 2; harmonic <= 4; ++harmonic)
+                            sample += (0.15 / harmonic) * sin(6.2831853071795864769 *
+                                frequencies[p] * harmonic * (double)absolute / RATE);
+                    }
+#endif
                     if (condition == 2) {
                         random ^= random << 13; random ^= random >> 17; random ^= random << 5;
                         sample += 0.02 * (2.0 * (double)random / 4294967295.0 - 1.0);
@@ -199,6 +218,9 @@ static int pcm(void)
                         apta_internal_key_feed_sample(&session, scaled, absolute);
                     }
 #else
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+                    CHECK(coverage_feed(&session, (float)sample) == 0);
+#endif
                     apta_internal_key_feed_sample(&session, (float)sample, absolute);
 #endif
 #ifdef APTA_KEY_EXTRACTION_REFERENCE
@@ -206,6 +228,9 @@ static int pcm(void)
 #endif
                 }
                 CHECK(session.key_analysis.completed_windows == window + 1u);
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+                CHECK(coverage_write(&session, tonic, mode, condition, window + 1u) == 0);
+#endif
 #ifdef APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC
                 CHECK(contrast_finish(session.key_analysis.chroma[APTA_INTERNAL_KEY_BASE_VARIANT]) == 0);
 #endif
@@ -227,7 +252,11 @@ static int pcm(void)
 
 int main(int argc, char **argv)
 {
-#ifdef APTA_KEY_GAIN_DIAGNOSTIC
+#if defined(APTA_KEY_COVERAGE_DIAGNOSTIC)
+    if (argc != 4 || strcmp(argv[1], "--json") || strcmp(argv[2], "--samples")) return 2;
+    CHECK(coverage_open(argv[3]) == 0);
+    emit_json = 1;
+#elif defined(APTA_KEY_GAIN_DIAGNOSTIC)
     if (argc != 4 || strcmp(argv[1], "--json") != 0 || strcmp(argv[2], "--gain-shift") != 0 ||
         (strcmp(argv[3], "-4") != 0 && strcmp(argv[3], "-2") != 0 &&
          strcmp(argv[3], "0") != 0 && strcmp(argv[3], "1") != 0)) {
@@ -242,7 +271,9 @@ int main(int argc, char **argv)
     }
     emit_json = argc == 2;
 #endif
-#ifdef APTA_KEY_EXTRACTION_REFERENCE
+#if defined(APTA_KEY_COVERAGE_DIAGNOSTIC)
+#define DIAGNOSTIC_FORMAT "apta-key-coverage-diagnostic-1"
+#elif defined(APTA_KEY_EXTRACTION_REFERENCE)
     CHECK(reference_selftest() == 0);
 #define DIAGNOSTIC_FORMAT "apta-key-extraction-reference-1"
 #elif defined(APTA_KEY_GAIN_DIAGNOSTIC) && defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED)
@@ -266,7 +297,12 @@ int main(int argc, char **argv)
     );
     CHECK(vectors() == 0);
     CHECK(pcm() == 0);
+#ifdef APTA_KEY_COVERAGE_DIAGNOSTIC
+    CHECK(rows == 1296u);
+    CHECK(coverage_close() == 0);
+#else
     CHECK(rows == 720u);
+#endif
 #ifdef APTA_KEY_GAIN_DIAGNOSTIC
     CHECK(gain_reversal_exact_samples == UINT64_C(13824000));
     if (emit_json) printf("\n],\"row_count\":%u,\"checks_passed\":true,"
