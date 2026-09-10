@@ -137,3 +137,9 @@ external-detector agreement for verified labels.
 The implementation-cost task is complete. Independent transfer, physical
 P4 memory/timing/USB/audio evidence, WP6/WP7 and final release gates remain
 open; the default stays unchanged and VERSION remains 1.0.1.
+
+The following [disjoint MTG development comparison](APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md)
+has now rejected this detector: 37/96 exact versus default 27/96, with failed
+absolute/per-mode gates and 17 new high-confidence errors. This supersedes
+eligibility for further validation. The resource and identity findings above
+remain valid at their recorded scope; no production promotion is authorized.

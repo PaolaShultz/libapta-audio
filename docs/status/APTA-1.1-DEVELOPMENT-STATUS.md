@@ -18,7 +18,7 @@ The reusable 1.1 infrastructure, native meter/key implementation and complete de
 | 5. Tempo/grid ensemble | **Accepted 2026-08-25** | Relation-aware recovery plus confidence-gated close-candidate arbitration and dominant S6 segment-family selection passed all five frozen gates on a formal 48-track owner-supplied fresh set (exact within 1% 25 -> 29, zero broken selections, no safety regressions); historical 188-row regression clean; see [`APTA-1.1-TEMPO-ENSEMBLE-EVALUATION.md`](APTA-1.1-TEMPO-ENSEMBLE-EVALUATION.md) |
 | 6. Confidence calibration contract | Complete | Deterministic isotonic fitting/evaluation protocol and data-separation gate; **production model accepted and integrated 2026-08-25** — `isotonic-pav-clamped-v1` (model ID 1867860160) passed both frozen gates on a 48-row untouched holdout (Brier 0.179 -> 0.152, ECE 0.282 -> 0.198, high-confidence errors preserved at zero) and now publishes an optional BPM quality record; see [`APTA-1.1-CONFIDENCE-CALIBRATION-PROTOCOL.md`](APTA-1.1-CONFIDENCE-CALIBRATION-PROTOCOL.md) |
 | 7. Native meter/downbeat | Complete implementation / no promoted lattice candidate | Bounded 3/4 vs 4/4 plumbing is complete. A conservative opt-in 3-band phase experiment adds four correct downbeats with zero breaks across 140 already-open development tracks, but absolute accuracy remains far below the release gate. Three temporal-lattice selectors are rejected. The 2026-09-04 coverage diagnostic found no benefit from distinct local-peak selection (ASAP 2/40 unchanged; Ballroom 17/40 -> 12/40); no native selector changed. See [`APTA-1.1-LATTICE-COVERAGE-AUDIT.md`](APTA-1.1-LATTICE-COVERAGE-AUDIT.md). Both formal holdouts remain closed |
-| 8. Native musical key | Fifth candidate rejected; external triangulation complete | Bounded global major/minor analysis is complete. The semitone-band front end scored 15/72 versus default 14/72, major 0/36, minor 15/36 and introduced one high-confidence error. Evaluation closed 2026-09-04; total/per-mode/safety gates fail despite full software passes. Source re-decode, two-listener review and independent automated triage found no local corpus-mapping defect and identified OpenKeyScan as a useful diagnostic comparator, not label truth. All five native attempts are rejected, the 72-track split is spent and the 48-track formal holdout remains unopened; see [`APTA-1.1-WP4-FMAK-SEMITONE-BAND-KEY-PROTOCOL.md`](APTA-1.1-WP4-FMAK-SEMITONE-BAND-KEY-PROTOCOL.md) and [`APTA-1.1-KEY-BLIND-REVIEW.md`](APTA-1.1-KEY-BLIND-REVIEW.md) |
+| 8. Native musical key | Sixth transfer candidate rejected | Mean-normalized I1 passes synthetic and host-cost gates but fails disjoint MTG development: 27/96 -> 37/96, major 1/48 -> 11/48, minor unchanged 26/48, and 17 new high-confidence errors. All 192 native outputs completed and validated. The 96-track selection is spent; both experimental options stay disabled and the formal 48-track holdout remains unopened. The prior five attempts remain rejected. See [`APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`](APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md) |
 | 9. Progressive publication | Complete implementation | Provisional -> stable -> final generations with retained-result immutability verified end to end |
 | 10. ESP32-P4 CI/capacity | Complete CI/layout evidence | ESP-IDF 6.0.2 `esp32p4` firmware build plus deterministic 30-minute bounded-capacity probe |
 | 11. Final DJ acceptance contract | Complete | Frozen fresh-corpus evaluator and thresholds for key, meter, downbeat, grid and high-confidence safety |
@@ -105,11 +105,21 @@ remain byte-identical, while extra project stack falls to 64 bytes. Seven
 longer host timing triples yield median I1/default 0.997090 and
 I1/original-normalized 0.855793; every timed interval exceeds 500 ms. All
 four software matrices pass (118/119/119 Release tests and 116 sanitizer
-tests). Both options stay off by default. Next preregister a disjoint
-independent key-development comparison for this exact detector, with verified
-labels, frozen per-mode/absolute/safety gates and spent-split separation.
-This is retention for development, not promotion or WP6 eligibility. See
+tests). This retained the implementation for the disjoint comparison below,
+not promotion or WP6 eligibility. Both options stay off by default. See
 [`APTA-1.1-KEY-MEAN-COST-I1-RESULT.md`](APTA-1.1-KEY-MEAN-COST-I1-RESULT.md).
+
+That disjoint MTG comparison is now **complete and rejected**. Published
+confidence-2 labels were frozen for 96 unused tracks (48/48 major/minor), with
+zero ID/transport overlap and zero WAV/PCM overlap against 556 prior recordings.
+Default/I1 exact results are 27/96 and 37/96 (13 fixes, three breaks, 34 changed
+verdicts). Major improves 1/48 -> 11/48; minor remains 26/48. High-confidence
+errors rise 2 -> 19, with 17 newly unsafe outputs. Total, per-mode and both
+confidence-safety gates fail. No labels, thresholds or selected tracks were
+changed; the split is spent and holdouts stay unopened. Next preregister a
+tonal-evidence diagnostic that distinguishes frequency coverage from ranking
+and confidence behavior; do not tune this detector against the spent split.
+See [`APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`](APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md).
 
 ## Implemented compatibility guarantees
 

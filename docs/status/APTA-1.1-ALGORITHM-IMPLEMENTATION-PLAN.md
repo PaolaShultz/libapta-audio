@@ -200,8 +200,11 @@ Exit criterion:
 
 ## Work package 4 — adaptive harmonic key evidence
 
-**Status:** five transfer attempts are rejected without opening the formal
-holdout; the fifth evaluation closed 2026-09-04. Harmonic-HPCP moved
+**Status:** six transfer attempts are rejected without opening the formal
+holdout; the fifth evaluation closed 2026-09-04 and the sixth mean-normalized
+I1 evaluation closed 2026-09-10. I1 improved 27/96 -> 37/96 but failed
+absolute/per-mode accuracy and introduced 17 high-confidence errors; see
+`APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`. Harmonic-HPCP moved
 21/96 to 22/96 on balanced GiantSteps-MTG
 development evidence. On a separate 48-major/48-minor development split,
 centered correlation moved production from 22/96 to 28/96 with 11 fixes and
@@ -282,9 +285,12 @@ Implementation order:
    `APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md`. The separately preregistered
    **cost I1 passes** with exact report/evaluator identity, +64 bytes stack,
    median CPU I1/default 0.997090 and I1/original 0.855793. All software
-   matrices pass; see `APTA-1.1-KEY-MEAN-COST-I1-RESULT.md`. Next preregister
-   a disjoint independent development comparison with verified labels and
-   frozen absolute/per-mode/safety gates before accessing new results.
+   matrices pass; see `APTA-1.1-KEY-MEAN-COST-I1-RESULT.md`. Its subsequent
+   disjoint MTG comparison is **rejected**: 27/96 -> 37/96, 13 fixes/three
+   breaks, major 11/48, minor 26/48 and 17 new high-confidence errors. See
+   `APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`. Next preregister a tonal-evidence
+   diagnostic separating frequency coverage from ranking/confidence; do not
+   retune normalization or confidence on the newly spent 96-track split.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -421,7 +427,7 @@ Only after work packages 5 through 8 pass:
 The ESP32-P4 control path is available on COM6 through the board's CH340 bridge.
 The exact-head WP8 UAC build, metadata check, normal flash and boot passed on
 the v1.3 target, but Windows did not enumerate the separate frozen USB-OTG UAC
-endpoint, so the 1,800-second evidence clock correctly did not start. Five key
+endpoint, so the 1,800-second evidence clock correctly did not start. Six key
 transfer attempts are closed and rejected without opening the formal holdout;
 the fifth semitone-band candidate failed total/per-mode/safety gates on 72
 development tracks (evaluation closed 2026-09-04).
@@ -441,12 +447,14 @@ locates synthetic loss after compression/folding with additional accumulation
 loss. The bounded input-gain diagnostic is complete and confirms synthetic
 gain dependence with unchanged raw-energy decisions. The mean-normalization
 candidate passes the synthetic screen but its original implementation failed
-the frozen CPU and stack limits. The separate cost I1 now passes every
-identity/software/resource gate and is retained for a separately preregistered
-disjoint development comparison. Resume by freezing that comparison's
-material/label separation and absolute/per-mode/safety gates, preserving the
-exact I1 detector. Transfer, especially detuned behavior, remains unproven.
-Automated agreements are not corrected truth.
+the frozen CPU and stack limits. The separate cost I1 passes every
+identity/software/resource gate, but its disjoint 96-track MTG development
+comparison now rejects the detector: 37/96 exact and 17 new high-confidence
+errors. The split is spent; preserve the original representation, confidence
+and label seals. Resume with a separately preregistered tonal-evidence
+diagnostic, not confidence or parameter rescue on this result. No specific
+cause of the remaining real-audio errors has been established. Automated
+agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
 software-clean but not algorithmically eligible, so neither a formal holdout
 nor a new final acceptance corpus may be opened until a complete transferable

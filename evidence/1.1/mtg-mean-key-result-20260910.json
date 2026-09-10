@@ -1,0 +1,476 @@
+{
+  "acceptance_claim": false,
+  "annotations": "pinned published MTG single-key confidence-2 labels; no automated relabeling",
+  "audio_audit": {
+    "count": 96,
+    "excluded_records": 556,
+    "exclusions_sha256": "6e4c1e601ac85fcd600ad3c1440b70fcf3d1d69c426e2fa64eca3550e2b02e89",
+    "format": "apta-1.1-mtg-mean-key-development-1-audio-audit",
+    "manifest_sha256": "aab31e965171f0a8a83f11b8818a791928fb8b3896979ae4ea3dafd73ff065b4",
+    "pcm_overlap": 0,
+    "selection_seal_sha256": "91e1b226a6938709cd1f301d32b1a7a4761747a921651693cf1dec9c1d3ae5cb",
+    "wav_overlap": 0
+  },
+  "binary_sha256": {
+    "candidate": "07bc09506799a17347d7fc2dae8e2630a101c3af2ab8fc876bf239ca58a17f77",
+    "default": "0e7999efb61734f656b846d5542617454c5a0789224531c071d0f8555512383a",
+    "shared_inspector": "22f8f3e85a177a034157a265e4e9cf6e1ea03151f90310dd854b3fee07d8e084"
+  },
+  "candidate_flags": [
+    "APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY=ON",
+    "APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY_COST_I1=ON"
+  ],
+  "candidate_promoted": false,
+  "canonical_geometry": {
+    "channels": 2,
+    "sample_rate": 48000,
+    "sample_width_bytes": 2
+  },
+  "comparison": {
+    "acceptance_claim": false,
+    "baseline_correct": 27,
+    "baseline_high_confidence_errors": 2,
+    "breaks": 3,
+    "by_mode": {
+      "major": {
+        "baseline": 1,
+        "candidate": 11,
+        "count": 48
+      },
+      "minor": {
+        "baseline": 26,
+        "candidate": 26,
+        "count": 48
+      }
+    },
+    "candidate_correct": 37,
+    "candidate_high_confidence_errors": 19,
+    "changed_verdicts": 34,
+    "development_gates_passed": false,
+    "error_families": {
+      "baseline": {
+        "exact": 27,
+        "fifth": 8,
+        "other": 29,
+        "parallel": 31,
+        "relative": 1
+      },
+      "candidate": {
+        "exact": 37,
+        "fifth": 7,
+        "other": 24,
+        "parallel": 21,
+        "relative": 7
+      }
+    },
+    "fixes": 13,
+    "format": "apta-1.1-mtg-mean-key-development-1-comparison",
+    "gates": {
+      "accuracy_improved": true,
+      "each_mode_at_least_60_percent": false,
+      "fixes_exceed_breaks": true,
+      "high_confidence_errors_at_most_5_percent": false,
+      "modes_preserved": true,
+      "no_new_high_confidence_errors": false,
+      "total_at_least_70_percent": false
+    },
+    "holdout_eligible": false,
+    "new_high_confidence_errors": 17,
+    "report_sha256": {
+      "baseline": "40c0c01b7f43c79fda6af022bba8e3e731b2bd89aef101408d12e4c7f4c55021",
+      "candidate": "912d9c5e070e9e540625b4aa883cbf2bb10a193b229eb38759aaafcd819f4478"
+    },
+    "track_count": 96
+  },
+  "curl_version": "curl 8.21.0 (Windows) libcurl/8.21.0 Schannel zlib/1.3.2 WinIDN WinLDAP",
+  "date": "2026-09-10",
+  "decision": "rejected-independent-development",
+  "detector_revision": "a883dd6d0d50d4f463d8347352d75891d9005fba",
+  "evidence_level": "disjoint-independent-development-with-published-labels",
+  "exclusion_scope": "recording IDs/transport checksums and exact WAV/PCM+geometry; not artist/composition separation",
+  "exclusions_sha256": "6e4c1e601ac85fcd600ad3c1440b70fcf3d1d69c426e2fa64eca3550e2b02e89",
+  "ffmpeg_version": "ffmpeg version 7.0.2-essentials_build-www.gyan.dev Copyright (c) 2000-2024 the FFmpeg developers",
+  "formal_holdout_opened": false,
+  "format": "apta-wp4-mtg-mean-key-result-1",
+  "full_manifest_sha256": "aab31e965171f0a8a83f11b8818a791928fb8b3896979ae4ea3dafd73ff065b4",
+  "holdout_eligible": false,
+  "inspector_sha256": "22f8f3e85a177a034157a265e4e9cf6e1ea03151f90310dd854b3fee07d8e084",
+  "labels_sha256": "c186d51c18d505d2c466f988fdaf208e1d5a9c4ca2e8577037280f546880b007",
+  "native_tests": {
+    "candidate_release_werror": 119,
+    "default_release_werror": 118,
+    "new_wrapper_tests": 8,
+    "retained_i1_sanitizer": 116
+  },
+  "new_local_manual_verification": false,
+  "preflight": {
+    "acceptance_claim": false,
+    "excluded_transport_overlap": 0,
+    "format": "apta-1.1-mtg-mean-key-development-1",
+    "holdout_eligible": false,
+    "inventory_count": 1159,
+    "mode_counts": {
+      "major": 48,
+      "minor": 48
+    },
+    "mtg_revision": "fd7b8c584f7bd6d720d170c325a6d42c9bf75a6b",
+    "operation": "preflight",
+    "original_revision": "6bcd492c825ac9b8597bc650a5f6fd18b6c43d2b",
+    "per_class_count": 4,
+    "prior_selection_sha256": "1fadadc5e5df343558eeb476aa2346fc688bea6ebbc98a09a996a649be3b0146",
+    "remaining_after_id_exclusions": 1015,
+    "reserved_holdout_count": 48,
+    "selection_seed": "apta-1.1-mtg-mean-key-v1",
+    "selection_sha256": "87c4764ddeb667ce5acee85cfeba0a6a9bc23f987438af8cfc064b60218601ab",
+    "source_id_overlap": 0,
+    "spent_mtg_count": 96,
+    "track_count": 96
+  },
+  "prior_record_counts": {
+    "asap": 40,
+    "final_dj": 60,
+    "fmak1": 96,
+    "fmak2": 96,
+    "fmak3": 72,
+    "mtg": 96,
+    "original": 96
+  },
+  "private_sources_sha256": "93e445ac0762ca0377f87247494a562787e1970a4d912261b2e735f347aeae0e",
+  "retained_artifact_sha256": {
+    "analyze.py": "637e73a3cbc35b5d86a38593d8b1c9e15002d5290bdd907a6b128243db952699",
+    "binary-identities.json": "a01cbd5dcd0711ca251a22d86e4f74645d19e562062e1495923a991719ad7f9b",
+    "build.py": "c84073dcce3f63e36c902d31a1277d17a82d2f4ff921087e22da39c009eb6a0f",
+    "candidate-analysis.log": "b32c1a4c11ef598a602905267edbb0cdb275a657859e5ec53d11da424dd33f5a",
+    "candidate-build.log": "8c89b1159d439caaa02e47f26bc825aa534304e4b6e18d3cc0330588d38f00cf",
+    "candidate-configure.log": "30fd677e540edf387f68558e61a3b9808c9aa3234c4ada795ca9359f1cbb1086",
+    "candidate-ctest.log": "4aa56ea27306e6986f2bc7f7e251f54ea27162abcc29d45301b346ec5d32ba25",
+    "candidate-diagnostic-build.log": "c4f11901d2f673da77ddac382fec47c6eb1fdb6817d25fbc92918b53dc88d42c",
+    "candidate-evaluation.log": "5e7d87fc37fca34a3ffec268749d732a5128a1583acee45211332fc5d91bb107",
+    "candidate-report-private.json": "912d9c5e070e9e540625b4aa883cbf2bb10a193b229eb38759aaafcd819f4478",
+    "candidate-timing.json": "4bd71b3c7c0a5a5f977696eb8032334f8c4147ff27b87f6c8bb97570acaee07f",
+    "comparison.json": "44d1b559bf64461804e4114b555ee1d16cb5ab058dd3a9c50ddc8616f82b11d1",
+    "default-analysis.log": "6aac08580615a1cb26afba9b65aa6884acad05ec242b38be0de27a1410d2f281",
+    "default-build.log": "a1e393b81f2510ec83dd27fcef22ebb5f5d1ebf77b468d4c714da3a936399061",
+    "default-configure.log": "cda26717912492aa36f732f6abfa1798c0fdcefb9655101521be64a2c84824fe",
+    "default-ctest.log": "4c2877471bd08457a5df81be946c8abd08f615be8e60da99faa9aa00c02fd17d",
+    "default-diagnostic-build.log": "f21538f2608f34a37c9dadfe913c0dfc090226caf1c60fd42895b30a927fb382",
+    "default-evaluation.log": "e21d3a72d0b03e71ebf184cf2f24a18b71b6b1b08c62f4d2e2671e853820250a",
+    "default-report-private.json": "40c0c01b7f43c79fda6af022bba8e3e731b2bd89aef101408d12e4c7f4c55021",
+    "default-timing.json": "4866037584acba1177a58c84ed06570df1050ece092f046c7ba2d06c373cccbc",
+    "exclusion-catalog-private.json": "4139150b47418cea41fddfeabf196525aa8e0ca77fe1859685ba90b066c10941",
+    "exclusions-private.json": "6e4c1e601ac85fcd600ad3c1440b70fcf3d1d69c426e2fa64eca3550e2b02e89",
+    "prepare.log": "2ce4356a68fcf89e07216eac3275b7799ea4322e1d66cbcfbfcf552be5639b39",
+    "publish_evidence.py": "b99584cad6f1dc7f969155e61793cb74bb270a287334cced6ec668a46cb2bc09"
+  },
+  "retained_i1_evidence_sha256": "31486d05edf3f0baf09e18e4f388faf5b47eee932293b094ee6e6536a54958d4",
+  "runs": {
+    "candidate": {
+      "by_class": {
+        "a major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "a minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "a# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "a# minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "b major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "b minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "c major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "c minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "c# major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "c# minor": {
+          "key_accuracy": 1.0,
+          "key_correct": 4,
+          "track_count": 4
+        },
+        "d major": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "d minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "d# major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "d# minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "e major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "e minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "f major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "f minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "f# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "f# minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "g major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "g minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "g# major": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "g# minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        }
+      },
+      "complete": true,
+      "error_families": {
+        "exact": 37,
+        "fifth": 7,
+        "other": 24,
+        "parallel": 21,
+        "relative": 7
+      },
+      "mapping_sha256": "3525660c1a60caae060a3d84779f148f80eff09e672648a986ef91ce40e11650",
+      "overall": {
+        "high_confidence_key_errors": 19,
+        "high_confidence_threshold": 75,
+        "key_accuracy": 0.3854166666666667,
+        "key_correct": 37,
+        "track_count": 96
+      },
+      "report_sha256": "912d9c5e070e9e540625b4aa883cbf2bb10a193b229eb38759aaafcd819f4478",
+      "run_sha256": "e5d497ed5835c57e00ee8a467a67a4efda62da66151640e72d45c81feeef003b",
+      "validated_outputs": 96,
+      "wall_time": {
+        "analysis_wall_seconds": 224.44376340300002,
+        "scope": "includes revalidation; concurrent builds are not running; not a performance gate"
+      }
+    },
+    "default": {
+      "by_class": {
+        "a major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "a minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "a# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "a# minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "b major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "b minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "c major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "c minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "c# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "c# minor": {
+          "key_accuracy": 1.0,
+          "key_correct": 4,
+          "track_count": 4
+        },
+        "d major": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "d minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "d# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "d# minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "e major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "e minor": {
+          "key_accuracy": 0.75,
+          "key_correct": 3,
+          "track_count": 4
+        },
+        "f major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "f minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "f# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "f# minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        },
+        "g major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "g minor": {
+          "key_accuracy": 0.25,
+          "key_correct": 1,
+          "track_count": 4
+        },
+        "g# major": {
+          "key_accuracy": 0.0,
+          "key_correct": 0,
+          "track_count": 4
+        },
+        "g# minor": {
+          "key_accuracy": 0.5,
+          "key_correct": 2,
+          "track_count": 4
+        }
+      },
+      "complete": true,
+      "error_families": {
+        "exact": 27,
+        "fifth": 8,
+        "other": 29,
+        "parallel": 31,
+        "relative": 1
+      },
+      "mapping_sha256": "a030e37a068b906c246c9841be38eadce91754b6df249f1eb485ac44420b9cb9",
+      "overall": {
+        "high_confidence_key_errors": 2,
+        "high_confidence_threshold": 75,
+        "key_accuracy": 0.28125,
+        "key_correct": 27,
+        "track_count": 96
+      },
+      "report_sha256": "40c0c01b7f43c79fda6af022bba8e3e731b2bd89aef101408d12e4c7f4c55021",
+      "run_sha256": "69862db0ef31876b1c057034e6b142102007ee64afdcb3786fcf859841df4bef",
+      "validated_outputs": 96,
+      "wall_time": {
+        "analysis_wall_seconds": 222.083384218,
+        "scope": "includes revalidation; concurrent builds are not running; not a performance gate"
+      }
+    }
+  },
+  "source_archive_sha256": "a036e4c8e3a50f1348f351fd66ded59f1e6a33bcdcb27f93d8990ed2175b98fc",
+  "source_date_epoch": 1788998400,
+  "source_revision": "9e7328c5b2f4ddf85c6aed55aeb8c67fd81fcac7",
+  "source_sha256": {
+    "docs/status/APTA-1.1-WP4-MTG-MEAN-KEY-PROTOCOL.md": "fb6c31a9037294b325c8da057b8487ca519ac9ee7a6a2bb302cccc49a265fa0f",
+    "evidence/1.1/mtg-mean-key-preflight-20260910.json": "91e1b226a6938709cd1f301d32b1a7a4761747a921651693cf1dec9c1d3ae5cb",
+    "src/key/apta_key.c": "2e93fc763c1b830a66a3f5e2e619715cd44f2de2f03f686bfb1aa85889b73e0a",
+    "src/key/apta_key_mean_cost_i1.c": "f63f438e11ecb96b51ce4df6d9213506387909b61b8f981a94c4e54a2c1e1f44",
+    "tools/apta_1_1_export_acceptance_results.py": "3e8b02631b904b0d0148a425763d2299ad53b826433b4b4fe83b1028448c91b8",
+    "tools/apta_1_1_giantsteps_key_validation.py": "fa56faa71451a666487f5eba2f119018b8f81534dba8590132bd6772b1c7c01a",
+    "tools/apta_1_1_mtg_mean_key_development.py": "ac6a66c21f3bd726ecad83458482d8ad453729f00b9312eaccc2cd043ef05778",
+    "tools/test_apta_1_1_mtg_mean_key_development.py": "668d5f1ae49f813bbafbc5312af989512d185335b0674fd83b7b9613a16f5e63"
+  },
+  "split_spent": true
+}
