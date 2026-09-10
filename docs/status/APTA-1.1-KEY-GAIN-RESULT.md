@@ -119,3 +119,9 @@ any independent development comparison. Do not select the lowest gain as an
 input workaround or tune normalization constants against these results.
 Any real candidate remains opt-in and requires independent transfer and safety
 evidence; no FMAK relabeling, corpus access, holdout or release gate was used.
+
+That follow-up is now complete: the
+[mean-normalization candidate](APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md)
+passes its synthetic gates but is rejected on CPU/stack cost. Its result
+document records the current continuation boundary; this gain diagnostic's
+evidence and interpretation remain unchanged.

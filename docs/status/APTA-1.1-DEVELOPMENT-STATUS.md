@@ -75,8 +75,8 @@ both builds, while the unchanged compressed native result matches 7/12 default
 and 2/12 band; four-window cumulative results remain 4/12 and 0/12. All original
 720 diagnostic rows per build and production analyzer/key object hashes are
 unchanged. This localizes an observed compression/contrast loss on synthetic
-stimuli, not a real-song fix. The next bounded diagnostic is gain sensitivity
-before selecting one new normalization/contrast experiment. See
+stimuli, not a real-song fix. It motivated the gain-sensitivity diagnostic
+below before selecting one new normalization/contrast experiment. See
 [`APTA-1.1-KEY-CONTRAST-TRACE.md`](APTA-1.1-KEY-CONTRAST-TRACE.md).
 
 The fixed input-gain follow-up is complete (runs 2026-09-05, evidence verified
@@ -84,10 +84,21 @@ and documented 2026-09-10). Clean major final matches at gains 1/16, 1/4, 1 and
 2 are default 12/12, 9/12, 4/12, 2/12 and band 11/12, 2/12, 0/12, 0/12.
 Exact sample reversibility, raw-energy gain-squared scaling and unchanged raw
 argmax confirm gain sensitivity in the synthetic compression/scoring path.
-Production analyzer/object bytes remain unchanged. Next preregister one bounded
-per-window energy-normalization hypothesis before any native candidate or
-independent development comparison; see
+Production analyzer/object bytes remain unchanged. This motivated the frozen
+per-window energy-normalization candidate below; see
 [`APTA-1.1-KEY-GAIN-RESULT.md`](APTA-1.1-KEY-GAIN-RESULT.md).
+
+The 2026-09-10 mean-energy normalization candidate passes all six synthetic
+gates (35 -> 56/72 final matches, 22 fixes/one break, zero high-confidence
+errors, identical normalized evidence at all four gains), but is **rejected
+on resource gates**: median host CPU ratio 1.172285 exceeds 1.15 and extra
+compiler-accounted stack is 400 bytes versus the 192-byte limit. Default
+production bytes remain unchanged. Native default/candidate Release tests
+pass 118/118 and 119/119; candidate ASan/UBSan passes 116/116. No independent
+development set or holdout was opened. Next preregister a separate cost-only
+implementation experiment with exact evidence identity and a less noisy host
+timing protocol; preserve this rejection and the detuned weakness (8/24).
+See [`APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md`](APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md).
 
 ## Implemented compatibility guarantees
 

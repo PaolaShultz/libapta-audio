@@ -275,10 +275,14 @@ Implementation order:
    is also complete (2026-09-05 runs, 2026-09-10 verified report): changing
    gain alone changes clean-major default final matches from 12/12 at 1/16
    to 2/12 at 2, with exact gain-squared raw-energy scaling and unchanged raw
-   argmax. See `APTA-1.1-KEY-GAIN-RESULT.md`. Next preregister one bounded
-   scale-invariant per-window energy normalization before compression, with
-   explicit silence/resource/no-regression rules. No fitted floor, gain
-   workaround, parameter sweep or label rescue is justified.
+   argmax. See `APTA-1.1-KEY-GAIN-RESULT.md`. The subsequent frozen mean-energy
+   candidate is **closed 2026-09-10, rejected on cost**: all synthetic gates
+   pass (35 -> 56/72, 22 fixes/one break, no confident errors), but CPU ratio
+   1.172285 >1.15 and stack +400 >192 bytes fail. See
+   `APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md`. Next preregister a separate
+   cost-only implementation experiment, preserving this candidate's normalized
+   evidence exactly and freezing longer host timing batches before editing.
+   No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
 4. Improve harmonic salience from the retained octave-resolved spectrum while
@@ -432,10 +436,13 @@ follow-up is now complete and retains a mode/contrast diagnostic hypothesis.
 The subsequent frozen per-window contrast observation is also complete and
 locates synthetic loss after compression/folding with additional accumulation
 loss. The bounded input-gain diagnostic is complete and confirms synthetic
-gain dependence with unchanged raw-energy decisions. Resume by preregistering
-one scale-invariant energy-normalization candidate as described above; a native
-representation change still needs independent development evidence. Automated
-agreements are not corrected truth.
+gain dependence with unchanged raw-energy decisions. The mean-normalization
+candidate now passes the synthetic screen but fails its frozen CPU and stack
+limits. Resume with the separately preregistered implementation-cost experiment
+described above; the rejected implementation must not proceed to independent
+development. A resource-qualified successor still needs disjoint transfer and
+safety evidence, especially for detuned material. Automated agreements are not
+corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
 software-clean but not algorithmically eligible, so neither a formal holdout
 nor a new final acceptance corpus may be opened until a complete transferable

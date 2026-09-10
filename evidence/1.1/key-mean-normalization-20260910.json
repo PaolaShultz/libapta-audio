@@ -1,0 +1,446 @@
+{
+  "acceptance_claim": false,
+  "baseline_commit": "fbe965bf5d89f52b92413d2fd3d4568dd54dde22",
+  "baseline_report_sha256": "bcb0ca233387ca77ac8c290fa6f461075684673d693713b5b2319226e663bc66",
+  "binary_sha256": {
+    "candidate": {
+      "CMakeFiles/apta_core_objects.dir/src/key/apta_key.c.o": "8b9cf89ea34f6947c3c2094f6185fe6091d2c2c55b38817b05dfc29d5cb093a3",
+      "tests/apta_key_feed_benchmark": "e61a41758c2d1f87c3b243a42049db64ea9d79fbf0953d8922256e76f073a7d0",
+      "tests/apta_key_gain_diagnostic": "003134b6fa603f3da7fdf575fe518cb24cdc7b52dab4f7dd7d698a0ba3aacc07",
+      "tools/apta-analyze": "caa5530cfcb40cf3ba14f26e9cc287cd1738cfe371b1ddcec26b42f5fb0cf509"
+    },
+    "default": {
+      "CMakeFiles/apta_core_objects.dir/src/key/apta_key.c.o": "2729a6008ebf58c7ee9778e784e931e7c1caddc0dbe1497b7d40eb8843199d8e",
+      "tests/apta_key_feed_benchmark": "3735ad5949605d97d872fe28e3931a4e3412b8bfdf9183d1449d0e71ce5ed4de",
+      "tests/apta_key_gain_diagnostic": "61b5cd51452d1e932603ad7e27489a75bf2dde8543096fabcb13251e71241f02",
+      "tools/apta-analyze": "0e7999efb61734f656b846d5542617454c5a0789224531c071d0f8555512383a"
+    },
+    "sanitize": {
+      "CMakeFiles/apta_core_objects.dir/src/key/apta_key.c.o": "1e355b8cf7e23eeec5a225a6e7bf1fb5b9210edf2fc26f62146a89ead7ef6f8e",
+      "tests/apta_key_feed_benchmark": "cae468247d7ffe45ec6cc05ae0fc42c11b6cd25b88d6256538276199427b0740",
+      "tests/apta_key_gain_diagnostic": "92c915cf31ff22fc7d354cf7f4c5d544c87a80e07bb07b3524405e2a23d8a31b",
+      "tools/apta-analyze": "6981db141a4bb30ad4191153088f66e3b7747e4cb4bdbd8d2bc87a08c21d18e3"
+    }
+  },
+  "broken_final_cases": [
+    {
+      "condition": 1,
+      "confidence": 56,
+      "selected_mode": 0,
+      "selected_tonic": 9,
+      "stimulus_mode": 1,
+      "stimulus_tonic": 1
+    }
+  ],
+  "candidate_promoted": false,
+  "corpus_access": false,
+  "date": "2026-09-10",
+  "decision": "rejected-resource-gates",
+  "default_production_bytes_unchanged": true,
+  "environment": {
+    "cmake": "cmake version 3.28.3",
+    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "cpu": "AMD Ryzen 7 4800H with Radeon Graphics",
+    "machine": "x86_64",
+    "platform": "Linux"
+  },
+  "evaluation_sha256": "277cb90d70df0af87175a009e4a4649ff527979ccdc7fa6bdc9df08dc7672f00",
+  "evidence_level": "synthetic-candidate-screen-and-host-cost",
+  "flags": {
+    "candidate": [
+      "CMAKE_BUILD_TYPE=Release",
+      "APTA_WARNINGS_AS_ERRORS=ON",
+      "APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY=ON"
+    ],
+    "sanitize": [
+      "CMAKE_BUILD_TYPE=Debug",
+      "APTA_WARNINGS_AS_ERRORS=ON",
+      "APTA_ENABLE_SANITIZERS=ON",
+      "APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY=ON"
+    ]
+  },
+  "format": "apta-key-mean-normalization-result-1",
+  "gain_shifts": [
+    -4,
+    -2,
+    0,
+    1
+  ],
+  "holdout_eligible": false,
+  "independent_transfer": "not-executed-after-resource-rejection",
+  "metrics_at_every_gain": {
+    "breaks": 1,
+    "by_condition": [
+      {
+        "condition": 0,
+        "major": {
+          "baseline": 4,
+          "candidate": 12
+        },
+        "minor": {
+          "baseline": 11,
+          "candidate": 12
+        }
+      },
+      {
+        "condition": 1,
+        "major": {
+          "baseline": 0,
+          "candidate": 2
+        },
+        "minor": {
+          "baseline": 6,
+          "candidate": 6
+        }
+      },
+      {
+        "condition": 2,
+        "major": {
+          "baseline": 3,
+          "candidate": 12
+        },
+        "minor": {
+          "baseline": 11,
+          "candidate": 12
+        }
+      }
+    ],
+    "changed_verdicts": 31,
+    "final_count": 72,
+    "fixes": 22,
+    "gates": {
+      "clean_major": true,
+      "clean_minor": true,
+      "fixes_exceed_breaks": true,
+      "minor_preserved_each_condition": true,
+      "no_new_high_confidence_mismatches": true
+    },
+    "high_confidence_finals": 24,
+    "high_confidence_mismatches": 0,
+    "new_high_confidence_mismatches": 0
+  },
+  "normalized_evidence_identical_at_every_gain": true,
+  "observed_windows_per_run": 288,
+  "observer_scratch_bytes": 476,
+  "p4_evidence": "not-executed",
+  "report_sha256": {
+    "-2": "f288e7480c39ddd9a17cbc4037ff3efa0a689583a08ab728277f4ea271616299",
+    "-4": "dd724e9d9e61e2e1bc63637d36fd6639b0664fe4b71b6fd40c4aa7b51ac010a4",
+    "0": "ee00d4c9aaa64a41741baa74c267981d085e0bf53f81daa3d41b816e7f0c029c",
+    "1": "9df77964747fcdb5b57fde908e8437d8d1c9ebdbdd88a45ca29b2170bd56a44f"
+  },
+  "resources": {
+    "benchmarks": [
+      {
+        "milliseconds": {
+          "candidate": 28.585,
+          "default": 24.384
+        },
+        "pair": 1,
+        "ratio": 1.1722851049868768,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=28.585 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=24.384 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 29.772,
+          "default": 24.748
+        },
+        "pair": 2,
+        "ratio": 1.2030063035396799,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=29.772 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=24.748 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 28.525,
+          "default": 25.326
+        },
+        "pair": 3,
+        "ratio": 1.1263128800442233,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=28.525 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=25.326 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 28.898,
+          "default": 37.647
+        },
+        "pair": 4,
+        "ratio": 0.7676043243817569,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=28.898 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=37.647 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 28.611,
+          "default": 24.554
+        },
+        "pair": 5,
+        "ratio": 1.165227661480818,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=28.611 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=24.554 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 28.854,
+          "default": 24.563
+        },
+        "pair": 6,
+        "ratio": 1.1746936449130807,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=28.854 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=24.563 checksum=2578.734704971"
+        }
+      },
+      {
+        "milliseconds": {
+          "candidate": 40.299,
+          "default": 26.12
+        },
+        "pair": 7,
+        "ratio": 1.5428407350689126,
+        "raw": {
+          "candidate": "seconds=120 elapsed_ms=40.299 checksum=947.499732733",
+          "default": "seconds=120 elapsed_ms=26.120 checksum=2578.734704971"
+        }
+      }
+    ],
+    "cpu_gate_passed": false,
+    "cpu_limit_ratio": 1.15,
+    "median_cpu_ratio": 1.1722851049868768,
+    "overall_passed": false,
+    "scope": "host key feed only; no P4 or complete pipeline evidence",
+    "stack": {
+      "candidate": {
+        "functions": [
+          {
+            "bytes": 48,
+            "function": "apta_key_insert_candidate",
+            "kind": "static"
+          },
+          {
+            "bytes": 256,
+            "function": "apta_internal_key_select_chroma",
+            "kind": "static"
+          },
+          {
+            "bytes": 48,
+            "function": "apta_internal_key_mean_compress",
+            "kind": "static"
+          },
+          {
+            "bytes": 432,
+            "function": "apta_internal_key_feed_sample",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_refresh_pending",
+            "kind": "static"
+          },
+          {
+            "bytes": 144,
+            "function": "apta_internal_key_refresh",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_pending_features",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_mark_published",
+            "kind": "static"
+          },
+          {
+            "bytes": 32,
+            "function": "apta_internal_key_build_snapshot",
+            "kind": "static"
+          },
+          {
+            "bytes": 48,
+            "function": "apta_internal_key_pool_build",
+            "kind": "static"
+          }
+        ],
+        "object_identity": true,
+        "object_sha256": "8b9cf89ea34f6947c3c2094f6185fe6091d2c2c55b38817b05dfc29d5cb093a3"
+      },
+      "default": {
+        "functions": [
+          {
+            "bytes": 48,
+            "function": "apta_key_insert_candidate",
+            "kind": "static"
+          },
+          {
+            "bytes": 256,
+            "function": "apta_internal_key_select_chroma",
+            "kind": "static"
+          },
+          {
+            "bytes": 80,
+            "function": "apta_internal_key_feed_sample",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_refresh_pending",
+            "kind": "static"
+          },
+          {
+            "bytes": 144,
+            "function": "apta_internal_key_refresh",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_pending_features",
+            "kind": "static"
+          },
+          {
+            "bytes": 8,
+            "function": "apta_internal_key_mark_published",
+            "kind": "static"
+          },
+          {
+            "bytes": 32,
+            "function": "apta_internal_key_build_snapshot",
+            "kind": "static"
+          },
+          {
+            "bytes": 48,
+            "function": "apta_internal_key_pool_build",
+            "kind": "static"
+          }
+        ],
+        "object_identity": true,
+        "object_sha256": "2729a6008ebf58c7ee9778e784e931e7c1caddc0dbe1497b7d40eb8843199d8e"
+      }
+    },
+    "stack_accounting": {
+      "basis": "GCC -fstack-usage plus objdump-confirmed feed-to-compress call; common libm internals and external callers excluded",
+      "candidate_compress_bytes": 48,
+      "candidate_feed_bytes": 432,
+      "candidate_path_bytes": 480,
+      "default_feed_bytes": 80,
+      "extra_path_bytes": 400,
+      "limit_bytes": 192,
+      "passed": false
+    }
+  },
+  "retained_artifact_sha256": {
+    "candidate-build.log": "213cda9fd30bfe21a9b7f508597d0ede857d61feb6943c101752ca21fab03c7e",
+    "candidate-configure.log": "25d2fa8538fcf5ce0cc2d0037310918f4c64eb45d9786e4ddaa39a6c309712c8",
+    "candidate-ctest.log": "2bf9dc3a0e8b30711b5bde73fdaf9ae1346a738440a77f301d72bb896d871d51",
+    "candidate-diagnostic-build.log": "8b4005e206c7bed777b6bfe11dac62f1374acaf1596fc3a44a75282f2fbbc98b",
+    "candidate-key-disassembly.txt": "d67eabebff19b684a89c9266c9343df9b9b9a4ee61e157d06ba6e330a8fff7e5",
+    "candidate-replay.json": "e446656c8f42458444dbf0e410ab4308da39a5dd844ca24ab3cc57ce11e70f85",
+    "candidate-stack.txt": "d882b1545a71e4933a234cc8f12ae1c105499557a29c47a874572be03e75b8ac",
+    "default-build.log": "f38e3d5739f5bb52bf51035e44b0abb18b6529f0a582106c55236680f32c482d",
+    "default-configure.log": "650bc66feea66eeb8619383cd3f6c803483a56f30df150d42f77b90b92e8b1ed",
+    "default-ctest.log": "b3a86f0946f076cfdf3c524f48d4e4bb8a5c50cdf58cd9a741db4ed6ca960e61",
+    "default-diagnostic-build.log": "f21538f2608f34a37c9dadfe913c0dfc090226caf1c60fd42895b30a927fb382",
+    "default-identity.log": "570d1c5669eeac469ecef3976026236ad996e0959a2d3842612558ceeec9fdfe",
+    "default-key-disassembly.txt": "551ecb42355ff5c5fa6a60687893480c6424bcc9ec97ac8f99db4637a9d5898b",
+    "default-stack.txt": "f141efb091d28659fca4c24cdbfd91d362525c1c6adaec09cb6508ac2b55e14c",
+    "evaluation.json": "277cb90d70df0af87175a009e4a4649ff527979ccdc7fa6bdc9df08dc7672f00",
+    "evidence.py": "d359f64a10e7f842cbc08847a6d47f1e88ae7581c755c6b83f21b0fc4643125c",
+    "incompatible.json": "44b87702b4940cdc670d947a2dc077a52ea39a8e2c9c17a898f2bf72590bc47e",
+    "reject-CENTERED_KEY_CORRELATION.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "reject-HARMONIC_HPCP.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "reject-KEY_TRACE.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "reject-SEMITONE_BAND_KEY.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "reject-TEMPORAL_CHORD_KEY.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "reject-TEMPORAL_PROFILE_KEY.log": "9e6f33d7f4fc9545d7d3d8bafa7a17291d00dc73b8acc8285eae921b13df334b",
+    "resources.json": "c0d77115ad042425f762a321c0daaaddedf00ef8c8483f32363dd3bf5fdbaafe",
+    "resources.py": "1083198cf6279b9ea9b7ed936d79a952b8990b466cf6d48a09803cb9c4c19372",
+    "run.py": "974d45d264c0e607a0b0033330c41f41ced52ac9e70b3bd74d960152c7039dcc",
+    "sanitize-build.log": "bf22008d8da14d954c984634b3294a03a84a65db09e15b815244f4d30c0e0f48",
+    "sanitize-configure.log": "5bfa7feda090e43e15bfe38106eeaa648e19ac40f7357b2c16ae231d9667df8c",
+    "sanitize-ctest.log": "9050d7bea3d251e25c6d56bf8af9b9dc0d72b158ee49ec0ffd8dab3bf9c951d9",
+    "sanitize-diagnostic-build.log": "8b4005e206c7bed777b6bfe11dac62f1374acaf1596fc3a44a75282f2fbbc98b",
+    "sanitize-replay.json": "5cfda5885a071c460484894a013fae6d8cd0c1c18280fe10fbf7083763b2775b"
+  },
+  "reversible_pcm_samples_per_run": 13824000,
+  "rows_per_run": 720,
+  "session_bytes": 11824,
+  "session_delta_bytes": 0,
+  "source_archive_sha256": "fc26dc0fc7fce97a5b3a4eb83827332e377187e9852efe75505c9cbdb33eec10",
+  "source_commit": "3fc7421f2cb184ac2ba31c02df2390268a24fe57",
+  "source_sha256": {
+    "CMakeLists.txt": "c25abd6e375f35ec9d67e026f5aebe9787059189a7408dc57c172d48a944decb",
+    "docs/status/APTA-1.1-KEY-MEAN-NORMALIZATION-PROTOCOL.md": "715ef9df287dadbaaf3801b2f8ec034555614af2042e4104e68832125bab2fd5",
+    "src/key/apta_key.c": "7af2866efc3af4c3aee34c844a7afdb71a0861cbc0738ce27db937f0a965fb39",
+    "src/key/apta_key_internal.h": "b82649c0b5cde0908e08815a5db413cc8de7f813d9bc8c0e92386e70cbbe6e0f",
+    "tests/CMakeLists.txt": "cfdb5fdcce2cbf71a2f50b1aeb76bf97e982e6a781f81ad9efeb07f051be6918",
+    "tests/bench/key_contrast_trace.h": "8de1cc491fb7b116d50ff4871b64adf0e967036b4012e1c0a4ff083d453c41ee",
+    "tests/bench/key_feed_benchmark.c": "2aab28a1cc6a1b4080b4b137ca61e5c535dc5343496d6cda900d2c4df68c5b6b",
+    "tests/bench/key_mode_diagnostic.c": "058c11bf51ae4b63995808f7090170c27de8a5c3f56cdf3d49b10aab427beaef",
+    "tests/unit/key_mean_normalization.c": "70cbce83a8a5eeaf2327ae26544403bbecebfeac6194e6471db1a0f6ffa7c758",
+    "tools/apta_key_mean_normalization_eval.py": "6907ee91c634920d211ce9a7ac897ed7df09ec1b9d4011ca2c590dd6895c6631",
+    "tools/test_apta_key_mean_normalization_eval.py": "8ef6c48367cdfa1d31c6aa4117e581acbd7631fa701b3abf2d719bc01a2802dc"
+  },
+  "synthetic_gates": {
+    "clean_major": true,
+    "clean_minor": true,
+    "fixes_exceed_breaks": true,
+    "gain_invariant": true,
+    "minor_preserved_each_condition": true,
+    "no_new_high_confidence_mismatches": true
+  },
+  "synthetic_gates_passed": true,
+  "verification": {
+    "all_pass": true,
+    "candidate_asan_ubsan_tests": 116,
+    "candidate_release_tests": 119,
+    "default_release_tests": 118,
+    "evaluator_unit_tests": 6,
+    "incompatible_flag_checks": {
+      "all_pass": true,
+      "count": 6,
+      "rejected": [
+        "SEMITONE_BAND_KEY",
+        "HARMONIC_HPCP",
+        "CENTERED_KEY_CORRELATION",
+        "TEMPORAL_CHORD_KEY",
+        "TEMPORAL_PROFILE_KEY",
+        "KEY_TRACE"
+      ]
+    },
+    "release_replay": {
+      "all_pass": true,
+      "release_identical": false,
+      "repeated": true,
+      "shifts": [
+        -4,
+        -2,
+        0,
+        1
+      ]
+    },
+    "sanitizer_release_identity": {
+      "all_pass": true,
+      "release_identical": true,
+      "repeated": false,
+      "shifts": [
+        -4,
+        -2,
+        0,
+        1
+      ]
+    }
+  }
+}
