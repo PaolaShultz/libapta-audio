@@ -79,6 +79,16 @@ stimuli, not a real-song fix. The next bounded diagnostic is gain sensitivity
 before selecting one new normalization/contrast experiment. See
 [`APTA-1.1-KEY-CONTRAST-TRACE.md`](APTA-1.1-KEY-CONTRAST-TRACE.md).
 
+The fixed input-gain follow-up is complete (runs 2026-09-05, evidence verified
+and documented 2026-09-10). Clean major final matches at gains 1/16, 1/4, 1 and
+2 are default 12/12, 9/12, 4/12, 2/12 and band 11/12, 2/12, 0/12, 0/12.
+Exact sample reversibility, raw-energy gain-squared scaling and unchanged raw
+argmax confirm gain sensitivity in the synthetic compression/scoring path.
+Production analyzer/object bytes remain unchanged. Next preregister one bounded
+per-window energy-normalization hypothesis before any native candidate or
+independent development comparison; see
+[`APTA-1.1-KEY-GAIN-RESULT.md`](APTA-1.1-KEY-GAIN-RESULT.md).
+
 ## Implemented compatibility guarantees
 
 - Existing `TEMP`, `LGRD`, `GGRD`, `REVN`, waveform and metadata semantics are unchanged by absence of the new optional sections.

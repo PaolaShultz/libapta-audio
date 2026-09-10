@@ -1,0 +1,421 @@
+{
+  "acceptance_claim": false,
+  "band_definition": "APTA_INTERNAL_KEY_SEMITONE_BAND=1",
+  "builds": {
+    "band": {
+      "baseline_sha256": "72c305af710f37b78cabb79377403453c286336b320815cbc7840b352c2381ce",
+      "gains": [
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 11,
+              "mean_major_margin": 0.013114942502006713,
+              "mean_min_over_mean": 0.2956651006731081,
+              "mean_normalized_entropy": 0.9180475170105259,
+              "mean_stimulus_major_margin": 0.013114942502006713,
+              "selected_major": 11,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": -0.06633354740637049,
+              "mean_min_over_mean": 0.2444622840033341,
+              "mean_normalized_entropy": 0.9123888135434889,
+              "mean_stimulus_major_margin": -0.07648401684061602,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 34,
+            "changed_pcm_verdicts": 347,
+            "final_high_confidence_outputs": 2,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 26,
+            "final_rows": 72,
+            "final_tonic_changes": 8,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 0.0625,
+          "gain_shift": -4,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "90d1c424e6eb60cacc0044646afdce60314f6c01fd472f1ae7b3d38d8cf67126",
+          "scaled_sample_peak": 0.0293603595
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 2,
+              "mean_major_margin": -0.0034326775098705944,
+              "mean_min_over_mean": 0.6020691043003373,
+              "mean_normalized_entropy": 0.9801119446933781,
+              "mean_stimulus_major_margin": -0.0034326775098705944,
+              "selected_major": 2,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": -0.04200818030891416,
+              "mean_min_over_mean": 0.5556202717239802,
+              "mean_normalized_entropy": 0.9775457739854684,
+              "mean_stimulus_major_margin": -0.04985093192032128,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 8,
+            "changed_pcm_verdicts": 219,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 3,
+            "final_rows": 72,
+            "final_tonic_changes": 5,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 0.25,
+          "gain_shift": -2,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "62477b2824f9dfc07d336ec444436ab4190bdbac872b70607bed81349da3ca9b",
+          "scaled_sample_peak": 0.117441438
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 0,
+              "mean_major_margin": -0.014215388088662823,
+              "mean_min_over_mean": 0.7566941009825842,
+              "mean_normalized_entropy": 0.99413346274186,
+              "mean_stimulus_major_margin": -0.013004858664761679,
+              "selected_major": 0,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": -0.02606355577108141,
+              "mean_min_over_mean": 0.7214994028753497,
+              "mean_normalized_entropy": 0.9934622769976768,
+              "mean_stimulus_major_margin": -0.03509985164217085,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 0,
+            "changed_pcm_verdicts": 0,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 0,
+            "final_rows": 72,
+            "final_tonic_changes": 0,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 1.0,
+          "gain_shift": 0,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "3ad5868b625f4d8aa52ecd816f5feeaad19c8852d5697ba3625d20806d9de1d7",
+          "scaled_sample_peak": 0.469765753
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 0,
+              "mean_major_margin": -0.01689555828102522,
+              "mean_min_over_mean": 0.7968274076465501,
+              "mean_normalized_entropy": 0.9963555375660044,
+              "mean_stimulus_major_margin": -0.015193294014186787,
+              "selected_major": 0,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 10,
+              "mean_major_margin": -0.023123087642180195,
+              "mean_min_over_mean": 0.7732740047966592,
+              "mean_normalized_entropy": 0.9959949862315881,
+              "mean_stimulus_major_margin": -0.031226152113719763,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 3,
+            "changed_pcm_verdicts": 78,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 0,
+            "final_rows": 72,
+            "final_tonic_changes": 3,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 2.0,
+          "gain_shift": 1,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "7e30227354de9e7960fe577b0aa8420a58d877fe2cccbb081675a7d8213548b2",
+          "scaled_sample_peak": 0.939531505
+        }
+      ]
+    },
+    "default": {
+      "baseline_sha256": "384bfcda5634861d122b3ff0f9c1f0262560364239d72de953ba653e7651f6d6",
+      "gains": [
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": 0.017709946926031433,
+              "mean_min_over_mean": 0.1024313548609364,
+              "mean_normalized_entropy": 0.8571775035195128,
+              "mean_stimulus_major_margin": 0.017709946926031433,
+              "selected_major": 12,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": -0.08413045358437567,
+              "mean_min_over_mean": 0.09538540719986877,
+              "mean_normalized_entropy": 0.852346173607843,
+              "mean_stimulus_major_margin": -0.08800572227444566,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 32,
+            "changed_pcm_verdicts": 264,
+            "final_high_confidence_outputs": 12,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 18,
+            "final_rows": 72,
+            "final_tonic_changes": 14,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 0.0625,
+          "gain_shift": -4,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "be381d6331592b26bc9d2cb5887bf946c15ce7660952342f832323fad2e60124",
+          "scaled_sample_peak": 0.0293603595
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 9,
+              "mean_major_margin": 0.004154448795034238,
+              "mean_min_over_mean": 0.34427193107388043,
+              "mean_normalized_entropy": 0.9492780146172198,
+              "mean_stimulus_major_margin": 0.004154448795034238,
+              "selected_major": 9,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 12,
+              "mean_major_margin": -0.05669109964778025,
+              "mean_min_over_mean": 0.34431797072447706,
+              "mean_normalized_entropy": 0.9469696737074664,
+              "mean_stimulus_major_margin": -0.06672381628198569,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 21,
+            "changed_pcm_verdicts": 188,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 10,
+            "final_rows": 72,
+            "final_tonic_changes": 11,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 0.25,
+          "gain_shift": -2,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "b4ef32f8acf9d464d4c5b446cfd28731e378fe92c8429b88fb0eb784010191f5",
+          "scaled_sample_peak": 0.117441438
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 4,
+              "mean_major_margin": -0.007452258260852672,
+              "mean_min_over_mean": 0.5722030858681699,
+              "mean_normalized_entropy": 0.9832283150864164,
+              "mean_stimulus_major_margin": -0.007260144694565272,
+              "selected_major": 4,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 11,
+              "mean_major_margin": -0.036265769439008465,
+              "mean_min_over_mean": 0.575819542385449,
+              "mean_normalized_entropy": 0.9832571868036019,
+              "mean_stimulus_major_margin": -0.047284302384569356,
+              "selected_major": 1,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 0,
+            "changed_pcm_verdicts": 0,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 0,
+            "final_rows": 72,
+            "final_tonic_changes": 0,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 1.0,
+          "gain_shift": 0,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "bcb0ca233387ca77ac8c290fa6f461075684673d693713b5b2319226e663bc66",
+          "scaled_sample_peak": 0.469765753
+        },
+        {
+          "clean_final": [
+            {
+              "matches_progression_key": 2,
+              "mean_major_margin": -0.011544973811046688,
+              "mean_min_over_mean": 0.6562078729076508,
+              "mean_normalized_entropy": 0.9897308687712919,
+              "mean_stimulus_major_margin": -0.010595868034147998,
+              "selected_major": 2,
+              "stimulus_mode": 0
+            },
+            {
+              "matches_progression_key": 11,
+              "mean_major_margin": -0.030975155907810876,
+              "mean_min_over_mean": 0.6553453054445433,
+              "mean_normalized_entropy": 0.9899261854708691,
+              "mean_stimulus_major_margin": -0.04082194431613816,
+              "selected_major": 0,
+              "stimulus_mode": 1
+            }
+          ],
+          "comparisons": {
+            "changed_final_verdicts": 11,
+            "changed_pcm_verdicts": 88,
+            "final_high_confidence_outputs": 0,
+            "final_high_confidence_stimulus_mismatches": 0,
+            "final_mode_only_changes": 6,
+            "final_rows": 72,
+            "final_tonic_changes": 5,
+            "pcm_rows": 576
+          },
+          "exact_reversible_samples": 13824000,
+          "exact_scaled_energy_windows": 288,
+          "gain": 2.0,
+          "gain_shift": 1,
+          "raw_argmax_unchanged_windows": 288,
+          "report_sha256": "73137887f882d2c5428a89251571697f04e43ce8ff61c304b8b2af60c9969355",
+          "scaled_sample_peak": 0.939531505
+        }
+      ]
+    }
+  },
+  "candidate_promoted": false,
+  "confidence_safety": "not-assessed-for-real-music",
+  "corpus_access": false,
+  "evidence_level": "synthetic-diagnostic",
+  "execution_date": "2026-09-05",
+  "fixed_gain_shifts": [
+    -4,
+    -2,
+    0,
+    1
+  ],
+  "fixes_breaks": "not-assessed-no-native-candidate",
+  "format": "apta-key-gain-evidence-1",
+  "gain_test_counter_bytes": 16,
+  "holdout_eligible": false,
+  "instrument_binary_sha256": {
+    "band": "8088117e425d4a4d807e32c3730ed2ed5f35a6a944fe17df1d286714b63f6292",
+    "default": "580613b091f3fa66567907e2b013579954d214bb00a3c7df48e553faa703c4b3",
+    "sanitize": "d185bb04df484e5b874b95afdb5cfebd877fcb72058d2af84a4f301281929142"
+  },
+  "instrument_definitions": [
+    "APTA_KEY_GAIN_DIAGNOSTIC=1",
+    "APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC=1"
+  ],
+  "instrument_target": "apta_key_gain_diagnostic",
+  "limitations": [
+    "These are synthetic progression identities, not real-song accuracy.",
+    "No input gain is selected as a production workaround.",
+    "IV/V window decisions are not global-key correctness tests.",
+    "Normalization requires a separate frozen candidate protocol and independent development evidence."
+  ],
+  "native_resource_delta_bytes": 0,
+  "observer_scratch_bytes": {
+    "band": 1124,
+    "default": 476
+  },
+  "report_sha256": {
+    "band-build.log": "5d482c801a58072e054bd73c9e71c6149554f22ea0662b2826f1351f7bf9f07e",
+    "band-runner-checks.json": "12c0e4866b3e3c9c2bc2e5400a570a93055164e78dcc39f239753dd1c7870353",
+    "binary-identities.txt": "2d8ac35a0380f127c2f3ddc05ce1d4ced9c04d70a2d7543afc32b6b631829aa0",
+    "default-build.log": "5d482c801a58072e054bd73c9e71c6149554f22ea0662b2826f1351f7bf9f07e",
+    "default-runner-checks.json": "5de36382009af86deb481c8dc75633fba3cb5df4724e83bde7a4de1d1a3710f5",
+    "run-fixed.py": "645d8fec2f39197e907336af238c69a03a9b60904c804b6844764c2cb8aa140f",
+    "sanitize-build.log": "5d482c801a58072e054bd73c9e71c6149554f22ea0662b2826f1351f7bf9f07e",
+    "sanitize-runner-checks.json": "d8f30295676a3cbdc7e3006a3ee9d1b47e1b56760d3d984063f7060ea960f8a9",
+    "summary-resume-20260910.json": "5677a536c54a7c6241498d303e817ff2c6a52a7943af73c47bfc36bb67c5438a",
+    "summary.json": "5677a536c54a7c6241498d303e817ff2c6a52a7943af73c47bfc36bb67c5438a"
+  },
+  "session_bytes": {
+    "band": 12784,
+    "default": 11824
+  },
+  "source_revision": "1e3a151ed625b82c276b5117c498dfe64f301dd7",
+  "source_sha256": {
+    "docs/status/APTA-1.1-KEY-GAIN-PROTOCOL.md": "5488833b64c3c264919f10345777f4a4004bdf2a3ea1258e945b21cafa1ccf55",
+    "src/key/apta_key.c": "ccf45616b7c82455ef69a25c3ca32a5783091519adb307ee19d378c2d34124d9",
+    "src/key/apta_key_internal.h": "b5e420e2e1a403a851b9236300aae1fb2189d4c699d591ef2bcbfb7a9b5e9b46",
+    "tests/CMakeLists.txt": "c21f2f9b321442e49b94895f9d5a29a5e63718cf099644bc915e28450991b203",
+    "tests/bench/key_contrast_trace.h": "8de1cc491fb7b116d50ff4871b64adf0e967036b4012e1c0a4ff083d453c41ee",
+    "tests/bench/key_mode_diagnostic.c": "c234c36cbcfb8f8a2356bb4dde5b572938526be9ccd672b897f40473dcb8580d",
+    "tools/apta_key_contrast_summary.py": "c9efb0fd6c8986466d1c21e8898580da233c07ea21e38cd8c5d430d08756d9c0",
+    "tools/apta_key_gain_summary.py": "b5b6e271caa4d79b58756ffe84c4f0f0856fd6f5f8e4f8e0fd9592fc8a2830ee",
+    "tools/apta_key_mode_diagnostic_summary.py": "e5f035b6f347e7e6528a0ef67c26f4374705bee59619a363c46db52393d39754",
+    "tools/test_apta_key_gain_summary.py": "2fd76620145e96a2bb82a8daf3a3290238524d24236166db973d47c043478646"
+  },
+  "source_worktree_clean": false,
+  "unchanged_production_sha256": {
+    "band_analyzer": "cd08b5887382142944d8ac3329cdbcf07dfa1fd76f284a1c1a761ac3906c6f2b",
+    "band_key_object": "73d09a7144bd072af39c82f47f39d8831465c98e6f6943022d78f2a0c2d0b505",
+    "default_analyzer": "0e7999efb61734f656b846d5542617454c5a0789224531c071d0f8555512383a",
+    "default_key_object": "2729a6008ebf58c7ee9778e784e931e7c1caddc0dbe1497b7d40eb8843199d8e"
+  },
+  "verification": {
+    "band_asan_ubsan_runs": 4,
+    "byte_identical_replays": 8,
+    "exact_energy_scaling_windows_per_run": 288,
+    "exact_reversible_samples_per_run": 13824000,
+    "gain_one_rows_identical_per_build": 720,
+    "ideal_rows_identical_per_gain": 144,
+    "invalid_cli_checks_passed": 18,
+    "native_full_matrix_rerun": false,
+    "production_objects_and_analyzers_unchanged": true,
+    "raw_argmax_unchanged_windows_per_run": 288,
+    "registered_runs": 8,
+    "release_werror_builds": [
+      "default",
+      "band"
+    ],
+    "sanitizer_reports_identical_to_release": true,
+    "summary_recomputed_byte_identical_on_resume": true,
+    "summary_tests_passed": 6
+  },
+  "verification_date": "2026-09-10"
+}

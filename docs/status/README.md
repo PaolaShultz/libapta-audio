@@ -26,6 +26,9 @@ Active post-1.0 development:
 - [`APTA-1.1-KEY-CONTRAST-TRACE.md`](APTA-1.1-KEY-CONTRAST-TRACE.md)
   — synthetic per-window energy/compression trace, unchanged native decisions,
   observed major-mode contrast loss and the next gain-sensitivity boundary.
+- [`APTA-1.1-KEY-GAIN-RESULT.md`](APTA-1.1-KEY-GAIN-RESULT.md)
+  — fixed four-gain synthetic diagnostic, exact raw-energy scaling, observed
+  gain-dependent mode decisions and the next energy-normalization boundary.
 - [`APTA-1.1-FINAL-DJ-CORPUS-STATUS.md`](APTA-1.1-FINAL-DJ-CORPUS-STATUS.md) —
   dated private-corpus snapshots, the independently verified formal rejection,
   and the remaining accuracy boundary.

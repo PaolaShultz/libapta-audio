@@ -24,6 +24,12 @@ static const float profiles[2][12] = {
 static int emit_json;
 static unsigned rows;
 
+#ifdef APTA_KEY_GAIN_DIAGNOSTIC
+static int gain_shift;
+static float scaled_sample_peak;
+static uint64_t gain_reversal_exact_samples;
+#endif
+
 static unsigned mode_index(apta_key_mode_t mode)
 {
     return mode == APTA_KEY_MODE_MAJOR ? 0u : 1u;
@@ -178,7 +184,19 @@ static int pcm(void)
                         random ^= random << 13; random ^= random >> 17; random ^= random << 5;
                         sample += 0.02 * (2.0 * (double)random / 4294967295.0 - 1.0);
                     }
+#ifdef APTA_KEY_GAIN_DIAGNOSTIC
+                    {
+                        const float original = (float)sample;
+                        const float scaled = ldexpf(original, gain_shift);
+                        CHECK(isfinite(scaled) && fabsf(scaled) <= 1.0f);
+                        CHECK(ldexpf(scaled, -gain_shift) == original);
+                        if (fabsf(scaled) > scaled_sample_peak) scaled_sample_peak = fabsf(scaled);
+                        ++gain_reversal_exact_samples;
+                        apta_internal_key_feed_sample(&session, scaled, absolute);
+                    }
+#else
                     apta_internal_key_feed_sample(&session, (float)sample, absolute);
+#endif
 #ifdef APTA_KEY_EXTRACTION_REFERENCE
                     CHECK(reference_feed(&session, (float)sample) == 0);
 #endif
@@ -205,13 +223,26 @@ static int pcm(void)
 
 int main(int argc, char **argv)
 {
+#ifdef APTA_KEY_GAIN_DIAGNOSTIC
+    if (argc != 4 || strcmp(argv[1], "--json") != 0 || strcmp(argv[2], "--gain-shift") != 0 ||
+        (strcmp(argv[3], "-4") != 0 && strcmp(argv[3], "-2") != 0 &&
+         strcmp(argv[3], "0") != 0 && strcmp(argv[3], "1") != 0)) {
+        fputs("usage: apta_key_gain_diagnostic --json --gain-shift {-4|-2|0|1}\n", stderr);
+        return 2;
+    }
+    gain_shift = atoi(argv[3]);
+    emit_json = 1;
+#else
     if (argc > 2 || (argc == 2 && strcmp(argv[1], "--json") != 0)) {
         fputs("usage: apta_key_mode_diagnostic [--json]\n", stderr); return 2;
     }
     emit_json = argc == 2;
+#endif
 #ifdef APTA_KEY_EXTRACTION_REFERENCE
     CHECK(reference_selftest() == 0);
 #define DIAGNOSTIC_FORMAT "apta-key-extraction-reference-1"
+#elif defined(APTA_KEY_GAIN_DIAGNOSTIC)
+#define DIAGNOSTIC_FORMAT "apta-key-gain-diagnostic-1"
 #elif defined(APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC)
 #define DIAGNOSTIC_FORMAT "apta-key-contrast-diagnostic-1"
 #else
@@ -228,7 +259,16 @@ int main(int argc, char **argv)
     CHECK(vectors() == 0);
     CHECK(pcm() == 0);
     CHECK(rows == 720u);
-#ifdef APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC
+#ifdef APTA_KEY_GAIN_DIAGNOSTIC
+    CHECK(gain_reversal_exact_samples == UINT64_C(13824000));
+    if (emit_json) printf("\n],\"row_count\":%u,\"checks_passed\":true,"
+                         "\"observer_scratch_bytes\":%lu,\"session_bytes\":%lu,"
+                         "\"gain_shift\":%d,\"scaled_sample_peak\":%.9g,"
+                         "\"gain_reversal_exact_samples\":%llu}\n",
+                         rows, (unsigned long)sizeof(contrast), (unsigned long)sizeof(apta_session_t),
+                         gain_shift, (double)scaled_sample_peak,
+                         (unsigned long long)gain_reversal_exact_samples);
+#elif defined(APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC)
     if (emit_json) printf("\n],\"row_count\":%u,\"checks_passed\":true,"
                          "\"observer_scratch_bytes\":%lu,\"session_bytes\":%lu}\n",
                          rows, (unsigned long)sizeof(contrast), (unsigned long)sizeof(apta_session_t));

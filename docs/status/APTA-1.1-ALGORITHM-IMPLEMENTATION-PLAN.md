@@ -271,9 +271,14 @@ Implementation order:
    observer identifies loss after compression/folding: first clean major
    windows change from raw-folded 12/12 to native 7/12 default and 2/12 band.
    All original 720 rows per build and production analyzer/object hashes stay
-   identical. See `APTA-1.1-KEY-CONTRAST-TRACE.md`. Next freeze a bounded
-   input-gain sensitivity diagnostic before choosing a normalization/contrast
-   change; no fitted floor, parameter sweep or label rescue is justified.
+   identical. See `APTA-1.1-KEY-CONTRAST-TRACE.md`. The frozen gain follow-up
+   is also complete (2026-09-05 runs, 2026-09-10 verified report): changing
+   gain alone changes clean-major default final matches from 12/12 at 1/16
+   to 2/12 at 2, with exact gain-squared raw-energy scaling and unchanged raw
+   argmax. See `APTA-1.1-KEY-GAIN-RESULT.md`. Next preregister one bounded
+   scale-invariant per-window energy normalization before compression, with
+   explicit silence/resource/no-regression rules. No fitted floor, gain
+   workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
 4. Improve harmonic salience from the retained octave-resolved spectrum while
@@ -426,9 +431,11 @@ question without changing that boundary. The 2026-09-05 frozen 22-case topology
 follow-up is now complete and retains a mode/contrast diagnostic hypothesis.
 The subsequent frozen per-window contrast observation is also complete and
 locates synthetic loss after compression/folding with additional accumulation
-loss. Resume with the bounded input-gain diagnostic described above; a native
-representation change still needs its own preregistration and independent
-development evidence. Automated agreements are not corrected truth.
+loss. The bounded input-gain diagnostic is complete and confirms synthetic
+gain dependence with unchanged raw-energy decisions. Resume by preregistering
+one scale-invariant energy-normalization candidate as described above; a native
+representation change still needs independent development evidence. Automated
+agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
 software-clean but not algorithmically eligible, so neither a formal holdout
 nor a new final acceptance corpus may be opened until a complete transferable

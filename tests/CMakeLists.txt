@@ -298,7 +298,7 @@ elseif(MSVC)
     endif()
 endif()
 # Explicit-build, synthetic-only key diagnostic; never installed or run on a corpus.
-foreach(key_diagnostic IN ITEMS apta_key_mode_diagnostic apta_key_extraction_reference apta_key_contrast_diagnostic)
+foreach(key_diagnostic IN ITEMS apta_key_mode_diagnostic apta_key_extraction_reference apta_key_contrast_diagnostic apta_key_gain_diagnostic)
 add_executable(${key_diagnostic} EXCLUDE_FROM_ALL bench/key_mode_diagnostic.c)
 target_link_libraries(${key_diagnostic} PRIVATE apta::core apta_c11_atomics)
 target_include_directories(${key_diagnostic} PRIVATE ${CMAKE_SOURCE_DIR}/src/core ${CMAKE_SOURCE_DIR}/src/key)
@@ -320,8 +320,11 @@ target_compile_definitions(apta_key_extraction_reference PRIVATE APTA_KEY_EXTRAC
 # Only this executable's key translation unit receives the observer macro.
 # Its definitions satisfy the static core's key references without loading the
 # uninstrumented key object from the archive. The production core is unchanged.
-target_sources(apta_key_contrast_diagnostic PRIVATE ${CMAKE_SOURCE_DIR}/src/key/apta_key.c)
-target_compile_definitions(apta_key_contrast_diagnostic PRIVATE APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC=1)
+foreach(observer_diagnostic IN ITEMS apta_key_contrast_diagnostic apta_key_gain_diagnostic)
+target_sources(${observer_diagnostic} PRIVATE ${CMAKE_SOURCE_DIR}/src/key/apta_key.c)
+target_compile_definitions(${observer_diagnostic} PRIVATE APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC=1)
+endforeach()
+target_compile_definitions(apta_key_gain_diagnostic PRIVATE APTA_KEY_GAIN_DIAGNOSTIC=1)
 apta_add_c_test(
     apta_dj_sections_roundtrip
     apta.serialization.dj_sections_roundtrip
