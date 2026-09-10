@@ -86,3 +86,12 @@ A full pass retains the exact detector for later explicitly frozen validation.
 This wrapper cannot materialize a holdout and never grants WP6/WP7 or final
 acceptance eligibility. Physical P4/full-path resource work and transferable
 lattice/downbeat algorithms remain separate blockers. VERSION stays 1.0.1.
+
+## Metadata-only preflight seal
+
+Before any new audio download, the selector and eight host tests pass. The
+96-track selection seal is
+`87c4764ddeb667ce5acee85cfeba0a6a9bc23f987438af8cfc064b60218601ab`.
+The [public preflight](../../evidence/1.1/mtg-mean-key-preflight-20260910.json)
+records 48/48 mode balance, four per class and zero reserved/spent ID or
+transport-checksum overlap. The new split contains no formal holdout entries.

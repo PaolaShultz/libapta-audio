@@ -1,0 +1,23 @@
+{
+  "acceptance_claim": false,
+  "excluded_transport_overlap": 0,
+  "format": "apta-1.1-mtg-mean-key-development-1",
+  "holdout_eligible": false,
+  "inventory_count": 1159,
+  "mode_counts": {
+    "major": 48,
+    "minor": 48
+  },
+  "mtg_revision": "fd7b8c584f7bd6d720d170c325a6d42c9bf75a6b",
+  "operation": "preflight",
+  "original_revision": "6bcd492c825ac9b8597bc650a5f6fd18b6c43d2b",
+  "per_class_count": 4,
+  "prior_selection_sha256": "1fadadc5e5df343558eeb476aa2346fc688bea6ebbc98a09a996a649be3b0146",
+  "remaining_after_id_exclusions": 1015,
+  "reserved_holdout_count": 48,
+  "selection_seed": "apta-1.1-mtg-mean-key-v1",
+  "selection_sha256": "87c4764ddeb667ce5acee85cfeba0a6a9bc23f987438af8cfc064b60218601ab",
+  "source_id_overlap": 0,
+  "spent_mtg_count": 96,
+  "track_count": 96
+}
