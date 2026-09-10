@@ -95,10 +95,21 @@ on resource gates**: median host CPU ratio 1.172285 exceeds 1.15 and extra
 compiler-accounted stack is 400 bytes versus the 192-byte limit. Default
 production bytes remain unchanged. Native default/candidate Release tests
 pass 118/118 and 119/119; candidate ASan/UBSan passes 116/116. No independent
-development set or holdout was opened. Next preregister a separate cost-only
-implementation experiment with exact evidence identity and a less noisy host
-timing protocol; preserve this rejection and the detuned weakness (8/24).
+development set or holdout was opened. This rejection and the detuned weakness
+(8/24) remain recorded; the separate cost-only follow-up is complete below.
 See [`APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md`](APTA-1.1-KEY-MEAN-NORMALIZATION-RESULT.md).
+
+The separately preregistered **cost I1 passes** at
+`a883dd6d0d50d4f463d8347352d75891d9005fba`: every gain report and the evaluator
+remain byte-identical, while extra project stack falls to 64 bytes. Seven
+longer host timing triples yield median I1/default 0.997090 and
+I1/original-normalized 0.855793; every timed interval exceeds 500 ms. All
+four software matrices pass (118/119/119 Release tests and 116 sanitizer
+tests). Both options stay off by default. Next preregister a disjoint
+independent key-development comparison for this exact detector, with verified
+labels, frozen per-mode/absolute/safety gates and spent-split separation.
+This is retention for development, not promotion or WP6 eligibility. See
+[`APTA-1.1-KEY-MEAN-COST-I1-RESULT.md`](APTA-1.1-KEY-MEAN-COST-I1-RESULT.md).
 
 ## Implemented compatibility guarantees
 

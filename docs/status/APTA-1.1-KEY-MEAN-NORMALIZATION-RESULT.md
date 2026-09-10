@@ -140,3 +140,8 @@ Only a separately qualified implementation may proceed to a preregistered,
 disjoint independent key-development comparison. Tuning robustness remains
 an explicit limitation. Physical P4 timing/stack/USB/audio evidence, WP6/WP7
 eligibility and all final 1.1 release gates remain open. `VERSION` stays 1.0.1.
+
+The separately preregistered [cost I1 follow-up](APTA-1.1-KEY-MEAN-COST-I1-RESULT.md)
+has now passed with identical evidence, +64 bytes stack and near-default host
+CPU cost. That successor is retained for independent development; the original
+implementation and short-run resource rejection above remain unchanged.
