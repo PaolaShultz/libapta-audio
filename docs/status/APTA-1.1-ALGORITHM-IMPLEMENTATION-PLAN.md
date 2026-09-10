@@ -288,9 +288,15 @@ Implementation order:
    matrices pass; see `APTA-1.1-KEY-MEAN-COST-I1-RESULT.md`. Its subsequent
    disjoint MTG comparison is **rejected**: 27/96 -> 37/96, 13 fixes/three
    breaks, major 11/48, minor 26/48 and 17 new high-confidence errors. See
-   `APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`. Next preregister a tonal-evidence
-   diagnostic separating frequency coverage from ranking/confidence; do not
-   retune normalization or confidence on the newly spent 96-track split.
+   `APTA-1.1-WP4-MTG-MEAN-KEY-RESULT.md`. The separately preregistered
+   tonal-coverage diagnostic is now **complete**: dense evidence plus unchanged
+   mean normalization restores both detuned conditions to 24/24, but breaks two
+   missing-fundamental cases; even known component energy misses three. Native
+   production bytes and old rows are unchanged, no corpus was opened, and no
+   candidate is retained. See `APTA-1.1-KEY-COVERAGE-RESULT.md`. Next preregister
+   harmonic-to-fundamental evidence with octave information preserved until
+   partial attribution. Do not retune normalization or confidence on the spent
+   96-track split.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -451,8 +457,12 @@ the frozen CPU and stack limits. The separate cost I1 passes every
 identity/software/resource gate, but its disjoint 96-track MTG development
 comparison now rejects the detector: 37/96 exact and 17 new high-confidence
 errors. The split is spent; preserve the original representation, confidence
-and label seals. Resume with a separately preregistered tonal-evidence
-diagnostic, not confidence or parameter rescue on this result. No specific
+and label seals. The subsequent synthetic coverage diagnostic is complete:
+broader evidence fixes detuned cases under mean normalization but regresses
+missing-fundamental cases (24/24 -> 22/24; component oracle 21/24). No detector
+is retained; see `APTA-1.1-KEY-COVERAGE-RESULT.md`. Resume with a preregistered
+harmonic-to-fundamental representation experiment, keeping ranking/confidence
+fixed and octave information available until partial attribution. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
