@@ -708,16 +708,55 @@ static void apta_key_initialize(
     analysis->initialized = 1u;
 }
 
+#ifdef APTA_INTERNAL_KEY_MEAN_NORMALIZED
+void apta_internal_key_mean_compress(float energies[APTA_INTERNAL_KEY_BIN_COUNT])
+{
+    float peak = 0.0f;
+    float scaled_sum = 0.0f;
+    float factor = 0.0f;
+    uint32_t bin;
+    for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin) {
+        if (!isfinite(energies[bin]) || energies[bin] < 0.0f) energies[bin] = 0.0f;
+        if (energies[bin] > peak) peak = energies[bin];
+    }
+    if (peak > 0.0f) {
+        for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin)
+            scaled_sum += energies[bin] / peak;
+        factor = (float)APTA_INTERNAL_KEY_BIN_COUNT / scaled_sum;
+    }
+    for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin) {
+        const float raw = energies[bin];
+        const float compressed = peak > 0.0f ? logf(1.0f + (raw / peak) * factor) : 0.0f;
+#ifdef APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC
+        apta_key_contrast_observe_energy(0u, bin, raw, compressed);
+#endif
+        energies[bin] = compressed;
+    }
+}
+#endif
+
 static void apta_key_finish_window(apta_internal_key_analysis_t *analysis)
 {
 #if defined(APTA_INTERNAL_KEY_TEMPORAL_CHORD) || \
     defined(APTA_INTERNAL_KEY_TEMPORAL_PROFILE)
     float window_chroma[APTA_INTERNAL_KEY_PITCH_CLASSES] = {0.0f};
 #endif
+#ifndef APTA_INTERNAL_KEY_MEAN_NORMALIZED
     uint32_t variant;
+#endif
     uint32_t bin;
 
-#ifdef APTA_INTERNAL_KEY_SEMITONE_BAND
+#ifdef APTA_INTERNAL_KEY_MEAN_NORMALIZED
+    float energies[APTA_INTERNAL_KEY_BIN_COUNT];
+    for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin) {
+        const float q1 = analysis->q1[0][bin];
+        const float q2 = analysis->q2[0][bin];
+        energies[bin] = q1 * q1 + q2 * q2 - analysis->coefficients[0][bin] * q1 * q2;
+    }
+    apta_internal_key_mean_compress(energies);
+    for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin)
+        analysis->chroma[0][bin % APTA_INTERNAL_KEY_PITCH_CLASSES] += energies[bin];
+#elif defined(APTA_INTERNAL_KEY_SEMITONE_BAND)
     for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin) {
         float band_energy = 0.0f;
 

@@ -7,6 +7,10 @@
 #include <string.h>
 #include "apta_key_internal.h"
 
+#if defined(APTA_KEY_EXTRACTION_REFERENCE) && defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED)
+#error "The frozen extraction reference does not support mean normalization"
+#endif
+
 #if defined(APTA_INTERNAL_KEY_CENTERED_CORRELATION) || defined(APTA_INTERNAL_KEY_HPCP) || \
     defined(APTA_INTERNAL_KEY_TEMPORAL_CHORD) || defined(APTA_INTERNAL_KEY_TEMPORAL_PROFILE)
 #error "This frozen diagnostic supports only default and semitone-band builds"
@@ -241,6 +245,10 @@ int main(int argc, char **argv)
 #ifdef APTA_KEY_EXTRACTION_REFERENCE
     CHECK(reference_selftest() == 0);
 #define DIAGNOSTIC_FORMAT "apta-key-extraction-reference-1"
+#elif defined(APTA_KEY_GAIN_DIAGNOSTIC) && defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED)
+#define DIAGNOSTIC_FORMAT "apta-key-mean-normalized-gain-1"
+#elif defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED)
+#define DIAGNOSTIC_FORMAT "apta-key-mean-normalized-diagnostic-1"
 #elif defined(APTA_KEY_GAIN_DIAGNOSTIC)
 #define DIAGNOSTIC_FORMAT "apta-key-gain-diagnostic-1"
 #elif defined(APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC)

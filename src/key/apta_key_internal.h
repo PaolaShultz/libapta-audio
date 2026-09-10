@@ -82,4 +82,8 @@ void apta_key_contrast_observe_energy(
     uint32_t variant, uint32_t bin, float energy, float compressed);
 #endif
 
+#ifdef APTA_INTERNAL_KEY_MEAN_NORMALIZED
+void apta_internal_key_mean_compress(float energies[APTA_INTERNAL_KEY_BIN_COUNT]);
+#endif
+
 #endif /* APTA_KEY_INTERNAL_H */

@@ -325,6 +325,17 @@ target_sources(${observer_diagnostic} PRIVATE ${CMAKE_SOURCE_DIR}/src/key/apta_k
 target_compile_definitions(${observer_diagnostic} PRIVATE APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC=1)
 endforeach()
 target_compile_definitions(apta_key_gain_diagnostic PRIVATE APTA_KEY_GAIN_DIAGNOSTIC=1)
+if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY)
+    apta_add_c_test(apta_key_mean_normalization apta.dj.key_mean_normalization unit/key_mean_normalization.c)
+    target_link_libraries(apta_key_mean_normalization PRIVATE apta_c11_atomics)
+    if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+        target_compile_options(apta_key_mean_normalization PRIVATE -Wall -Wextra -Wpedantic)
+        target_link_libraries(apta_key_mean_normalization PRIVATE m)
+        if(APTA_WARNINGS_AS_ERRORS)
+            target_compile_options(apta_key_mean_normalization PRIVATE -Werror)
+        endif()
+    endif()
+endif()
 apta_add_c_test(
     apta_dj_sections_roundtrip
     apta.serialization.dj_sections_roundtrip

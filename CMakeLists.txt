@@ -194,6 +194,22 @@ if(APTA_ENABLE_EXPERIMENTAL_SEMITONE_BAND_KEY)
 endif()
 
 option(
+    APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY
+    "Build the development window-mean energy normalization key candidate"
+    OFF)
+if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY)
+    if(APTA_ENABLE_EXPERIMENTAL_SEMITONE_BAND_KEY OR
+       APTA_ENABLE_EXPERIMENTAL_HARMONIC_HPCP OR
+       APTA_ENABLE_EXPERIMENTAL_CENTERED_KEY_CORRELATION OR
+       APTA_ENABLE_EXPERIMENTAL_TEMPORAL_CHORD_KEY OR
+       APTA_ENABLE_EXPERIMENTAL_TEMPORAL_PROFILE_KEY OR
+       APTA_ENABLE_EXPERIMENTAL_KEY_TRACE)
+        message(FATAL_ERROR "Mean-normalized key requires the unmodified one-probe key frontend")
+    endif()
+    add_compile_definitions(APTA_INTERNAL_KEY_MEAN_NORMALIZED=1)
+endif()
+
+option(
     APTA_ENABLE_EXPERIMENTAL_KEY_TRACE
     "Build the apta-key-trace development diagnostic tool"
     OFF)
