@@ -708,7 +708,7 @@ static void apta_key_initialize(
     analysis->initialized = 1u;
 }
 
-#ifdef APTA_INTERNAL_KEY_MEAN_NORMALIZED
+#if defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED) && !defined(APTA_INTERNAL_KEY_MEAN_COST_I1)
 void apta_internal_key_mean_compress(float energies[APTA_INTERNAL_KEY_BIN_COUNT])
 {
     float peak = 0.0f;
@@ -744,9 +744,13 @@ static void apta_key_finish_window(apta_internal_key_analysis_t *analysis)
 #ifndef APTA_INTERNAL_KEY_MEAN_NORMALIZED
     uint32_t variant;
 #endif
+#ifndef APTA_INTERNAL_KEY_MEAN_COST_I1
     uint32_t bin;
+#endif
 
-#ifdef APTA_INTERNAL_KEY_MEAN_NORMALIZED
+#ifdef APTA_INTERNAL_KEY_MEAN_COST_I1
+    apta_internal_key_mean_accumulate_in_place(analysis);
+#elif defined(APTA_INTERNAL_KEY_MEAN_NORMALIZED)
     float energies[APTA_INTERNAL_KEY_BIN_COUNT];
     for (bin = 0u; bin < APTA_INTERNAL_KEY_BIN_COUNT; ++bin) {
         const float q1 = analysis->q1[0][bin];

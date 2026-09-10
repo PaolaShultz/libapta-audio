@@ -86,4 +86,9 @@ void apta_key_contrast_observe_energy(
 void apta_internal_key_mean_compress(float energies[APTA_INTERNAL_KEY_BIN_COUNT]);
 #endif
 
+#ifdef APTA_INTERNAL_KEY_MEAN_COST_I1
+/* Consumes q1 as scratch; the caller must reset the window before feeding. */
+void apta_internal_key_mean_accumulate_in_place(apta_internal_key_analysis_t *analysis);
+#endif
+
 #endif /* APTA_KEY_INTERNAL_H */

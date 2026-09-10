@@ -322,6 +322,9 @@ target_compile_definitions(apta_key_extraction_reference PRIVATE APTA_KEY_EXTRAC
 # uninstrumented key object from the archive. The production core is unchanged.
 foreach(observer_diagnostic IN ITEMS apta_key_contrast_diagnostic apta_key_gain_diagnostic)
 target_sources(${observer_diagnostic} PRIVATE ${CMAKE_SOURCE_DIR}/src/key/apta_key.c)
+if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY_COST_I1)
+target_sources(${observer_diagnostic} PRIVATE ${CMAKE_SOURCE_DIR}/src/key/apta_key_mean_cost_i1.c)
+endif()
 target_compile_definitions(${observer_diagnostic} PRIVATE APTA_INTERNAL_KEY_CONTRAST_DIAGNOSTIC=1)
 endforeach()
 target_compile_definitions(apta_key_gain_diagnostic PRIVATE APTA_KEY_GAIN_DIAGNOSTIC=1)

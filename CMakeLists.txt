@@ -209,6 +209,15 @@ if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY)
     add_compile_definitions(APTA_INTERNAL_KEY_MEAN_NORMALIZED=1)
 endif()
 
+option(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY_COST_I1
+    "Build the exact-evidence mean-normalization storage/call-boundary experiment" OFF)
+if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY_COST_I1)
+    if(NOT APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY)
+        message(FATAL_ERROR "Mean-normalized cost I1 requires APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY=ON")
+    endif()
+    add_compile_definitions(APTA_INTERNAL_KEY_MEAN_COST_I1=1)
+endif()
+
 option(
     APTA_ENABLE_EXPERIMENTAL_KEY_TRACE
     "Build the apta-key-trace development diagnostic tool"
@@ -623,6 +632,9 @@ if(APTA_ENABLE_EXPERIMENTAL_COMPLEX_DEVIATION_I10)
         src/experimental/apta_complex_deviation_i10.c)
 endif()
 
+if(APTA_ENABLE_EXPERIMENTAL_MEAN_NORMALIZED_KEY_COST_I1)
+    list(APPEND APTA_CORE_SOURCES src/key/apta_key_mean_cost_i1.c)
+endif()
 add_library(apta_core_objects OBJECT ${APTA_CORE_SOURCES})
 add_library(apta_core $<TARGET_OBJECTS:apta_core_objects>)
 

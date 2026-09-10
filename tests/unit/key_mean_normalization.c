@@ -51,5 +51,22 @@ int main(void)
     for (i = 48000; i < 96000; ++i) apta_internal_key_feed_sample(&session, 0.0f, i);
     CHECK(session.key_analysis.completed_windows == 2u);
     CHECK(memcmp(reference, session.key_analysis.chroma[0], 12 * sizeof(float)) == 0);
+    /* A non-silent completed window consumes scratch, resets it, and an
+     * immediately following silent window must preserve that exact chroma. */
+    for (i = 96000; i < 144000; ++i)
+        apta_internal_key_feed_sample(&session, (float)((int)(i % 97) - 48) / 100.0f, i);
+    CHECK(session.key_analysis.completed_windows == 3u);
+    for (i = 0; i < 36; ++i) {
+        CHECK(session.key_analysis.q1[0][i] == 0.0f);
+        CHECK(session.key_analysis.q2[0][i] == 0.0f);
+    }
+    CHECK(session.key_analysis.window_samples == 0u);
+    CHECK(session.key_analysis.decimation_count == 0u);
+    CHECK(session.key_analysis.decimation_sum == 0.0f);
+    CHECK(memcmp(reference, session.key_analysis.chroma[0], 12 * sizeof(float)) != 0);
+    memcpy(reference, session.key_analysis.chroma[0], 12 * sizeof(float));
+    for (i = 144000; i < 192000; ++i) apta_internal_key_feed_sample(&session, 0.0f, i);
+    CHECK(session.key_analysis.completed_windows == 4u);
+    CHECK(memcmp(reference, session.key_analysis.chroma[0], 12 * sizeof(float)) == 0);
     return 0;
 }
