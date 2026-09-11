@@ -298,9 +298,14 @@ Implementation order:
    reach 144/144, but missing-fundamental local chords are 84/96 (<89 required).
    Twelve local minor chords become relative major. Instrument/resource gates
    pass, production bytes are unchanged and no music was opened; see
-   `APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. Next preregister an evidence
-   identifiability diagnostic before selecting another fitter; do not change
-   H1's dictionary/iterations or retune confidence on the spent 96-track split.
+   `APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. The subsequent identifiability
+   diagnostic is complete: eight window pairs (four distinct spectra) support
+   different minor/relative-major interpretations with identical ideal cell
+   energy and <=6 columns on each side. Known-note support improves residual
+   in 0/576 windows; H1 optimality is not proven. See
+   `APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md`. Next preregister within-cell frequency
+   structure before choosing another frontend; do not change H1's dictionary/
+   iterations or retune confidence on the spent 96-track split.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -467,9 +472,12 @@ missing-fundamental cases (24/24 -> 22/24; component oracle 21/24). No detector
 is retained; see `APTA-1.1-KEY-COVERAGE-RESULT.md`. The subsequent H1 attribution
 experiment is rejected despite 144/144 final keys: local missing-fundamental
 chords fail 84/96 versus required >=89. See
-`APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. Resume with a preregistered evidence
-identifiability diagnostic separating ambiguity from bounded fitting error,
-without rescuing H1's dictionary, iterations or ranking/confidence. No specific
+`APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. The identifiability diagnostic now
+records exact ideal-model key ambiguities, including eight window pairs with
+<=6 columns per side, and no lower residual on known-note support (0/576).
+H1 remains rejected; see `APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md`. Resume with a
+preregistered within-cell frequency-structure diagnostic, without rescuing H1's
+dictionary, iterations or ranking/confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is

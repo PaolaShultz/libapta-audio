@@ -7,14 +7,24 @@
 
 ## Current boundary
 
+The 2026-09-11 identifiability diagnostic is complete: eight window pairs
+(four distinct ideal spectra) admit different minor/relative-major fundamental
+interpretations while both use <=6 columns and retain identical 36-cell energy.
+The 26 duplicate single-column pairs preserve pitch class and alone do not
+explain those mode errors. A known-note support fit improves the actual H1
+residual in 0/576 windows, including 0/14 local errors; this is not a global
+optimality proof. H1 remains rejected. Next preregister within-cell frequency
+structure at the existing FFT resolution, before selecting another frontend.
+Production bytes and corpus seals are unchanged. See
+[`APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md`](APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md).
+
 The 2026-09-11 harmonic-attribution H1 follow-up is **rejected** under its
 frozen synthetic gate: final keys reach 144/144, but missing-fundamental local
 chords reach only 84/96 versus required >=89/96. All 12 misses select the
 relative major for a minor chord. No new confident errors occur, host resource
 and instrument checks pass, and production bytes are unchanged. No music was
-opened. Next preregister an identifiability diagnostic separating ambiguity
-in the retained octave-resolved evidence from bounded fitting error; do not
-retune H1 against this matrix. See
+opened. This motivated the separately preregistered identifiability diagnostic
+above, now complete; H1 was not retuned. See
 [`APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`](APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md).
 
 The 2026-09-10 synthetic tonal-coverage diagnostic is complete. At +/-1/3
