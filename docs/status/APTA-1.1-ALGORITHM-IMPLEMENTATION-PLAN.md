@@ -307,8 +307,12 @@ Implementation order:
    complete: all eight fixed-phase pairs retain separation after cell-total
    normalization, but actual coarse totals also differ. No phase robustness or
    frontend acceptance is claimed; see `APTA-1.1-KEY-WITHIN-CELL-RESULT.md`.
-   Next preregister phase robustness before choosing another frontend; do not
-   change H1's dictionary/iterations or retune confidence on spent music.
+   F2 phase robustness is now **rejected**: 252/256 pass, four harmonic
+   observations prefer the wrong phase-marginal reference. F1 remains unchanged;
+   see `APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. Next preregister a coherent
+   harmonic representation retaining relative phase and a new frozen phase
+   bank before implementation. Do not optimize F2 or change H1's dictionary/
+   iterations or confidence against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -481,8 +485,11 @@ records exact ideal-model key ambiguities, including eight window pairs with
 H1 remains rejected; see `APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md`. F1 now finds
 within-cell separation for all eight fixed-phase pairs after removing cell
 totals, without establishing phase robustness or selecting a frontend. See
-`APTA-1.1-KEY-WITHIN-CELL-RESULT.md`. Resume with preregistered phase robustness,
-without rescuing H1's dictionary, iterations or ranking/confidence. No specific
+`APTA-1.1-KEY-WITHIN-CELL-RESULT.md`. F2 subsequently rejects the phase-marginal
+construction (252/256, four reversed scores); see
+`APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. Resume with a separately preregistered
+coherent harmonic representation and a new frozen phase bank, without rescuing
+F2 or H1's dictionary, iterations or ranking/confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is

@@ -7,14 +7,23 @@
 
 ## Current boundary
 
+The 2026-09-11 F2 unknown-phase screen **rejects the phase-marginal scoring
+construction**: 252/256 pass, but four harmonic observations prefer the wrong
+reference; the rule required 256/256. Original F1 rows replay 8/8 exactly,
+instrument/resource checks pass, and no production/corpus changes occur.
+F1 remains a fixed-phase finding, not robust frontend evidence. Next preregister
+a coherent harmonic representation with relative phase and a new phase bank
+before implementation; do not optimize F2 against its failures. See
+[`APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`](APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md).
+
 The 2026-09-11 F1 within-cell diagnostic is complete: all eight fixed-phase
 counterexample windows (four distinct ideal spectra) remain distinguishable
 after each cell's total energy is removed. Fine distance to the alternative is
 0.238..0.516 versus 1.76e-9..3.59e-9 to the known-source reference; all eight
 pass the frozen margin. Actual coarse totals also differ, so this does not
 prove that only fine evidence separates the waveforms. H1 stays rejected and
-no frontend is retained. Next preregister phase robustness of within-cell
-evidence. Production and corpus boundaries are unchanged. See
+no frontend is retained. The separately preregistered phase screen above is
+now complete and rejects its phase-marginal construction. See
 [`APTA-1.1-KEY-WITHIN-CELL-RESULT.md`](APTA-1.1-KEY-WITHIN-CELL-RESULT.md).
 
 The 2026-09-11 identifiability diagnostic is complete: eight window pairs
