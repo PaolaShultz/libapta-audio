@@ -7,14 +7,24 @@
 
 ## Current boundary
 
+The 2026-09-11 F1 within-cell diagnostic is complete: all eight fixed-phase
+counterexample windows (four distinct ideal spectra) remain distinguishable
+after each cell's total energy is removed. Fine distance to the alternative is
+0.238..0.516 versus 1.76e-9..3.59e-9 to the known-source reference; all eight
+pass the frozen margin. Actual coarse totals also differ, so this does not
+prove that only fine evidence separates the waveforms. H1 stays rejected and
+no frontend is retained. Next preregister phase robustness of within-cell
+evidence. Production and corpus boundaries are unchanged. See
+[`APTA-1.1-KEY-WITHIN-CELL-RESULT.md`](APTA-1.1-KEY-WITHIN-CELL-RESULT.md).
+
 The 2026-09-11 identifiability diagnostic is complete: eight window pairs
 (four distinct ideal spectra) admit different minor/relative-major fundamental
 interpretations while both use <=6 columns and retain identical 36-cell energy.
 The 26 duplicate single-column pairs preserve pitch class and alone do not
 explain those mode errors. A known-note support fit improves the actual H1
 residual in 0/576 windows, including 0/14 local errors; this is not a global
-optimality proof. H1 remains rejected. Next preregister within-cell frequency
-structure at the existing FFT resolution, before selecting another frontend.
+optimality proof. H1 remains rejected. This motivated the fixed-reference
+within-cell diagnostic above, now complete without selecting a frontend.
 Production bytes and corpus seals are unchanged. See
 [`APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md`](APTA-1.1-KEY-IDENTIFIABILITY-RESULT.md).
 
