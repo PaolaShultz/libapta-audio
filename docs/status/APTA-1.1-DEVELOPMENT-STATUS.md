@@ -7,15 +7,24 @@
 
 ## Current boundary
 
+The 2026-09-11 harmonic-attribution H1 follow-up is **rejected** under its
+frozen synthetic gate: final keys reach 144/144, but missing-fundamental local
+chords reach only 84/96 versus required >=89/96. All 12 misses select the
+relative major for a minor chord. No new confident errors occur, host resource
+and instrument checks pass, and production bytes are unchanged. No music was
+opened. Next preregister an identifiability diagnostic separating ambiguity
+in the retained octave-resolved evidence from bounded fitting error; do not
+retune H1 against this matrix. See
+[`APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`](APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md).
+
 The 2026-09-10 synthetic tonal-coverage diagnostic is complete. At +/-1/3
 semitone, dense cell energy has lower normalized error and, with the unchanged
 mean normalization/selector, restores both conditions to 24/24. It also breaks
 two missing-fundamental progressions (24/24 -> 22/24); even the known-component
 oracle reaches only 21/24 there. No candidate is retained. Production analyzer
 and key-object bytes, all 720 old rows per build, and the release/corpus
-boundaries are unchanged. Next preregister harmonic-to-fundamental evidence
-with octave information preserved until partial attribution, rather than
-retuning confidence on spent music. See
+boundaries are unchanged. This motivated the separately preregistered H1
+experiment above, which is now complete and rejected. See
 [`APTA-1.1-KEY-COVERAGE-RESULT.md`](APTA-1.1-KEY-COVERAGE-RESULT.md).
 
 The reusable 1.1 infrastructure, native meter/key implementation and complete desktop qualification path are in place. Tempo/grid and confidence acceptance evidence is retained. WP5 closed at `cfb811a96af4202f266d58fc8a74e484b189cf59` as a software-qualified, byte-stable production baseline after rejected experiments were retired, but it is not algorithmically eligible for WP6. The independent 60-track final DJ attempt is formally rejected, leaving a transferable replacement algorithm, physical ESP32-P4 measurements and final release freeze as the active blockers. Formal ASAP/Ballroom/GiantSteps holdouts and a new final corpus remain unopened.

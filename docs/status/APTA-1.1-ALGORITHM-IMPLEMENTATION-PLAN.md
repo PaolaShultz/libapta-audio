@@ -293,10 +293,14 @@ Implementation order:
    mean normalization restores both detuned conditions to 24/24, but breaks two
    missing-fundamental cases; even known component energy misses three. Native
    production bytes and old rows are unchanged, no corpus was opened, and no
-   candidate is retained. See `APTA-1.1-KEY-COVERAGE-RESULT.md`. Next preregister
-   harmonic-to-fundamental evidence with octave information preserved until
-   partial attribution. Do not retune normalization or confidence on the spent
-   96-track split.
+   candidate is retained. See `APTA-1.1-KEY-COVERAGE-RESULT.md`. The separately
+   frozen harmonic attribution H1 is now **rejected 2026-09-11**: final keys
+   reach 144/144, but missing-fundamental local chords are 84/96 (<89 required).
+   Twelve local minor chords become relative major. Instrument/resource gates
+   pass, production bytes are unchanged and no music was opened; see
+   `APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. Next preregister an evidence
+   identifiability diagnostic before selecting another fitter; do not change
+   H1's dictionary/iterations or retune confidence on the spent 96-track split.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -460,9 +464,12 @@ errors. The split is spent; preserve the original representation, confidence
 and label seals. The subsequent synthetic coverage diagnostic is complete:
 broader evidence fixes detuned cases under mean normalization but regresses
 missing-fundamental cases (24/24 -> 22/24; component oracle 21/24). No detector
-is retained; see `APTA-1.1-KEY-COVERAGE-RESULT.md`. Resume with a preregistered
-harmonic-to-fundamental representation experiment, keeping ranking/confidence
-fixed and octave information available until partial attribution. No specific
+is retained; see `APTA-1.1-KEY-COVERAGE-RESULT.md`. The subsequent H1 attribution
+experiment is rejected despite 144/144 final keys: local missing-fundamental
+chords fail 84/96 versus required >=89. See
+`APTA-1.1-KEY-PARTIAL-ATTRIBUTION-RESULT.md`. Resume with a preregistered evidence
+identifiability diagnostic separating ambiguity from bounded fitting error,
+without rescuing H1's dictionary, iterations or ranking/confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
