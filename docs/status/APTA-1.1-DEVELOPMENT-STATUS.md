@@ -7,6 +7,15 @@
 
 ## Current boundary
 
+The 2026-09-12 O1 numerical observability instrument passes its independent
+24-case bank: 12 ready fits, four exact invisible cases and eight weak-component
+abstentions. Analytic columns preserve structural zeros and prevent their
+normalization into fit directions; the precision guard is not a physical
+amplitude or noise model. No C2 family verdict was recomputed. Next separately
+preregister frequency-uncertainty reevaluation with explicit abstention accounting.
+No production/corpus change. See
+[`APTA-1.1-KEY-OBSERVABILITY-RESULT.md`](APTA-1.1-KEY-OBSERVABILITY-RESULT.md).
+
 The 2026-09-12 C2 frequency-uncertainty screen is **rejected**: only 50/1024
 perturbed cases pass both gates. Quarter-Hz perturbations preserve all 768
 family rankings but exceed the frozen 10% reconstruction ceiling; nearest-Hz
@@ -14,8 +23,9 @@ rounding produces 32 reversals and 206 reconstruction failures. Rounded
 out-of-range columns expose normalization of near-roundoff energy, yielding
 unphysical fitted coefficients, so those reversals are not a clean physical
 ambiguity measure. Exact C1 controls remain 256/256 and all source signals are
-unchanged. Next preregister physically valid handling of unobservable components
-before frequency estimation. No production/corpus change. See
+unchanged. The subsequent O1 numerical instrument screen above addresses
+structural zeros and weak-component abstention; frequency robustness remains
+unproven. No production/corpus change. See
 [`APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`](APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md).
 
 The 2026-09-12 C1 coherent supplied-frequency screen passes 256/256 new-phase

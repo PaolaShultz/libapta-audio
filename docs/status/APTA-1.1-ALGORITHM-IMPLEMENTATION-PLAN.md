@@ -316,8 +316,11 @@ Implementation order:
    C2 frequency uncertainty is now **rejected**: 50/1024 perturbed cases pass
    both gates. Quarter-Hz shifts keep rankings but fail the 10% residual ceiling;
    nearest-Hz gives 32 reversals and exposes near-zero-column normalization.
-   See `APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. Next preregister physically
-   valid treatment of unobservable components before a frequency estimator.
+   See `APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. O1 now passes its separate
+   24-case numerical bank (12 ready, four invisible, eight weak abstentions),
+   preserving structural zeros before normalization; see
+   `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`. Next preregister frequency-uncertainty
+   reevaluation with explicit abstention accounting before a frequency estimator.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
@@ -499,9 +502,12 @@ screen now passes 256/256 new-phase observations with supplied frequencies,
 not discovered notes; see `APTA-1.1-KEY-COHERENT-RESULT.md`. The subsequent
 C2 frequency-uncertainty screen is complete: 50/1024 combined-gate passes,
 with near-zero projected columns exposed by rounding. See
-`APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. Next preregister valid handling
-of unobservable components before frequency estimation, without tuning to C2
-verdicts or rescuing F2/H1's dictionary, iterations or confidence. No specific
+`APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. O1's separate analytic numerical
+screen now passes: structural zeros are omitted as unidentifiable and weak
+components cause abstention; see `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`.
+Next preregister frequency-uncertainty reevaluation with explicit abstention
+accounting, before frequency estimation and without tuning to C2 verdicts or
+rescuing F2/H1's dictionary, iterations or confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is

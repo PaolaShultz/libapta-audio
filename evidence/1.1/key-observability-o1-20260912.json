@@ -1,0 +1,829 @@
+{
+  "screen": "O1 numerical observability",
+  "source_commit": "4ee65030686d9f79b875c1639b6e3752d7b3e394",
+  "tool_sha256": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+  "source_sha256": {
+    "apta_key_observability.py": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+    "apta_key_coherent.py": "19f5eda52fdd0ef1e18cbdf5c757264225f44a33bcceab71602667c9dad27e86",
+    "apta_key_phase_robustness.py": "a9f2156fffdd0750d316a64c9fb54cd69974944675addf41b26c22aad9cadee3",
+    "apta_key_within_cell.py": "8a2d4a4a395e4b03da6eda6baf3c1247f04c24e3c1d48b0eee33a79cb71c8aa1",
+    "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997"
+  },
+  "python": "3.12.3",
+  "numpy": "2.5.2",
+  "rows": [
+    {
+      "frequency_hz": 0.5,
+      "raw_column_norms": [
+        [
+          0.7648409710801993,
+          316.8255733656839
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        6.776602075222833e-17,
+        9.194916123250062e-17
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 1.0430886303457314e-29,
+        "unit_column_coefficients": [
+          0.7648409710802185,
+          158.4127866828419
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.000000000000025,
+          0.49999999999999983
+        ],
+        "independent_prediction_discrepancy": 3.9161450179763434e-16
+      },
+      "max_absolute_amplitude_error": 2.5091040356528538e-14
+    },
+    {
+      "frequency_hz": 127.0,
+      "raw_column_norms": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "structural_zero_components": [
+        0
+      ],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [],
+      "status": "abstain_empty",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        8.176232441707375e-15,
+        8.083936088752932e-15
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 128.0,
+      "raw_column_norms": [
+        [
+          5998.947292685341,
+          5998.947292685341
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.779378903035133e-14,
+        1.7733269102234826e-14
+      ],
+      "grid_scaled_error": 0.0,
+      "fit": {
+        "normalized_squared_residual": 6.899908196159275e-29,
+        "unit_column_coefficients": [
+          5998.947292685391,
+          2999.4736463425784
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.0000000000000084,
+          0.4999999999999846
+        ],
+        "independent_prediction_discrepancy": 1.3560325697943003e-16
+      },
+      "max_absolute_amplitude_error": 1.5376588891058418e-14
+    },
+    {
+      "frequency_hz": 440.0,
+      "raw_column_norms": [
+        [
+          5987.567234060043,
+          5987.567234060043
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        3.87721229793964e-14,
+        3.933804714923971e-14
+      ],
+      "grid_scaled_error": 0.0,
+      "fit": {
+        "normalized_squared_residual": 5.367883632614826e-28,
+        "unit_column_coefficients": [
+          5987.567234059947,
+          2993.783617030208
+        ],
+        "physical_sine_cosine_coefficients": [
+          0.9999999999999839,
+          0.5000000000000311
+        ],
+        "independent_prediction_discrepancy": 0.0
+      },
+      "max_absolute_amplitude_error": 3.108624468950438e-14
+    },
+    {
+      "frequency_hz": 1016.0,
+      "raw_column_norms": [
+        [
+          5933.872299685834,
+          5933.872299685834
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        6.214441044090982e-14,
+        6.241208981348277e-14
+      ],
+      "grid_scaled_error": 0.0,
+      "fit": {
+        "normalized_squared_residual": 2.451425692925416e-27,
+        "unit_column_coefficients": [
+          5933.872299685948,
+          2966.9361498426874
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.000000000000019,
+          0.4999999999999613
+        ],
+        "independent_prediction_discrepancy": 6.85451885591754e-17
+      },
+      "max_absolute_amplitude_error": 3.8691272408186705e-14
+    },
+    {
+      "frequency_hz": 1017.0,
+      "raw_column_norms": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "structural_zero_components": [
+        0
+      ],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [],
+      "status": "abstain_empty",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        6.648322484211363e-14,
+        7.30966303154792e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 2048.0,
+      "raw_column_norms": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "structural_zero_components": [
+        0
+      ],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [],
+      "status": "abstain_empty",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        6.704780328319405e-14,
+        6.525513663160234e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 5999.0,
+      "raw_column_norms": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "structural_zero_components": [
+        0
+      ],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [],
+      "status": "abstain_empty",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        1.947337607130257e-13,
+        1.9611988199440614e-13
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 126.9375,
+      "raw_column_norms": [
+        [
+          463.81777598347765,
+          451.1540741457958
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.0105816823658077e-14,
+        1.0022815703212424e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 1.4976701006719281e-27,
+        "unit_column_coefficients": [
+          463.81777598354006,
+          225.5770370729141
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.0000000000001346,
+          0.5000000000000359
+        ],
+        "independent_prediction_discrepancy": 1.0000119383002314e-15
+      },
+      "max_absolute_amplitude_error": 1.3455903058456897e-13
+    },
+    {
+      "frequency_hz": 127.0625,
+      "raw_column_norms": [
+        [
+          507.3447261267416,
+          495.2200948677891
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.947944175957686e-14,
+        1.906885953912187e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 4.218575179829873e-27,
+        "unit_column_coefficients": [
+          507.3447261266411,
+          247.61004743382105
+        ],
+        "physical_sine_cosine_coefficients": [
+          0.9999999999998019,
+          0.49999999999985156
+        ],
+        "independent_prediction_discrepancy": 1.0350433439692648e-15
+      },
+      "max_absolute_amplitude_error": 1.9806378759312793e-13
+    },
+    {
+      "frequency_hz": 126.99998474121094,
+      "raw_column_norms": [
+        [
+          0.11910781664502251,
+          0.11580838068421861
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.3221686943271747e-14,
+        1.2927913434785631e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 8.326503596793588e-21,
+        "unit_column_coefficients": [
+          0.11910781672374575,
+          0.05790419038022611
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.000000000660941,
+          0.5000000003291368
+        ],
+        "independent_prediction_discrepancy": 7.070762520612933e-17
+      },
+      "max_absolute_amplitude_error": 6.609410796443171e-10
+    },
+    {
+      "frequency_hz": 127.00001525878906,
+      "raw_column_norms": [
+        [
+          0.11911041595393324,
+          0.11581101553304818
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.8512037678097577e-14,
+        1.816516020678678e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 3.307375348160413e-19,
+        "unit_column_coefficients": [
+          0.11911041586636227,
+          0.05790550772393463
+        ],
+        "physical_sine_cosine_coefficients": [
+          0.9999999992647918,
+          0.49999999963225034
+        ],
+        "independent_prediction_discrepancy": 4.3683426891427986e-17
+      },
+      "max_absolute_amplitude_error": 7.352082276312899e-10
+    },
+    {
+      "frequency_hz": 126.99999999627471,
+      "raw_column_norms": [
+        [
+          2.9079374027267034e-05,
+          2.8273852002904306e-05
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        2.1066675889999895e-14,
+        2.0517305479978366e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 127.00000000372529,
+      "raw_column_norms": [
+        [
+          2.9079374182197922e-05,
+          2.8273852159953565e-05
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        1.3080657492669663e-14,
+        1.2740563668724103e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 126.99999999999909,
+      "raw_column_norms": [
+        [
+          7.0994565685335875e-09,
+          6.902795918312923e-09
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        8.922271419925427e-15,
+        8.77172315863322e-15
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 127.00000000000091,
+      "raw_column_norms": [
+        [
+          7.0994565685428205e-09,
+          6.902795918322284e-09
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        1.131749072574384e-14,
+        1.1134712206936875e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 1016.9375,
+      "raw_column_norms": [
+        [
+          494.5237852241026,
+          496.4814720119806
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        1.3938499814222602e-13,
+        1.3930640385405642e-13
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 2.8000359404331835e-25,
+        "unit_column_coefficients": [
+          494.52378522495724,
+          248.24073600623333
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.0000000000017282,
+          0.5000000000004895
+        ],
+        "independent_prediction_discrepancy": 8.88241103244866e-16
+      },
+      "max_absolute_amplitude_error": 1.7281731601315187e-12
+    },
+    {
+      "frequency_hz": 1017.0625,
+      "raw_column_norms": [
+        [
+          450.9843509000539,
+          453.31975915693084
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        7.457653261360308e-14,
+        7.440684145200536e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 9.616707060161643e-25,
+        "unit_column_coefficients": [
+          450.9843508999964,
+          226.6598795784222
+        ],
+        "physical_sine_cosine_coefficients": [
+          0.9999999999998724,
+          0.49999999999990463
+        ],
+        "independent_prediction_discrepancy": 2.956855532834792e-16
+      },
+      "max_absolute_amplitude_error": 1.2756462552943049e-13
+    },
+    {
+      "frequency_hz": 1016.9999847412109,
+      "raw_column_norms": [
+        [
+          0.11581534513025075,
+          0.11638561285569203
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        5.779658498695023e-14,
+        5.851729444338946e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 1.2161338445033094e-18,
+        "unit_column_coefficients": [
+          0.11581534545226813,
+          0.058192806592717264
+        ],
+        "physical_sine_cosine_coefficients": [
+          1.0000000027804379,
+          0.5000000014165947
+        ],
+        "independent_prediction_discrepancy": 9.064844513762888e-17
+      },
+      "max_absolute_amplitude_error": 2.7804378799345386e-09
+    },
+    {
+      "frequency_hz": 1017.0000152587891,
+      "raw_column_norms": [
+        [
+          0.1158127428991258,
+          0.1163830343539284
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "ready",
+      "rank": 2,
+      "matrix_and_inverse_bytes": 56896,
+      "analytic_fft_scaled_errors": [
+        8.577729798094571e-14,
+        8.670359157799642e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": {
+        "normalized_squared_residual": 3.468457693763189e-18,
+        "unit_column_coefficients": [
+          0.11581274242802272,
+          0.058191516932508784
+        ],
+        "physical_sine_cosine_coefficients": [
+          0.9999999959322,
+          0.49999999789956145
+        ],
+        "independent_prediction_discrepancy": 2.4560738637519388e-17
+      },
+      "max_absolute_amplitude_error": 4.067799985740805e-09
+    },
+    {
+      "frequency_hz": 1016.9999999962747,
+      "raw_column_norms": [
+        [
+          2.8274913172835838e-05,
+          2.8414141588370737e-05
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        8.633160109532303e-14,
+        8.674301791315437e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 1017.0000000037253,
+      "raw_column_norms": [
+        [
+          2.827491301773078e-05,
+          2.841414143468005e-05
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        8.990274156588245e-14,
+        8.999287761109563e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 1016.9999999999991,
+      "raw_column_norms": [
+        [
+          6.903054954907775e-09,
+          6.9370462674668345e-09
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        2.708720298447202e-14,
+        2.6679472253138904e-14
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    },
+    {
+      "frequency_hz": 1017.0000000000009,
+      "raw_column_norms": [
+        [
+          6.9030549548985305e-09,
+          6.937046267457675e-09
+        ]
+      ],
+      "structural_zero_components": [],
+      "weak_components": [
+        0
+      ],
+      "normalization_floor": 8.940696716308594e-05,
+      "active_columns": [
+        0,
+        1
+      ],
+      "status": "abstain_weak",
+      "rank": null,
+      "matrix_and_inverse_bytes": 0,
+      "analytic_fft_scaled_errors": [
+        1.1947523404452e-13,
+        1.2075930618686847e-13
+      ],
+      "grid_scaled_error": null,
+      "fit": null,
+      "max_absolute_amplitude_error": null
+    }
+  ],
+  "gates_pass": true,
+  "family_verdicts_evaluated": 0,
+  "max_analytic_fft_scaled_error": 1.9611988199440614e-13,
+  "max_matrix_and_inverse_bytes": 56896,
+  "statuses": {
+    "abstain_empty": 4,
+    "abstain_weak": 8,
+    "ready": 12
+  },
+  "validation": {
+    "max_residual": 3.468457693763189e-18,
+    "max_amplitude_error": 4.067799985740805e-09,
+    "max_independent_prediction_error": 1.0350433439692648e-15,
+    "deterministic_replay_identical": true,
+    "stderr_empty": true,
+    "protocol_commit": "848a100",
+    "new_tests": 10,
+    "predecessor_tests": 45,
+    "coverage_tests_per_reused_native_probe": 11,
+    "reused_native_probe_variants": [
+      "default",
+      "candidate",
+      "sanitize"
+    ],
+    "new_native_build": false,
+    "full_native_suite": false,
+    "physical_device_qualification": false,
+    "production_source_diff_from_baseline_empty": true,
+    "candidate_flags": "none; Python diagnostic only",
+    "environment": {
+      "platform": "WSL Ubuntu",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "cpu_seconds": 0.08029841400000001,
+    "repeat_cpu_seconds": 0.07793298,
+    "artifact_sha256": {
+      "result.json": "c95d094b2abbbcea3d48c898cd50b8e9cdb4ec2fbbfb8911729cd5dc57ee1a52",
+      "repeat.json": "c95d094b2abbbcea3d48c898cd50b8e9cdb4ec2fbbfb8911729cd5dc57ee1a52",
+      "source.tar": "583fac574a58de194df4b8ad6fcf1d4070adcfb5231a05d0ad1fb6eccd938a05",
+      "tests.log": "934f4eb925a2e807819518751d732ff9e5995484f25c956945632c13ed7c1142",
+      "coverage-default.log": "523370fa616a31de399b47180dcc234360efdb27f457e3bf739109ba8852b0ea",
+      "coverage-candidate.log": "6f9ffd676f7d9f1e1183a0f929b7001b3c710d5213171646d67b3a1ad9e2d8f8",
+      "coverage-sanitize.log": "6b4f0119625ac0a6f22938bf635e50528edaadae889c990e280dd9d7b1d4d87b"
+    }
+  }
+}
