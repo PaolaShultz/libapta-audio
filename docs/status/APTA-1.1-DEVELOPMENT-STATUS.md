@@ -7,13 +7,27 @@
 
 ## Current boundary
 
+The 2026-09-12 **two-experiment search checkpoint is complete**: S2 passes
+16/16 new quadratic/tone cases and S3 passes 36/36 new paired clean/40 dB/20 dB
+cases. All terminate within the frozen budget and deterministic replay passes.
+Retain unchanged S2 only as a bounded numerical reference for an offline
+end-to-end key candidate; supplied tone count and local frequency neighborhoods
+remain major assumptions. No complete key candidate or release gate is accepted.
+The next deliverable is a frozen PCM-to-key pipeline design and implementation
+with seed discovery, unknown component selection, harmonic attribution,
+confidence and whole-pipeline cost, followed by independent development evidence.
+The agreed two experiments are spent: do not start another solver-only probe.
+See the [decision](APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md),
+[S2 result](APTA-1.1-KEY-QUADRATIC-SEARCH-RESULT.md) and
+[S3 result](APTA-1.1-KEY-SEARCH-FINAL-CHECK-RESULT.md).
+
 The 2026-09-12 S1 search-termination screen is **rejected overall**: all eight
 new tone cases and six/eight quadratics pass, while two high-curvature-ratio
 quadratics explicitly exhaust the evaluation budget. Keeping poll step after
 improvement fixes four tone and three quadratic results versus R2, with zero
 accuracy breaks. Finite poll resolution is not a global convergence guarantee.
-Next preregister search directions that adapt to correlated parameters on
-independent objectives, retaining explicit budget and termination accounting.
+Its subsequent S2 direction and S3 noise screens are complete as recorded above;
+they do not rewrite this historical rejection.
 No production/corpus change. See
 [`APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md`](APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md).
 

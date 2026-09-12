@@ -332,9 +332,13 @@ Implementation order:
    `APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`. S1 now passes eight/eight new
    tone cases and six/eight quadratics, with two explicit budget exhaustions;
    its full screen is rejected. See `APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md`.
-   Next preregister direction adaptation for correlated parameters on independent
-   objectives, preserving explicit cost, termination and accuracy distinctions.
-   Neither screen establishes the amplitude rule for music or discovers tones.
+   S2 now passes 16/16 new quadratic/tone cases and S3 passes 36/36 paired
+   clean/noisy cases, all with explicit successful termination. The agreed two
+   experiments are complete. Retain S2 as a bounded numerical reference only;
+   next freeze and implement an end-to-end PCM-to-key candidate, including seed
+   discovery, unknown component selection and whole-pipeline cost. No further
+   solver-only probe is scheduled. See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md`.
+   These screens do not establish the amplitude rule for music or discover tones.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
@@ -530,9 +534,13 @@ unequal-amplitude close-tone failures already present without noise; see
 `APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`. S1's complete termination screen is
 now rejected (14/16; two explicit budget exhaustions), despite four new tone
 and three quadratic fixes; see `APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md`.
-Next preregister search directions adapted to correlated parameters with
-explicit budget/termination accounting, without tuning to C2/C3/R3/S1 outcomes or
-rescuing F2/H1's dictionary, iterations or confidence. No specific
+S2 and S3 complete the two-experiment checkpoint with 16/16 and 36/36 passes,
+respectively, including termination and deterministic replay. Retain S2 only as
+a bounded two-component numerical reference. Next freeze the complete offline
+PCM-to-key candidate, resource limits and independent development gates before
+implementation/evaluation; no further local-search microexperiment is planned.
+See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md` for the concrete scope. Do not
+rescue F2/H1's dictionary, iterations or confidence against spent evidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
