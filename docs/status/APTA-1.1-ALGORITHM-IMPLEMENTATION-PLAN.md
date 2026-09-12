@@ -323,8 +323,11 @@ Implementation order:
    50/1024 pass, zero abstentions, zero changed outcomes and all 32 reversals
    remain after structural-zero correction. Noninteger fits still admit large
    physical coefficients. See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`.
-   Next preregister bounded local frequency refinement on an independent
-   analytic bank, explicitly addressing amplitude/conditioning limits first.
+   R1 now passes 48/48 common-shift analytic cases with supplied tone spacing,
+   an explicit synthetic amplitude budget and raw-rank guard; see
+   `APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`. Next preregister independent per-tone
+   refinement on a new analytic bank with active-constraint, near-dependence
+   and abstention cases. R1 does not establish the amplitude rule for music.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
@@ -511,9 +514,11 @@ screen now passes: structural zeros are omitted as unidentifiable and weak
 components cause abstention; see `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`.
 C3 reevaluation is now rejected with unchanged 50/1024 combined passes and
 32 reversals; numerical correction alone does not confer frequency robustness.
-See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`. Next preregister bounded
-local frequency refinement on an independent analytic bank, with explicit
-amplitude/conditioning treatment and without tuning to C2/C3 verdicts or
+See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`. R1's bounded common-shift
+instrument now passes 48/48 analytic cases under supplied-spacing and synthetic
+amplitude assumptions; see `APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`. Next preregister
+independent per-tone refinement with explicit constraint/abstention stress cases
+on a new analytic bank, without tuning to C2/C3 verdicts or
 rescuing F2/H1's dictionary, iterations or confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.

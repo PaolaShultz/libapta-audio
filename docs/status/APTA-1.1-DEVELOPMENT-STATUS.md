@@ -7,15 +7,25 @@
 
 ## Current boundary
 
+The 2026-09-12 R1 bounded common-frequency refinement screen passes 48/48
+synthetic cases with supplied tone count/spacing. Maximum shift error is
+9.278e-8 Hz, with 48 reconstruction fixes and zero breaks. A raw-matrix rank
+guard and explicit synthetic amplitude budget replace unconstrained acceptance;
+none of the 2832 bank candidates triggers rejection, so active-constraint
+behavior is covered only by targeted tests. Next preregister independent
+per-tone refinement on a new analytic bank with constraint/abstention stress
+cases. No music applicability, C3 rescue or native port is claimed. See
+[`APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`](APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md).
+
 The 2026-09-12 C3 observable frequency-uncertainty screen is **rejected**:
 50/1024 perturbed cases pass, with zero family/outcome changes from C2.
 Analytic removal of invisible columns eliminates the rounded unphysical
 amplitudes but leaves all 32 nearest-Hz reversals. Quarter-Hz rankings remain
 correct while reconstruction fails; noninteger fits still admit large physical
 coefficients. All 1280 rows/40 models complete without abstention and numerical
-controls pass. Next preregister bounded local frequency refinement, first on
-an independent analytic bank, with explicit amplitude/conditioning treatment.
-No estimator is selected or production/corpus changed. See
+controls pass. The subsequent R1 numerical common-shift screen above now
+passes its bounded analytic bank; independently erroneous component frequencies
+remain untested. No production/corpus change. See
 [`APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`](APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md).
 
 The 2026-09-12 O1 numerical observability instrument passes its independent

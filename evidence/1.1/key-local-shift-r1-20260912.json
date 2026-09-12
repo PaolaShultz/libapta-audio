@@ -1,0 +1,3800 @@
+{
+  "abstentions": 0,
+  "acceptance_claim": false,
+  "artifact_sha256": {
+    "coverage-candidate.log": "24310e20c73e13ea5ca9c796d3f7d47894169df3251c5ae1878c92d71bddc358",
+    "coverage-default.log": "e8854ad95badbe1fd4fe8187a6db9f439b7029f2aa4c5b2a380095635071a4bb",
+    "coverage-sanitize.log": "6f9ffd676f7d9f1e1183a0f929b7001b3c710d5213171646d67b3a1ad9e2d8f8",
+    "repeat-detail.json": "3effc9edc607e6b3efd70aeb1610d8a3d9968acd14d34b3c98fb88c3e6f0dfdb",
+    "repeat.json": "196a2d603a9c960e147856007e6e5ed1018c647f14a6068f7de2b2e80c9e35cb",
+    "result-detail.json": "3effc9edc607e6b3efd70aeb1610d8a3d9968acd14d34b3c98fb88c3e6f0dfdb",
+    "result.json": "196a2d603a9c960e147856007e6e5ed1018c647f14a6068f7de2b2e80c9e35cb",
+    "run.sh": "f8a0606acf9e3bbb0f0ac7510147c800421423916624a5cb91f46354423e8597",
+    "source.tar": "a195b1fa4517081def058d4f1177a2ea1bb20e7871aabf5a68c535a2c3f69578",
+    "tests.log": "41163418424ab2be6188e2e1eee7ad64794a873efd9e9e8378f90687b1bf91de"
+  },
+  "baseline_commit": "0f82a398fab4e05f153edc4e2e6b68ef14512ad1",
+  "candidate_retained": false,
+  "candidate_status_counts": {
+    "ready": 2832
+  },
+  "corpus_access": false,
+  "count": 48,
+  "decision": "bounded-common-shift-screen-passed-only",
+  "format": "apta-key-local-shift-r1-1",
+  "instrument_gates_pass": true,
+  "max_amplitude_error": 2.26321182211775e-08,
+  "max_analytic_column_error": 2.1025996582300473e-13,
+  "max_prediction_error": 4.979199971869604e-15,
+  "max_refined_residual": 2.862671320010632e-14,
+  "max_shift_error_hz": 9.277223039783067e-08,
+  "max_storage_bytes": 113792,
+  "numpy": "2.5.2",
+  "o1_evidence_sha256": "be5b0fb3c30edd8e521240317cf7eae6d327cb872c2878b8f9f1797f09be556c",
+  "oracle_pass_count": 48,
+  "original_o1_rows_identical": 24,
+  "pass_count": 48,
+  "production_cpu_ram_state_delta": 0,
+  "reconstruction_breaks": 0,
+  "reconstruction_fixes": 48,
+  "rows": [
+    {
+      "amplitude_error": 3.965508477143942e-13,
+      "baseline": {
+        "amplitudes": [
+          0.03952759326085022
+        ],
+        "coefficients": [
+          -0.01200549282419457,
+          0.03766030763341458
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 2.568093411650357e-15,
+        "score": 0.375701111538769,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.04999999999960345
+        ],
+        "coefficients": [
+          0.03770465429318798,
+          0.03283837761813952
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 2.0105005364391882e-16,
+        "score": 2.8407545315286947e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999996023066
+        ],
+        "coefficients": [
+          0.03770464471876852,
+          0.03283838860592505
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 7.542434550121983e-16,
+        "score": 2.3670062142829397e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "1d319f0f721448bbcd2c0ef8ae9540ca7483e200cfb964905728d1b015fa49da"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "208e582ce9d84e565575055aeee83a2b231e92cfea8bf664d8d187fd14cd823c",
+      "source_rounding_absolute_error": 6.108976914609432e-09,
+      "source_rounding_relative_error": 3.9414027405659904e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 7.558668968510318e-12,
+      "baseline": {
+        "amplitudes": [
+          0.039519114594915146
+        ],
+        "coefficients": [
+          0.0356663162189489,
+          -0.01701982096662529
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 8.289786119805301e-16,
+        "score": 0.37619154788243064,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.049999999992441334
+        ],
+        "coefficients": [
+          0.03770463514434483,
+          0.032838399593706914
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 9.89467413681924e-16,
+        "score": 2.846193634952105e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999996023066
+        ],
+        "coefficients": [
+          0.03770464471876852,
+          0.03283838860592505
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 7.542434550121983e-16,
+        "score": 2.3670062142829397e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "1d319f0f721448bbcd2c0ef8ae9540ca7483e200cfb964905728d1b015fa49da"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "208e582ce9d84e565575055aeee83a2b231e92cfea8bf664d8d187fd14cd823c",
+      "source_rounding_absolute_error": 6.108976914609432e-09,
+      "source_rounding_relative_error": 3.9414027405659904e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 4.018844979025715e-11,
+      "baseline": {
+        "amplitudes": [
+          0.0395300492393078
+        ],
+        "coefficients": [
+          -0.03123967495207634,
+          0.02422204577963458
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 1.0713675697540191e-15,
+        "score": 0.37568455782769966,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.04999999995981155
+        ],
+        "coefficients": [
+          0.012403582321939775,
+          0.04843708436274853
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 2.431347634055924e-15,
+        "score": 2.84484437260396e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.04999999995643458
+        ],
+        "coefficients": [
+          0.012403568205599921,
+          0.048437087974118435
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 9.455281663502427e-16,
+        "score": 2.304576416958219e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "35c9385b0a0b8c4f5950b79a8151090387a1c6542745f9d5c0420e84fa3de7cc"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "c62fd31ef90eaf4047265ae089fe313c510994ad627f98577309d6136ecc95aa",
+      "source_rounding_absolute_error": 6.0450858624383486e-09,
+      "source_rounding_relative_error": 3.9460407334119284e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 4.694372668367919e-11,
+      "baseline": {
+        "amplitudes": [
+          0.03952203578023
+        ],
+        "coefficients": [
+          0.03903441476098186,
+          0.006189166057024349
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 4.738634165166653e-16,
+        "score": 0.3761474475009834,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.049999999953056276
+        ],
+        "coefficients": [
+          0.012403554089258665,
+          0.04843709158548294
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.2028554989320448e-15,
+        "score": 2.8395344540005616e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.04999999995643458
+        ],
+        "coefficients": [
+          0.012403568205599921,
+          0.048437087974118435
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 9.455281663502427e-16,
+        "score": 2.304576416958219e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "35c9385b0a0b8c4f5950b79a8151090387a1c6542745f9d5c0420e84fa3de7cc"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "c62fd31ef90eaf4047265ae089fe313c510994ad627f98577309d6136ecc95aa",
+      "source_rounding_absolute_error": 6.0450858624383486e-09,
+      "source_rounding_relative_error": 3.9460407334119284e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 2.3052781905619213e-11,
+      "baseline": {
+        "amplitudes": [
+          0.03948567805178989
+        ],
+        "coefficients": [
+          0.015897998226985316,
+          0.03614377434060219
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 6.911801825538823e-16,
+        "score": 0.3759836613594046,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.04999999997694722
+        ],
+        "coefficients": [
+          0.04999889439829936,
+          -0.00033250059012123124
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 1.383867042573615e-15,
+        "score": 2.862671320010632e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999969897645
+        ],
+        "coefficients": [
+          0.049998894488169084,
+          -0.00033248601579606444
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 1.1174501836310926e-15,
+        "score": 2.380000346877039e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "ffbaa3f0a1f06ddefd35d6fe1bb2dce66fd705da4660634bb83cc9174649d4fa"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "c697d6f9b1753c7aeadc2b61e895af836d4b6667788405b6aed345b1ea706596",
+      "source_rounding_absolute_error": 5.739083284994617e-09,
+      "source_rounding_relative_error": 3.917667177281658e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 3.7153280452173476e-11,
+      "baseline": {
+        "amplitudes": [
+          0.039469254481125364
+        ],
+        "coefficients": [
+          0.015464880283433008,
+          -0.03631335191241535
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 1.535470928532874e-15,
+        "score": 0.37694429499938603,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.04999999996284672
+        ],
+        "coefficients": [
+          0.04999889457803321,
+          -0.00033247144147077273
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.0061585537805199e-15,
+        "score": 2.8470803033317804e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999969897645
+        ],
+        "coefficients": [
+          0.049998894488169084,
+          -0.00033248601579606444
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 1.1174501836310926e-15,
+        "score": 2.380000346877039e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "ffbaa3f0a1f06ddefd35d6fe1bb2dce66fd705da4660634bb83cc9174649d4fa"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "c697d6f9b1753c7aeadc2b61e895af836d4b6667788405b6aed345b1ea706596",
+      "source_rounding_absolute_error": 5.739083284994617e-09,
+      "source_rounding_relative_error": 3.917667177281658e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 3.1748909057327523e-13,
+      "baseline": {
+        "amplitudes": [
+          0.039523999075083395
+        ],
+        "coefficients": [
+          0.034483915881915954,
+          -0.019313364500680292
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 2.8775584783898635e-15,
+        "score": 0.3757253370261506,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.049999999999682514
+        ],
+        "coefficients": [
+          -0.005066613197546743,
+          -0.049742631923478844
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 1.7784396174958524e-15,
+        "score": 2.827896362903174e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999995804484
+        ],
+        "coefficients": [
+          -0.005066598701799797,
+          -0.04974263339606548
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 2.4848387817053254e-15,
+        "score": 2.318449684685544e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "bbdd40811a245659514d23891215f873f9bba3163938c3a0a42c39b88c3adcf5"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "7fd62880eb0d7d973c7e1e20649ce44a0f9f54fe9825e28a3f8f444b87dc98a1",
+      "source_rounding_absolute_error": 5.392398819137334e-09,
+      "source_rounding_relative_error": 3.9189975452579085e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 8.074742263719514e-12,
+      "baseline": {
+        "amplitudes": [
+          0.03951483956115374
+        ],
+        "coefficients": [
+          -0.03767675562870342,
+          -0.01191153352170432
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 6.988641762091655e-16,
+        "score": 0.37625608638170066,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.04999999999192526
+        ],
+        "coefficients": [
+          -0.005066584206052238,
+          -0.04974263486864672
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.3297278327179834e-15,
+        "score": 2.8600135073789014e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.049999999995804484
+        ],
+        "coefficients": [
+          -0.005066598701799797,
+          -0.04974263339606548
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 2.4848387817053254e-15,
+        "score": 2.318449684685544e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "bbdd40811a245659514d23891215f873f9bba3163938c3a0a42c39b88c3adcf5"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "7fd62880eb0d7d973c7e1e20649ce44a0f9f54fe9825e28a3f8f444b87dc98a1",
+      "source_rounding_absolute_error": 5.392398819137334e-09,
+      "source_rounding_relative_error": 3.9189975452579085e-08,
+      "support": 0,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 1.5862033908575768e-12,
+      "baseline": {
+        "amplitudes": [
+          0.1581103730434009
+        ],
+        "coefficients": [
+          -0.04802197129677828,
+          0.15064123053365833
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 2.568093411650357e-15,
+        "score": 0.375701111538769,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.1999999999984138
+        ],
+        "coefficients": [
+          0.1508186171727519,
+          0.13135351047255808
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 2.0105005364391882e-16,
+        "score": 2.8407545315286947e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999998409226
+        ],
+        "coefficients": [
+          0.15081857887507408,
+          0.1313535544237002
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 7.542434550121983e-16,
+        "score": 2.3670062142829397e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "1d319f0f721448bbcd2c0ef8ae9540ca7483e200cfb964905728d1b015fa49da"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "08979ae9afda185656127287f14bc8584a72a747a55cc1e399bd465231d70d4b",
+      "source_rounding_absolute_error": 2.4435907658437728e-08,
+      "source_rounding_relative_error": 3.9414027405659904e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 3.023467587404127e-11,
+      "baseline": {
+        "amplitudes": [
+          0.15807645837966058
+        ],
+        "coefficients": [
+          0.1426652648757956,
+          -0.06807928386650117
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 8.289786119805301e-16,
+        "score": 0.37619154788243064,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999996976534
+        ],
+        "coefficients": [
+          0.1508185405773793,
+          0.13135359837482766
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 9.89467413681924e-16,
+        "score": 2.846193634952105e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999998409226
+        ],
+        "coefficients": [
+          0.15081857887507408,
+          0.1313535544237002
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 7.542434550121983e-16,
+        "score": 2.3670062142829397e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "1d319f0f721448bbcd2c0ef8ae9540ca7483e200cfb964905728d1b015fa49da"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "08979ae9afda185656127287f14bc8584a72a747a55cc1e399bd465231d70d4b",
+      "source_rounding_absolute_error": 2.4435907658437728e-08,
+      "source_rounding_relative_error": 3.9414027405659904e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 1.607537991610286e-10,
+      "baseline": {
+        "amplitudes": [
+          0.1581201969572312
+        ],
+        "coefficients": [
+          -0.12495869980830536,
+          0.09688818311853832
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 1.0713675697540191e-15,
+        "score": 0.37568455782769966,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.1999999998392462
+        ],
+        "coefficients": [
+          0.0496143292877591,
+          0.19374833745099412
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 2.431347634055924e-15,
+        "score": 2.84484437260396e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999982573832
+        ],
+        "coefficients": [
+          0.049614272822399684,
+          0.19374835189647374
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 9.455281663502427e-16,
+        "score": 2.304576416958219e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "35c9385b0a0b8c4f5950b79a8151090387a1c6542745f9d5c0420e84fa3de7cc"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "30c6c4b2584f3853a48ca728d729cc424df48786b6c39cfea23f30569e032d63",
+      "source_rounding_absolute_error": 2.4180343449753394e-08,
+      "source_rounding_relative_error": 3.9460407334119284e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 1.8777490673471675e-10,
+      "baseline": {
+        "amplitudes": [
+          0.15808814312092
+        ],
+        "coefficients": [
+          0.15613765904392743,
+          0.024756664228097396
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 4.738634165166653e-16,
+        "score": 0.3761474475009834,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.1999999998122251
+        ],
+        "coefficients": [
+          0.04961421635703466,
+          0.19374836634193177
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.2028554989320448e-15,
+        "score": 2.8395344540005616e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999982573832
+        ],
+        "coefficients": [
+          0.049614272822399684,
+          0.19374835189647374
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 9.455281663502427e-16,
+        "score": 2.304576416958219e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "35c9385b0a0b8c4f5950b79a8151090387a1c6542745f9d5c0420e84fa3de7cc"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "30c6c4b2584f3853a48ca728d729cc424df48786b6c39cfea23f30569e032d63",
+      "source_rounding_absolute_error": 2.4180343449753394e-08,
+      "source_rounding_relative_error": 3.9460407334119284e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 9.221112762247685e-11,
+      "baseline": {
+        "amplitudes": [
+          0.15794271220715955
+        ],
+        "coefficients": [
+          0.06359199290794126,
+          0.14457509736240876
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 6.911801825538823e-16,
+        "score": 0.3759836613594046,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999990778888
+        ],
+        "coefficients": [
+          0.19999557759319744,
+          -0.001330002360484925
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 1.383867042573615e-15,
+        "score": 2.862671320010632e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999987959058
+        ],
+        "coefficients": [
+          0.19999557795267633,
+          -0.0013299440631842577
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 1.1174501836310926e-15,
+        "score": 2.380000346877039e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "ffbaa3f0a1f06ddefd35d6fe1bb2dce66fd705da4660634bb83cc9174649d4fa"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "8a30f2a3c434dbffb7c05ebd5456a8f405b4922c2c206294517c13175b9950fa",
+      "source_rounding_absolute_error": 2.295633313997847e-08,
+      "source_rounding_relative_error": 3.917667177281658e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 1.486131218086939e-10,
+      "baseline": {
+        "amplitudes": [
+          0.15787701792450146
+        ],
+        "coefficients": [
+          0.06185952113373203,
+          -0.1452534076496614
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 1.535470928532874e-15,
+        "score": 0.37694429499938603,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.1999999998513869
+        ],
+        "coefficients": [
+          0.19999557831213283,
+          -0.001329885765883091
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.0061585537805199e-15,
+        "score": 2.8470803033317804e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999987959058
+        ],
+        "coefficients": [
+          0.19999557795267633,
+          -0.0013299440631842577
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 1.1174501836310926e-15,
+        "score": 2.380000346877039e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "ffbaa3f0a1f06ddefd35d6fe1bb2dce66fd705da4660634bb83cc9174649d4fa"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "8a30f2a3c434dbffb7c05ebd5456a8f405b4922c2c206294517c13175b9950fa",
+      "source_rounding_absolute_error": 2.295633313997847e-08,
+      "source_rounding_relative_error": 3.917667177281658e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 1.269956362293101e-12,
+      "baseline": {
+        "amplitudes": [
+          0.15809599630033358
+        ],
+        "coefficients": [
+          0.13793566352766382,
+          -0.07725345800272117
+        ],
+        "condition": 1.0007689094394858,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 2.8775584783898635e-15,
+        "score": 0.3757253370261506,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999999873005
+        ],
+        "coefficients": [
+          -0.020266452790186972,
+          -0.19897052769391538
+        ],
+        "condition": 1.0005129523951397,
+        "max_column_error": 3.0433972303452406e-14,
+        "prediction_error": 1.7784396174958524e-15,
+        "score": 2.827896362903174e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999998321794
+        ],
+        "coefficients": [
+          -0.02026639480719919,
+          -0.19897053358426192
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 2.4848387817053254e-15,
+        "score": 2.318449684685544e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "bbdd40811a245659514d23891215f873f9bba3163938c3a0a42c39b88c3adcf5"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "bcab66ef4f79c158b0286959f3bf107b5aa857383954971f24c426df8e16911f",
+      "source_rounding_absolute_error": 2.1569595276549336e-08,
+      "source_rounding_relative_error": 3.9189975452579085e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 3.229896905487806e-11,
+      "baseline": {
+        "amplitudes": [
+          0.15805935824461495
+        ],
+        "coefficients": [
+          -0.1507070225148137,
+          -0.04764613408681728
+        ],
+        "condition": 1.00049875254032,
+        "max_column_error": 1.8109819639846502e-14,
+        "prediction_error": 6.988641762091655e-16,
+        "score": 0.37625608638170066,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999996770104
+        ],
+        "coefficients": [
+          -0.02026633682420895,
+          -0.19897053947458687
+        ],
+        "condition": 1.0005129521820206,
+        "max_column_error": 1.0540814093222685e-14,
+        "prediction_error": 1.3297278327179834e-15,
+        "score": 2.8600135073789014e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.19999999998321794
+        ],
+        "coefficients": [
+          -0.02026639480719919,
+          -0.19897053358426192
+        ],
+        "condition": 1.000512952288581,
+        "max_column_error": 2.0000571264516927e-14,
+        "prediction_error": 2.4848387817053254e-15,
+        "score": 2.318449684685544e-16,
+        "status": "ready",
+        "storage_bytes": 56896
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "bbdd40811a245659514d23891215f873f9bba3163938c3a0a42c39b88c3adcf5"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "bcab66ef4f79c158b0286959f3bf107b5aa857383954971f24c426df8e16911f",
+      "source_rounding_absolute_error": 2.1569595276549336e-08,
+      "source_rounding_relative_error": 3.9189975452579085e-08,
+      "support": 0,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17
+      ]
+    },
+    {
+      "amplitude_error": 2.0090526464677794e-11,
+      "baseline": {
+        "amplitudes": [
+          0.0197601570488243,
+          0.019736780455489426
+        ],
+        "coefficients": [
+          -0.012116983544370238,
+          0.015609052385704314,
+          0.018325512726548168,
+          -0.007329125872661115
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 3.2095107231837954e-16,
+        "score": 0.376207051974663,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.024999999983506736,
+          0.024999999979909475
+        ],
+        "coefficients": [
+          0.012029044113753396,
+          0.02191579560236661,
+          0.0007187346306228705,
+          -0.024989666254798544
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 1.1320167065805625e-15,
+        "score": 2.8623620275282846e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02499999998089679,
+          0.0249999999828082
+        ],
+        "coefficients": [
+          0.012029037729419486,
+          0.021915799103592867,
+          0.0007187419067719406,
+          -0.024989666048426097
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.2242078149823142e-15,
+        "score": 2.3970305151213747e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "2b8c2ac1cb44b299495dfa1df1f974881398706c3e49e7aae0a02bc79ba298fc",
+        "c12be94c3f8c9aae50b95783766375eb7a57e921225b4d4d09a83da91ffe10bd"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a857456b30c9d856c95a7a04298c68f7a0620a2d9ce4a1cd61857988f30a0c21",
+      "source_rounding_absolute_error": 5.391161135570588e-09,
+      "source_rounding_relative_error": 4.016698238947888e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 2.171382518234566e-11,
+      "baseline": {
+        "amplitudes": [
+          0.019769512427848437,
+          0.019728261216199344
+        ],
+        "coefficients": [
+          0.019686056378506907,
+          -0.0018146090204507683,
+          -0.01786562836494648,
+          -0.008368011337242253
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 9.045716663425333e-16,
+        "score": 0.3761662920269208,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.024999999978286176,
+          0.02499999998570622
+        ],
+        "coefficients": [
+          0.012029031345084252,
+          0.021915802604816674,
+          0.0007187491829209247,
+          -0.02498966584205082
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 5.734522973204179e-16,
+        "score": 2.8376758349666946e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02499999998089679,
+          0.0249999999828082
+        ],
+        "coefficients": [
+          0.012029037729419486,
+          0.021915799103592867,
+          0.0007187419067719406,
+          -0.024989666048426097
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.2242078149823142e-15,
+        "score": 2.3970305151213747e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "2b8c2ac1cb44b299495dfa1df1f974881398706c3e49e7aae0a02bc79ba298fc",
+        "c12be94c3f8c9aae50b95783766375eb7a57e921225b4d4d09a83da91ffe10bd"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a857456b30c9d856c95a7a04298c68f7a0620a2d9ce4a1cd61857988f30a0c21",
+      "source_rounding_absolute_error": 5.391161135570588e-09,
+      "source_rounding_relative_error": 4.016698238947888e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 5.439624445324753e-12,
+      "baseline": {
+        "amplitudes": [
+          0.019740619366906336,
+          0.019758425920642236
+        ],
+        "coefficients": [
+          -0.008541773015585818,
+          -0.017796914528627916,
+          0.01841742634604826,
+          -0.007154984391974196
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 4.416090000062129e-16,
+        "score": 0.37602864531777475,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.025000000005439626,
+          0.02499999999721179
+        ],
+        "coefficients": [
+          -0.024979856051103377,
+          0.001003390222264141,
+          0.0009335606734127138,
+          -0.024982563205757067
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 1.2375245462485643e-15,
+        "score": 2.84899974897133e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02499999999805991,
+          0.025000000002497656
+        ],
+        "coefficients": [
+          -0.024979856336331097,
+          0.0010033829374943503,
+          0.000933567960813613,
+          -0.024982562938726385
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 7.305731567533659e-16,
+        "score": 2.507872623186048e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "7e5d42cfce646d11b25da4b6b0d904570af8281159378c8a348de598a5d6388e",
+        "c18596d9a92eb41a1428af6571a3001987cbf42da29be98774a8f5b2edc0b26c"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "0d7877b88689faaa080edac27a7adcba3f84da9c4ce8d869ef8850b3ceb5d770",
+      "source_rounding_absolute_error": 5.52417576960007e-09,
+      "source_rounding_relative_error": 4.034055784643004e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 9.320533927992258e-12,
+      "baseline": {
+        "amplitudes": [
+          0.019760538908562986,
+          0.01973364279539842
+        ],
+        "coefficients": [
+          -0.007110291975067965,
+          0.018436991240061807,
+          -0.01780969084319516,
+          -0.008498915815925608
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 6.921564926367881e-16,
+        "score": 0.37631572304696753,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.024999999990679467,
+          0.02500000000778281
+        ],
+        "coefficients": [
+          -0.024979856621555958,
+          0.0010033756527245321,
+          0.0009335752482144121,
+          -0.024982562671692868
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 4.07909865461217e-16,
+        "score": 2.8535369329110515e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02499999999805991,
+          0.025000000002497656
+        ],
+        "coefficients": [
+          -0.024979856336331097,
+          0.0010033829374943503,
+          0.000933567960813613,
+          -0.024982562938726385
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 7.305731567533659e-16,
+        "score": 2.507872623186048e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "7e5d42cfce646d11b25da4b6b0d904570af8281159378c8a348de598a5d6388e",
+        "c18596d9a92eb41a1428af6571a3001987cbf42da29be98774a8f5b2edc0b26c"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "0d7877b88689faaa080edac27a7adcba3f84da9c4ce8d869ef8850b3ceb5d770",
+      "source_rounding_absolute_error": 5.52417576960007e-09,
+      "source_rounding_relative_error": 4.034055784643004e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 2.6340679637471e-11,
+      "baseline": {
+        "amplitudes": [
+          0.019761544854907078,
+          0.01971714362462009
+        ],
+        "coefficients": [
+          -0.019759192723340094,
+          0.0003048901021815593,
+          -0.010573472197726023,
+          0.01664233872981233
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 6.179252062881526e-16,
+        "score": 0.3762434289380875,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.024999999973659322,
+          0.024999999992170216
+        ],
+        "coefficients": [
+          -0.00960786811832008,
+          0.02308005348572517,
+          0.014018781267578112,
+          0.02069960800064368
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 7.647002841901273e-16,
+        "score": 2.860848933003625e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.024999999974630364,
+          0.024999999983697667
+        ],
+        "coefficients": [
+          -0.00960787484373344,
+          0.023080050687090622,
+          0.014018775229954983,
+          0.02069961207938168
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.3078007840588845e-15,
+        "score": 2.356805912260647e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "50126d3bc64eb07a7ebe95714450e8d40f33a3187002a0433e4ef6b50a3e0277",
+        "27bedf98423b7eeaafefc8909f0c9dabb2096c28671c539b41d08fd28a5ed858"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "18714d4974b99e478f04fedf65eb5d21668dcb8eb4ee2ba73df3dd45b3020ea3",
+      "source_rounding_absolute_error": 5.373729239366298e-09,
+      "source_rounding_relative_error": 3.9909103649452116e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 2.477555313684654e-11,
+      "baseline": {
+        "amplitudes": [
+          0.019714331108006942,
+          0.0197472924549964
+        ],
+        "coefficients": [
+          0.01370838989711185,
+          0.0141680943483904,
+          0.019402114647171512,
+          -0.0036760721594074454
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 9.482851163538555e-16,
+        "score": 0.3772601511286826,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02499999997560081,
+          0.024999999975224448
+        ],
+        "coefficients": [
+          -0.009607881569145646,
+          0.02308004788845361,
+          0.01401876919233033,
+          0.02069961615811734
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 9.104474325930074e-16,
+        "score": 2.852889975207838e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.024999999974630364,
+          0.024999999983697667
+        ],
+        "coefficients": [
+          -0.00960787484373344,
+          0.023080050687090622,
+          0.014018775229954983,
+          0.02069961207938168
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.3078007840588845e-15,
+        "score": 2.356805912260647e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "50126d3bc64eb07a7ebe95714450e8d40f33a3187002a0433e4ef6b50a3e0277",
+        "27bedf98423b7eeaafefc8909f0c9dabb2096c28671c539b41d08fd28a5ed858"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "18714d4974b99e478f04fedf65eb5d21668dcb8eb4ee2ba73df3dd45b3020ea3",
+      "source_rounding_absolute_error": 5.373729239366298e-09,
+      "source_rounding_relative_error": 3.9909103649452116e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 3.0004644602232844e-11,
+      "baseline": {
+        "amplitudes": [
+          0.019748691324277964,
+          0.019736543376046706
+        ],
+        "coefficients": [
+          -0.016879117098955534,
+          0.010252132216342058,
+          -0.015453103668182663,
+          -0.01227732590815169
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 9.547540271415478e-16,
+        "score": 0.3763019412833713,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.025000000030004646,
+          0.02500000000645753
+        ],
+        "coefficients": [
+          0.003422598439948113,
+          0.024764608242794736,
+          -0.02203300672348401,
+          0.01181298501843564
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 9.222392625813967e-16,
+        "score": 2.8581028907372464e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.025000000027200073,
+          0.025000000009152736
+        ],
+        "coefficients": [
+          0.0034225912186827867,
+          0.024764609237979088,
+          -0.022033010171516817,
+          0.011812978593033732
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 9.9050260014224e-16,
+        "score": 2.498070479213306e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "3a678b63c1e89fcff22e1c62a4892194313a5041106af2d3d60fd8f79bb68ec0",
+        "6bf2b88ced31d84720099fc9b23e333973dc183457b724b604e289ae9c88fa5a"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "b8b5ce43862849d21d6ab800657176abffef23f7a3eb29664ad7655dc40a5c35",
+      "source_rounding_absolute_error": 5.156193035038559e-09,
+      "source_rounding_relative_error": 4.0267651896177877e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 2.4394892356172093e-11,
+      "baseline": {
+        "amplitudes": [
+          0.019760720346754405,
+          0.01972444717545052
+        ],
+        "coefficients": [
+          0.019049980288228525,
+          0.005252077649915148,
+          0.0016603730513490033,
+          0.019654439134900087
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 1.0520650078397928e-15,
+        "score": 0.3763143395380947,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.025000000024394894,
+          0.025000000011847233
+        ],
+        "coefficients": [
+          0.003422583997417146,
+          0.024764610233160723,
+          -0.02203301361954712,
+          0.011812972167630496
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 1.4398834035666614e-15,
+        "score": 2.849884519946981e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.025000000027200073,
+          0.025000000009152736
+        ],
+        "coefficients": [
+          0.0034225912186827867,
+          0.024764609237979088,
+          -0.022033010171516817,
+          0.011812978593033732
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 9.9050260014224e-16,
+        "score": 2.498070479213306e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "3a678b63c1e89fcff22e1c62a4892194313a5041106af2d3d60fd8f79bb68ec0",
+        "6bf2b88ced31d84720099fc9b23e333973dc183457b724b604e289ae9c88fa5a"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "b8b5ce43862849d21d6ab800657176abffef23f7a3eb29664ad7655dc40a5c35",
+      "source_rounding_absolute_error": 5.156193035038559e-09,
+      "source_rounding_relative_error": 4.0267651896177877e-08,
+      "support": 1,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 8.036210585871117e-11,
+      "baseline": {
+        "amplitudes": [
+          0.0790406281952972,
+          0.0789471218219577
+        ],
+        "coefficients": [
+          -0.04846793417748095,
+          0.062436209542817256,
+          0.07330205090619267,
+          -0.02931650349064446
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 3.2095107231837954e-16,
+        "score": 0.376207051974663,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999993402695,
+          0.0999999999196379
+        ],
+        "coefficients": [
+          0.048116176455013586,
+          0.08766318240946644,
+          0.002874938522491482,
+          -0.09995866501919418
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 1.1320167065805625e-15,
+        "score": 2.8623620275282846e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999992358716,
+          0.0999999999312328
+        ],
+        "coefficients": [
+          0.048116150917677944,
+          0.08766319641437147,
+          0.0028749676270877623,
+          -0.09995866419370439
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.2242078149823142e-15,
+        "score": 2.3970305151213747e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "2b8c2ac1cb44b299495dfa1df1f974881398706c3e49e7aae0a02bc79ba298fc",
+        "c12be94c3f8c9aae50b95783766375eb7a57e921225b4d4d09a83da91ffe10bd"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "ab39506f3c11322eaacb1e5754240de522be2338ea86005ff2e7dca44de3e33d",
+      "source_rounding_absolute_error": 2.1564644542282352e-08,
+      "source_rounding_relative_error": 4.016698238947888e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 8.685530072938263e-11,
+      "baseline": {
+        "amplitudes": [
+          0.07907804971139375,
+          0.07891304486479737
+        ],
+        "coefficients": [
+          0.07874422551402763,
+          -0.007258436081803073,
+          -0.07146251345978592,
+          -0.03347204534896901
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 9.045716663425333e-16,
+        "score": 0.3761662920269208,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.0999999999131447,
+          0.09999999994282488
+        ],
+        "coefficients": [
+          0.04811612538033701,
+          0.0876632104192667,
+          0.0028749967316836988,
+          -0.09995866336820328
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 5.734522973204179e-16,
+        "score": 2.8376758349666946e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999992358716,
+          0.0999999999312328
+        ],
+        "coefficients": [
+          0.048116150917677944,
+          0.08766319641437147,
+          0.0028749676270877623,
+          -0.09995866419370439
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.2242078149823142e-15,
+        "score": 2.3970305151213747e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "2b8c2ac1cb44b299495dfa1df1f974881398706c3e49e7aae0a02bc79ba298fc",
+        "c12be94c3f8c9aae50b95783766375eb7a57e921225b4d4d09a83da91ffe10bd"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "ab39506f3c11322eaacb1e5754240de522be2338ea86005ff2e7dca44de3e33d",
+      "source_rounding_absolute_error": 2.1564644542282352e-08,
+      "source_rounding_relative_error": 4.016698238947888e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 2.1758497781299013e-11,
+      "baseline": {
+        "amplitudes": [
+          0.07896247746762534,
+          0.07903370368256894
+        ],
+        "coefficients": [
+          -0.03416709206234327,
+          -0.07118765811451166,
+          0.07366970538419304,
+          -0.028619937567896783
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 4.416090000062129e-16,
+        "score": 0.37602864531777475,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.1000000000217585,
+          0.09999999998884716
+        ],
+        "coefficients": [
+          -0.0999194242044135,
+          0.004013560889056564,
+          0.003734242693650855,
+          -0.09993025282302827
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 1.2375245462485643e-15,
+        "score": 2.84899974897133e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999999223964,
+          0.10000000000999062
+        ],
+        "coefficients": [
+          -0.09991942534532439,
+          0.004013531749977401,
+          0.003734271843254452,
+          -0.09993025175490554
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 7.305731567533659e-16,
+        "score": 2.507872623186048e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "7e5d42cfce646d11b25da4b6b0d904570af8281159378c8a348de598a5d6388e",
+        "c18596d9a92eb41a1428af6571a3001987cbf42da29be98774a8f5b2edc0b26c"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a794dd6cb5bde5b81b1257971170fc429f6ae6e639aeadd251a0f4e46dae0417",
+      "source_rounding_absolute_error": 2.209670307840028e-08,
+      "source_rounding_relative_error": 4.034055784643004e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 3.7282135711969033e-11,
+      "baseline": {
+        "amplitudes": [
+          0.07904215563425195,
+          0.07893457118159368
+        ],
+        "coefficients": [
+          -0.02844116790027186,
+          0.07374796496024723,
+          -0.07123876337278064,
+          -0.03399566326370243
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 6.921564926367881e-16,
+        "score": 0.37631572304696753,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999996271787,
+          0.10000000003113124
+        ],
+        "coefficients": [
+          -0.09991942648622383,
+          0.0040135026108981285,
+          0.0037343009928576484,
+          -0.09993025068677147
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 4.07909865461217e-16,
+        "score": 2.8535369329110515e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999999223964,
+          0.10000000000999062
+        ],
+        "coefficients": [
+          -0.09991942534532439,
+          0.004013531749977401,
+          0.003734271843254452,
+          -0.09993025175490554
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 7.305731567533659e-16,
+        "score": 2.507872623186048e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "7e5d42cfce646d11b25da4b6b0d904570af8281159378c8a348de598a5d6388e",
+        "c18596d9a92eb41a1428af6571a3001987cbf42da29be98774a8f5b2edc0b26c"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a794dd6cb5bde5b81b1257971170fc429f6ae6e639aeadd251a0f4e46dae0417",
+      "source_rounding_absolute_error": 2.209670307840028e-08,
+      "source_rounding_relative_error": 4.034055784643004e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 1.05362718549884e-10,
+      "baseline": {
+        "amplitudes": [
+          0.07904617941962831,
+          0.07886857449848036
+        ],
+        "coefficients": [
+          -0.07903677089336038,
+          0.0012195604087262373,
+          -0.042293888790904094,
+          0.06656935491924933
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 6.179252062881526e-16,
+        "score": 0.3762434289380875,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999989463729,
+          0.09999999996868086
+        ],
+        "coefficients": [
+          -0.03843147247328032,
+          0.09232021394290069,
+          0.05607512507031245,
+          0.08279843200257472
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 7.647002841901273e-16,
+        "score": 2.860848933003625e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999989852146,
+          0.09999999993479067
+        ],
+        "coefficients": [
+          -0.03843149937493376,
+          0.09232020274836249,
+          0.05607510091981993,
+          0.08279844831752672
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.3078007840588845e-15,
+        "score": 2.356805912260647e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "50126d3bc64eb07a7ebe95714450e8d40f33a3187002a0433e4ef6b50a3e0277",
+        "27bedf98423b7eeaafefc8909f0c9dabb2096c28671c539b41d08fd28a5ed858"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "3c9bcf6d6c4b8d5a00f607434926d40af40f5f44845dd5f57a6aad3eb2a281d4",
+      "source_rounding_absolute_error": 2.1494916957465193e-08,
+      "source_rounding_relative_error": 3.9909103649452116e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 9.910221254738616e-11,
+      "baseline": {
+        "amplitudes": [
+          0.07885732443202777,
+          0.0789891698199856
+        ],
+        "coefficients": [
+          0.0548335595884474,
+          0.0566723773935616,
+          0.07760845858868605,
+          -0.014704288637629782
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 9.482851163538555e-16,
+        "score": 0.3772601511286826,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999990240324,
+          0.09999999990089779
+        ],
+        "coefficients": [
+          -0.038431526276582584,
+          0.09232019155381443,
+          0.05607507676932132,
+          0.08279846463246936
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 9.104474325930074e-16,
+        "score": 2.852889975207838e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999989852146,
+          0.09999999993479067
+        ],
+        "coefficients": [
+          -0.03843149937493376,
+          0.09232020274836249,
+          0.05607510091981993,
+          0.08279844831752672
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 1.3078007840588845e-15,
+        "score": 2.356805912260647e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "50126d3bc64eb07a7ebe95714450e8d40f33a3187002a0433e4ef6b50a3e0277",
+        "27bedf98423b7eeaafefc8909f0c9dabb2096c28671c539b41d08fd28a5ed858"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "3c9bcf6d6c4b8d5a00f607434926d40af40f5f44845dd5f57a6aad3eb2a281d4",
+      "source_rounding_absolute_error": 2.1494916957465193e-08,
+      "source_rounding_relative_error": 3.9909103649452116e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 1.2001857840893138e-10,
+      "baseline": {
+        "amplitudes": [
+          0.07899476529711186,
+          0.07894617350418683
+        ],
+        "coefficients": [
+          -0.06751646839582214,
+          0.04100852886536823,
+          -0.06181241467273065,
+          -0.04910930363260676
+        ],
+        "condition": 1.0034910767676724,
+        "max_column_error": 5.325651950496768e-14,
+        "prediction_error": 9.547540271415478e-16,
+        "score": 0.3763019412833713,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000000012001858,
+          0.10000000002583012
+        ],
+        "coefficients": [
+          0.013690393759792452,
+          0.09905843297117894,
+          -0.08813202689393604,
+          0.04725194007374256
+        ],
+        "condition": 1.003624040605858,
+        "max_column_error": 4.2317585205483804e-14,
+        "prediction_error": 9.222392625813967e-16,
+        "score": 2.8581028907372464e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.1000000001088003,
+          0.10000000003661094
+        ],
+        "coefficients": [
+          0.013690364874731147,
+          0.09905843695191635,
+          -0.08813204068606727,
+          0.047251914372134926
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 9.9050260014224e-16,
+        "score": 2.498070479213306e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "3a678b63c1e89fcff22e1c62a4892194313a5041106af2d3d60fd8f79bb68ec0",
+        "6bf2b88ced31d84720099fc9b23e333973dc183457b724b604e289ae9c88fa5a"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "bc961c3115f3cb0531a5b5ee7abee58f643445876e567b5b7e3f5f63599e7403",
+      "source_rounding_absolute_error": 2.0624772140154235e-08,
+      "source_rounding_relative_error": 4.0267651896177877e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 9.757956942468837e-11,
+      "baseline": {
+        "amplitudes": [
+          0.07904288138701762,
+          0.07889778870180209
+        ],
+        "coefficients": [
+          0.0761999211529141,
+          0.02100831059966059,
+          0.006641492205396013,
+          0.07861775653960035
+        ],
+        "condition": 1.0031551369907332,
+        "max_column_error": 2.0532136123254143e-13,
+        "prediction_error": 1.0520650078397928e-15,
+        "score": 0.3763143395380947,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000000009757957,
+          0.10000000004738893
+        ],
+        "coefficients": [
+          0.013690335989668585,
+          0.09905844093264289,
+          -0.08813205447818848,
+          0.047251888670521984
+        ],
+        "condition": 1.003624040821166,
+        "max_column_error": 2.049363303691403e-13,
+        "prediction_error": 1.4398834035666614e-15,
+        "score": 2.849884519946981e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.1000000001088003,
+          0.10000000003661094
+        ],
+        "coefficients": [
+          0.013690364874731147,
+          0.09905843695191635,
+          -0.08813204068606727,
+          0.047251914372134926
+        ],
+        "condition": 1.0036240407135133,
+        "max_column_error": 1.102922733552623e-13,
+        "prediction_error": 9.9050260014224e-16,
+        "score": 2.498070479213306e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "3a678b63c1e89fcff22e1c62a4892194313a5041106af2d3d60fd8f79bb68ec0",
+        "6bf2b88ced31d84720099fc9b23e333973dc183457b724b604e289ae9c88fa5a"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "bc961c3115f3cb0531a5b5ee7abee58f643445876e567b5b7e3f5f63599e7403",
+      "source_rounding_absolute_error": 2.0624772140154235e-08,
+      "source_rounding_relative_error": 4.0267651896177877e-08,
+      "support": 1,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        233.17,
+        587.41
+      ]
+    },
+    {
+      "amplitude_error": 5.658029555294375e-09,
+      "baseline": {
+        "amplitudes": [
+          0.01303003614763852,
+          0.04276342499481337
+        ],
+        "coefficients": [
+          -0.011111979939246697,
+          -0.006804832388717993,
+          0.042489558859101904,
+          -0.004831967016230935
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 1.0621347326902542e-15,
+        "score": 0.0525243056922413,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.025000005626931204,
+          0.024999994341970446
+        ],
+        "coefficients": [
+          0.014925989244322443,
+          0.02005530170366336,
+          -0.002896169314509343,
+          -0.02483167171980672
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.0521473995605554e-15,
+        "score": 2.105767511691398e-15,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.024999999984819703,
+          0.02499999998558446
+        ],
+        "coefficients": [
+          0.014925976582062751,
+          0.020055304094246478,
+          -0.002896158461482986,
+          -0.024831678667484473
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.833809533937523e-15,
+        "score": 2.2835074020256885e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "25ee975b15e0753e47e418ecdba16b33e5f1e6960b7f12913eb59240d0612fe5",
+        "bb44f5afd03a75fd61f92f131614c39315cfb0e51e9021ddcdb8f806ce01b570"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "61ea5b06aea24164637c080cad8c4211d9cb5fb4957e20a99d9674e16eb3cc76",
+      "source_rounding_absolute_error": 5.7038290757205345e-09,
+      "source_rounding_relative_error": 3.9536247067913686e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 5.657291753113913e-09,
+      "baseline": {
+        "amplitudes": [
+          0.04275393776018607,
+          0.01301014670779993
+        ],
+        "coefficients": [
+          0.03421789452823322,
+          -0.025632691783278864,
+          -0.0034156171464081236,
+          0.012553783368675762
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.7017405459263576e-15,
+        "score": 0.05249011189346671,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02499999434270825,
+          0.02500000562919842
+        ],
+        "coefficients": [
+          0.014925963919802747,
+          0.020055306484823187,
+          -0.002896147608452437,
+          -0.02483168561515726
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.4630137726851729e-15,
+        "score": 2.1514495687023754e-15,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.024999999984819703,
+          0.02499999998558446
+        ],
+        "coefficients": [
+          0.014925976582062751,
+          0.020055304094246478,
+          -0.002896158461482986,
+          -0.024831678667484473
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.833809533937523e-15,
+        "score": 2.2835074020256885e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "25ee975b15e0753e47e418ecdba16b33e5f1e6960b7f12913eb59240d0612fe5",
+        "bb44f5afd03a75fd61f92f131614c39315cfb0e51e9021ddcdb8f806ce01b570"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "61ea5b06aea24164637c080cad8c4211d9cb5fb4957e20a99d9674e16eb3cc76",
+      "source_rounding_absolute_error": 5.7038290757205345e-09,
+      "source_rounding_relative_error": 3.9536247067913686e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 5.903901048598392e-10,
+      "baseline": {
+        "amplitudes": [
+          0.020943056981305722,
+          0.019429150463116312
+        ],
+        "coefficients": [
+          0.017241630841017312,
+          -0.011888557593934559,
+          0.01942878088652908,
+          0.00011983731328377215
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 1.2099926685915832e-15,
+        "score": 0.20249296863188307,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02499999945420884,
+          0.025000000590390106
+        ],
+        "coefficients": [
+          0.007304942249081802,
+          -0.023908947936871292,
+          0.02280066723606883,
+          -0.010253272799919203
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.6616042214265584e-15,
+        "score": 1.6365269679994683e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02500000003217351,
+          0.025000000020792026
+        ],
+        "coefficients": [
+          0.0073049462541927,
+          -0.02390894731752177,
+          0.02280066836354163,
+          -0.01025326890388588
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 7.590131504018418e-16,
+        "score": 2.466573949864887e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "cc14dc0037bfbc28586db972ab0be28a8b691b8afd16d75b718d3dc35a33ce06",
+        "eec82621d10d61b1584b709646116551aa00d237e17245ba7c44e2a2b962a70e"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "b9fefc00a57804c548edef2590c851b4e8af5296a4f5c3a7a691575e2096290c",
+      "source_rounding_absolute_error": 4.7287487259239924e-09,
+      "source_rounding_relative_error": 4.0096729419307026e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 6.101374371014767e-10,
+      "baseline": {
+        "amplitudes": [
+          0.019450527511691327,
+          0.02095507617206857
+        ],
+        "coefficients": [
+          -0.0025781401185493848,
+          -0.01927890593400433,
+          0.00964394442821181,
+          -0.018604019814082072
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.2597585044225186e-15,
+        "score": 0.2019264214488564,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02500000061013744,
+          0.024999999451193213
+        ],
+        "coefficients": [
+          0.007304950259303683,
+          -0.02390894669817078,
+          0.022800669491012938,
+          -0.010253265007852513
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.564000206288186e-15,
+        "score": 1.63171328805707e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02500000003217351,
+          0.025000000020792026
+        ],
+        "coefficients": [
+          0.0073049462541927,
+          -0.02390894731752177,
+          0.02280066836354163,
+          -0.01025326890388588
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 7.590131504018418e-16,
+        "score": 2.466573949864887e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "cc14dc0037bfbc28586db972ab0be28a8b691b8afd16d75b718d3dc35a33ce06",
+        "eec82621d10d61b1584b709646116551aa00d237e17245ba7c44e2a2b962a70e"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "b9fefc00a57804c548edef2590c851b4e8af5296a4f5c3a7a691575e2096290c",
+      "source_rounding_absolute_error": 4.7287487259239924e-09,
+      "source_rounding_relative_error": 4.0096729419307026e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 4.996406708507317e-09,
+      "baseline": {
+        "amplitudes": [
+          0.014083000242976842,
+          0.04091353321738565
+        ],
+        "coefficients": [
+          -0.012005356498084756,
+          -0.0073622218927155356,
+          -0.016272170866277302,
+          -0.03753842905115763
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 3.805280616315718e-16,
+        "score": 0.05924769393946785,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02500000499640671,
+          0.024999995035753148
+        ],
+        "coefficients": [
+          -0.01667435278726889,
+          -0.01862702898870506,
+          -0.022350090336622015,
+          -0.011201482657778716
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 2.4067264529595933e-15,
+        "score": 2.7374902111145277e-15,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02500000001113258,
+          0.02500000002069597
+        ],
+        "coefficients": [
+          -0.016674347472900926,
+          -0.01862702705505072,
+          -0.022350093597786787,
+          -0.011201487276472199
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3446754680778132e-15,
+        "score": 2.512505689813571e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "a2405d43f8497df755754111bbc2dda9bd40e86e75db767b52a4a5a59c3f21ac",
+        "92ede30161ef2105aaea7f74e3c34a723f54cf218377e9c859e159961a19bfd2"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a3aee17ece513eab2aae1dd7a59e33fb9bb527ae65038e9cdaa0f2d7277d63bc",
+      "source_rounding_absolute_error": 5.953442627770755e-09,
+      "source_rounding_relative_error": 4.040524178158271e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 5.005638865213102e-09,
+      "baseline": {
+        "amplitudes": [
+          0.040915109730125715,
+          0.01407290780665371
+        ],
+        "coefficients": [
+          -0.040493241787195766,
+          -0.005860339050936445,
+          -0.01024851774488266,
+          -0.009644408647885062
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.2266284658112e-15,
+        "score": 0.05919560501668444,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.024999995025858642,
+          0.025000005005638867
+        ],
+        "coefficients": [
+          -0.01667434215853478,
+          -0.018627025121394625,
+          -0.022350096858950234,
+          -0.011201491895167864
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 7.679029795697857e-16,
+        "score": 2.825001385088907e-15,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.02500000001113258,
+          0.02500000002069597
+        ],
+        "coefficients": [
+          -0.016674347472900926,
+          -0.01862702705505072,
+          -0.022350093597786787,
+          -0.011201487276472199
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3446754680778132e-15,
+        "score": 2.512505689813571e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "a2405d43f8497df755754111bbc2dda9bd40e86e75db767b52a4a5a59c3f21ac",
+        "92ede30161ef2105aaea7f74e3c34a723f54cf218377e9c859e159961a19bfd2"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "a3aee17ece513eab2aae1dd7a59e33fb9bb527ae65038e9cdaa0f2d7277d63bc",
+      "source_rounding_absolute_error": 5.953442627770755e-09,
+      "source_rounding_relative_error": 4.040524178158271e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.9857970262892053e-10,
+      "baseline": {
+        "amplitudes": [
+          0.020649011899660046,
+          0.021121314040308096
+        ],
+        "coefficients": [
+          -0.020648230126120878,
+          -0.00017968052497807697,
+          -0.017582897863466104,
+          -0.01170263258896198
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 6.84916542393276e-16,
+        "score": 0.18550714211933686,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.02499999974276167,
+          0.025000000298579704
+        ],
+        "coefficients": [
+          -0.02060396388629355,
+          0.014158978046116,
+          -0.024666433895220014,
+          -0.004070264588663299
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.565322828685149e-15,
+        "score": 1.4716852399540553e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.025000000020488765,
+          0.02500000002191366
+        ],
+        "coefficients": [
+          -0.020603966212144834,
+          0.01415897515193922,
+          -0.02466643301905271,
+          -0.004070268199058785
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3183652160068506e-15,
+        "score": 2.231039901003092e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "6778107e75c7f67732789cd50891eac492a789332b109d1c283abdc2af42da23",
+        "86a9c551c4e2a7ea03d07a0a01964cd9887d4bc8e29b32514d403a9b0fccfaa6"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "df2e353feaa7c7485dd0236b9e1faba6323a28c1ff857d0430a8d6a6830be590",
+      "source_rounding_absolute_error": 5.321554100157222e-09,
+      "source_rounding_relative_error": 3.997449001214065e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.982151713071257e-10,
+      "baseline": {
+        "amplitudes": [
+          0.02114709060451583,
+          0.020660971575482908
+        ],
+        "coefficients": [
+          -0.01096396395603489,
+          0.018082890681701567,
+          -0.018638668246768013,
+          0.008914919653582664
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 6.726019071593718e-16,
+        "score": 0.1853526659069253,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.025000000298215173,
+          0.024999999745247015
+        ],
+        "coefficients": [
+          -0.020603968537995343,
+          0.014158972257761394,
+          -0.024666432142884335,
+          -0.004070271809453677
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.3071568809662612e-15,
+        "score": 1.46776878565054e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.025000000020488765,
+          0.02500000002191366
+        ],
+        "coefficients": [
+          -0.020603966212144834,
+          0.01415897515193922,
+          -0.02466643301905271,
+          -0.004070268199058785
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3183652160068506e-15,
+        "score": 2.231039901003092e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "6778107e75c7f67732789cd50891eac492a789332b109d1c283abdc2af42da23",
+        "86a9c551c4e2a7ea03d07a0a01964cd9887d4bc8e29b32514d403a9b0fccfaa6"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "df2e353feaa7c7485dd0236b9e1faba6323a28c1ff857d0430a8d6a6830be590",
+      "source_rounding_absolute_error": 5.321554100157222e-09,
+      "source_rounding_relative_error": 3.997449001214065e-08,
+      "support": 2,
+      "total_source_amplitude": 0.05,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.26321182211775e-08,
+      "baseline": {
+        "amplitudes": [
+          0.05212014459055408,
+          0.1710536999792535
+        ],
+        "coefficients": [
+          -0.04444791975698679,
+          -0.02721932955487197,
+          0.16995823543640762,
+          -0.01932786806492374
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 1.0621347326902542e-15,
+        "score": 0.0525243056922413,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000002250772481,
+          0.09999997736788178
+        ],
+        "coefficients": [
+          0.05970395697728977,
+          0.08022120681465345,
+          -0.011584677258037373,
+          -0.09932668687922688
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.0521473995605554e-15,
+        "score": 2.105767511691398e-15,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999993927881,
+          0.09999999994233784
+        ],
+        "coefficients": [
+          0.059703906328251004,
+          0.08022121637698591,
+          -0.011584633845931945,
+          -0.0993267146699379
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.833809533937523e-15,
+        "score": 2.2835074020256885e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "25ee975b15e0753e47e418ecdba16b33e5f1e6960b7f12913eb59240d0612fe5",
+        "bb44f5afd03a75fd61f92f131614c39315cfb0e51e9021ddcdb8f806ce01b570"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "ae5935aa59df03853b141a65f5cf34a572c0532231eb2dcf0330563d101183df",
+      "source_rounding_absolute_error": 2.2815316302882138e-08,
+      "source_rounding_relative_error": 3.9536247067913686e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.2629167012455653e-08,
+      "baseline": {
+        "amplitudes": [
+          0.1710157510407443,
+          0.05204058683119972
+        ],
+        "coefficients": [
+          0.13687157811293288,
+          -0.10253076713311546,
+          -0.013662468585632494,
+          0.05021513347470305
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.7017405459263576e-15,
+        "score": 0.05249011189346671,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.099999977370833,
+          0.10000002251679369
+        ],
+        "coefficients": [
+          0.059703855679210986,
+          0.08022122593929275,
+          -0.011584590433809747,
+          -0.09932674246062904
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.4630137726851729e-15,
+        "score": 2.1514495687023754e-15,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.09999999993927881,
+          0.09999999994233784
+        ],
+        "coefficients": [
+          0.059703906328251004,
+          0.08022121637698591,
+          -0.011584633845931945,
+          -0.0993267146699379
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.833809533937523e-15,
+        "score": 2.2835074020256885e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "25ee975b15e0753e47e418ecdba16b33e5f1e6960b7f12913eb59240d0612fe5",
+        "bb44f5afd03a75fd61f92f131614c39315cfb0e51e9021ddcdb8f806ce01b570"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "ae5935aa59df03853b141a65f5cf34a572c0532231eb2dcf0330563d101183df",
+      "source_rounding_absolute_error": 2.2815316302882138e-08,
+      "source_rounding_relative_error": 3.9536247067913686e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.361560419439357e-09,
+      "baseline": {
+        "amplitudes": [
+          0.08377222792522289,
+          0.07771660185246525
+        ],
+        "coefficients": [
+          0.06896652336406925,
+          -0.047554230375738235,
+          0.07771512354611632,
+          0.0004793492531350886
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 1.2099926685915832e-15,
+        "score": 0.20249296863188307,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999781683536,
+          0.10000000236156042
+        ],
+        "coefficients": [
+          0.02921976899632721,
+          -0.09563579174748517,
+          0.09120266894427533,
+          -0.04101309119967681
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.6616042214265584e-15,
+        "score": 1.6365269679994683e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000012869403,
+          0.1000000000831681
+        ],
+        "coefficients": [
+          0.0292197850167708,
+          -0.09563578927008708,
+          0.09120267345416652,
+          -0.04101307561554352
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 7.590131504018418e-16,
+        "score": 2.466573949864887e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "cc14dc0037bfbc28586db972ab0be28a8b691b8afd16d75b718d3dc35a33ce06",
+        "eec82621d10d61b1584b709646116551aa00d237e17245ba7c44e2a2b962a70e"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "6fd6286ed73ebc46d006f243ec61c2ec6447e084f72ab7b9d07e6c10cf9eb12a",
+      "source_rounding_absolute_error": 1.891499490369597e-08,
+      "source_rounding_relative_error": 4.0096729419307026e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.440549748405907e-09,
+      "baseline": {
+        "amplitudes": [
+          0.07780211004676531,
+          0.08382030468827428
+        ],
+        "coefficients": [
+          -0.010312560474197539,
+          -0.07711562373601732,
+          0.03857577771284724,
+          -0.07441607925632829
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.2597585044225186e-15,
+        "score": 0.2019264214488564,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000000244054975,
+          0.09999999780477285
+        ],
+        "coefficients": [
+          0.02921980103721473,
+          -0.09563578679268311,
+          0.09120267796405175,
+          -0.04101306003141005
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.564000206288186e-15,
+        "score": 1.63171328805707e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000012869403,
+          0.1000000000831681
+        ],
+        "coefficients": [
+          0.0292197850167708,
+          -0.09563578927008708,
+          0.09120267345416652,
+          -0.04101307561554352
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 7.590131504018418e-16,
+        "score": 2.466573949864887e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "cc14dc0037bfbc28586db972ab0be28a8b691b8afd16d75b718d3dc35a33ce06",
+        "eec82621d10d61b1584b709646116551aa00d237e17245ba7c44e2a2b962a70e"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "6fd6286ed73ebc46d006f243ec61c2ec6447e084f72ab7b9d07e6c10cf9eb12a",
+      "source_rounding_absolute_error": 1.891499490369597e-08,
+      "source_rounding_relative_error": 4.0096729419307026e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 1.998562683402927e-08,
+      "baseline": {
+        "amplitudes": [
+          0.05633200097190737,
+          0.1636541328695426
+        ],
+        "coefficients": [
+          -0.04802142599233902,
+          -0.029448887570862142,
+          -0.06508868346510921,
+          -0.15015371620463053
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 3.805280616315718e-16,
+        "score": 0.05924769393946785,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000001998562684,
+          0.09999998014301259
+        ],
+        "coefficients": [
+          -0.06669741114907556,
+          -0.07450811595482024,
+          -0.08940036134648806,
+          -0.04480593063111486
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 2.4067264529595933e-15,
+        "score": 2.7374902111145277e-15,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000004453032,
+          0.10000000008278388
+        ],
+        "coefficients": [
+          -0.0666973898916037,
+          -0.07450810822020287,
+          -0.08940037439114715,
+          -0.044805949105888795
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3446754680778132e-15,
+        "score": 2.512505689813571e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "a2405d43f8497df755754111bbc2dda9bd40e86e75db767b52a4a5a59c3f21ac",
+        "92ede30161ef2105aaea7f74e3c34a723f54cf218377e9c859e159961a19bfd2"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "2481c073253bc356cafba5ebf3a37d550aa9db2e41d9426a67fba0036ff08d33",
+      "source_rounding_absolute_error": 2.381377051108302e-08,
+      "source_rounding_relative_error": 4.040524178158271e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 2.002255546085241e-08,
+      "baseline": {
+        "amplitudes": [
+          0.16366043892050286,
+          0.05629163122661484
+        ],
+        "coefficients": [
+          -0.16197296714878306,
+          -0.02344135620374578,
+          -0.04099407097953064,
+          -0.03857763459154025
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 1.2266284658112e-15,
+        "score": 0.05919560501668444,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999998010343457,
+          0.10000002002255547
+        ],
+        "coefficients": [
+          -0.06669736863413912,
+          -0.0745081004855785,
+          -0.08940038743580093,
+          -0.04480596758067146
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 7.679029795697857e-16,
+        "score": 2.825001385088907e-15,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000004453032,
+          0.10000000008278388
+        ],
+        "coefficients": [
+          -0.0666973898916037,
+          -0.07450810822020287,
+          -0.08940037439114715,
+          -0.044805949105888795
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3446754680778132e-15,
+        "score": 2.512505689813571e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 2,
+      "phase_sha256": [
+        "a2405d43f8497df755754111bbc2dda9bd40e86e75db767b52a4a5a59c3f21ac",
+        "92ede30161ef2105aaea7f74e3c34a723f54cf218377e9c859e159961a19bfd2"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "2481c073253bc356cafba5ebf3a37d550aa9db2e41d9426a67fba0036ff08d33",
+      "source_rounding_absolute_error": 2.381377051108302e-08,
+      "source_rounding_relative_error": 4.040524178158271e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 1.1943188105156821e-09,
+      "baseline": {
+        "amplitudes": [
+          0.08259604759864018,
+          0.08448525616123238
+        ],
+        "coefficients": [
+          -0.08259292050448351,
+          -0.0007187220999123079,
+          -0.07033159145386442,
+          -0.04681053035584792
+        ],
+        "condition": 2.1235226505037956,
+        "max_column_error": 1.7762562485602723e-13,
+        "prediction_error": 6.84916542393276e-16,
+        "score": 0.18550714211933686,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.09999999897104668,
+          0.10000000119431882
+        ],
+        "coefficients": [
+          -0.0824158555451742,
+          0.056635912184464,
+          -0.09866573558088006,
+          -0.016281058354653197
+        ],
+        "condition": 2.1230732477124796,
+        "max_column_error": 1.8057051278810614e-13,
+        "prediction_error": 1.565322828685149e-15,
+        "score": 1.4716852399540553e-14,
+        "shift_hz": 0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000008195506,
+          0.10000000008765464
+        ],
+        "coefficients": [
+          -0.08241586484857934,
+          0.05663590060775688,
+          -0.09866573207621084,
+          -0.01628107279623514
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3183652160068506e-15,
+        "score": 2.231039901003092e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "6778107e75c7f67732789cd50891eac492a789332b109d1c283abdc2af42da23",
+        "86a9c551c4e2a7ea03d07a0a01964cd9887d4bc8e29b32514d403a9b0fccfaa6"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": -0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "939236e7aa0daba89a06d71ab923d0c3c5ae9abee847590729d988d7daf2110f",
+      "source_rounding_absolute_error": 2.1286216400628888e-08,
+      "source_rounding_relative_error": 3.997449001214065e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    },
+    {
+      "amplitude_error": 1.1928606852285029e-09,
+      "baseline": {
+        "amplitudes": [
+          0.08458836241806332,
+          0.08264388630193163
+        ],
+        "coefficients": [
+          -0.04385585582413956,
+          0.07233156272680627,
+          -0.07455467298707205,
+          0.035659678614330656
+        ],
+        "condition": 2.124058313722887,
+        "max_column_error": 1.0762715910729583e-13,
+        "prediction_error": 6.726019071593718e-16,
+        "score": 0.1853526659069253,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.10000000119286069,
+          0.09999999898098806
+        ],
+        "coefficients": [
+          -0.08241587415198137,
+          0.05663588903104558,
+          -0.09866572857153734,
+          -0.01628108723781471
+        ],
+        "condition": 2.1230732492669167,
+        "max_column_error": 1.0732378932204185e-13,
+        "prediction_error": 1.3071568809662612e-15,
+        "score": 1.46776878565054e-14,
+        "shift_hz": -0.3700000927722304,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 59
+      },
+      "evaluations": 59,
+      "no_regression": true,
+      "oracle": {
+        "amplitudes": [
+          0.10000000008195506,
+          0.10000000008765464
+        ],
+        "coefficients": [
+          -0.08241586484857934,
+          0.05663590060775688,
+          -0.09866573207621084,
+          -0.01628107279623514
+        ],
+        "condition": 2.1230732484896992,
+        "max_column_error": 6.29804248306894e-14,
+        "prediction_error": 1.3183652160068506e-15,
+        "score": 2.231039901003092e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "phase_index": 3,
+      "phase_sha256": [
+        "6778107e75c7f67732789cd50891eac492a789332b109d1c283abdc2af42da23",
+        "86a9c551c4e2a7ea03d07a0a01964cd9887d4bc8e29b32514d403a9b0fccfaa6"
+      ],
+      "screen_pass": true,
+      "seed_error_hz": 0.37,
+      "shift_error_hz": 9.277223039783067e-08,
+      "source_pcm_sha256": "939236e7aa0daba89a06d71ab923d0c3c5ae9abee847590729d988d7daf2110f",
+      "source_rounding_absolute_error": 2.1286216400628888e-08,
+      "source_rounding_relative_error": 3.997449001214065e-08,
+      "support": 2,
+      "total_source_amplitude": 0.2,
+      "true_frequencies_hz": [
+        440.13,
+        440.63
+      ]
+    }
+  ],
+  "source_commit": "2d0ee0984f58c44748603bcc3fde5e2051e2b8b8",
+  "source_sha256": {
+    "apta_key_coherent.py": "19f5eda52fdd0ef1e18cbdf5c757264225f44a33bcceab71602667c9dad27e86",
+    "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+    "apta_key_observability.py": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+    "apta_key_phase_robustness.py": "a9f2156fffdd0750d316a64c9fb54cd69974944675addf41b26c22aad9cadee3",
+    "apta_key_within_cell.py": "8a2d4a4a395e4b03da6eda6baf3c1247f04c24e3c1d48b0eee33a79cb71c8aa1"
+  },
+  "tool_sha256": "1ac4a44b30bd1400290f4e01249a47491cd49c62714a48a5f75704e3b8a9aa9e",
+  "trace_summary": {
+    "coarse_grid_reconstruction_passes": 0,
+    "max_baseline_residual": 0.3772601511286826,
+    "max_candidate_physical_coefficient": 0.19999825299786114,
+    "max_condition_number": 2.124294763740271,
+    "max_total_fitted_amplitude": 0.2627126552879203,
+    "min_baseline_residual": 0.05249011189346671,
+    "refined_reconstruction_passes": 48
+  },
+  "validation": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "coverage_tests_per_reused_probe": 11,
+    "deterministic_summary_detail_replay": true,
+    "flags": "none; Python diagnostic only",
+    "full_native_build": false,
+    "new_tests": 9,
+    "physical_p4": false,
+    "platform": "WSL Ubuntu",
+    "pre_evaluation_amendment_commit": "e78902d",
+    "production_and_predecessor_diff_empty": true,
+    "protocol_commit": "c88b57d",
+    "repeat_resources": {
+      "cpu_seconds": 13.632861916,
+      "limit_seconds": 120
+    },
+    "resources": {
+      "cpu_seconds": 12.192758869999999,
+      "limit_seconds": 120
+    },
+    "reused_probe_variants": [
+      "default",
+      "candidate",
+      "sanitize"
+    ],
+    "stderr_empty": true,
+    "unchanged_diagnostic_tests": 62
+  }
+}
