@@ -1,0 +1,72 @@
+[
+  {
+    "family": "missing",
+    "finite": true,
+    "fixed_solver_arguments": true,
+    "kkt": 1.538732080346066e-05,
+    "minimum_coefficient": 0.0,
+    "mode": 0,
+    "negative_count": 0,
+    "no_clipping_or_retry": true,
+    "objective": 0.052738360036487734,
+    "tonic": 8,
+    "window": 4,
+    "zero_objective": 1.0
+  },
+  {
+    "family": "missing",
+    "finite": true,
+    "fixed_solver_arguments": true,
+    "kkt": 1.26133005606947e-05,
+    "minimum_coefficient": 0.0,
+    "mode": 0,
+    "negative_count": 0,
+    "no_clipping_or_retry": true,
+    "objective": 0.0014234402245031459,
+    "tonic": 9,
+    "window": 4,
+    "zero_objective": 1.0
+  },
+  {
+    "family": "missing",
+    "finite": true,
+    "fixed_solver_arguments": true,
+    "kkt": 0.04075896179334614,
+    "minimum_coefficient": 0.0,
+    "mode": 1,
+    "negative_count": 0,
+    "no_clipping_or_retry": true,
+    "objective": 0.013349480644610681,
+    "tonic": 7,
+    "window": 6,
+    "zero_objective": 1.0
+  },
+  {
+    "family": "missing",
+    "finite": true,
+    "fixed_solver_arguments": true,
+    "kkt": 5.159002873753719e-07,
+    "minimum_coefficient": 0.0,
+    "mode": 1,
+    "negative_count": 0,
+    "no_clipping_or_retry": true,
+    "objective": 0.0025657648166807403,
+    "tonic": 10,
+    "window": 1,
+    "zero_objective": 0.9999999999999998
+  },
+  {
+    "family": "detuned",
+    "finite": true,
+    "fixed_solver_arguments": true,
+    "kkt": 1.514959776223872e-07,
+    "minimum_coefficient": 0.0,
+    "mode": 1,
+    "negative_count": 0,
+    "no_clipping_or_retry": true,
+    "objective": 0.005528096756865891,
+    "tonic": 10,
+    "window": 7,
+    "zero_objective": 1.0000000000000004
+  }
+]
