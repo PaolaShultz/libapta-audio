@@ -335,8 +335,10 @@ Implementation order:
    S2 now passes 16/16 new quadratic/tone cases and S3 passes 36/36 paired
    clean/noisy cases, all with explicit successful termination. The agreed two
    experiments are complete. Retain S2 as a bounded numerical reference only;
-   next freeze and implement an end-to-end PCM-to-key candidate, including seed
-   discovery, unknown component selection and whole-pipeline cost. No further
+   the subsequent end-to-end PCM-to-key candidate E1 is implemented but rejected:
+   85/96 synthetic keys, 11 breaks and two new high-confidence errors. Stop E1
+   without music transfer or allocation-rule tuning; see
+   `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. No further
    solver-only probe is scheduled. See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md`.
    These screens do not establish the amplitude rule for music or discover tones.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
@@ -536,9 +538,12 @@ now rejected (14/16; two explicit budget exhaustions), despite four new tone
 and three quadratic fixes; see `APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md`.
 S2 and S3 complete the two-experiment checkpoint with 16/16 and 36/36 passes,
 respectively, including termination and deterministic replay. Retain S2 only as
-a bounded two-component numerical reference. Next freeze the complete offline
-PCM-to-key candidate, resource limits and independent development gates before
-implementation/evaluation; no further local-search microexperiment is planned.
+a bounded two-component numerical reference. The subsequent complete offline
+PCM-to-key E1 is now implemented and rejected at its synthetic gate (85/96,
+11 breaks, two new high-confidence errors). Stop E1; competing fundamental
+explanations remain a design issue, not permission to tune the observed bank.
+See `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. No further local-search
+microexperiment is planned.
 See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md` for the concrete scope. Do not
 rescue F2/H1's dictionary, iterations or confidence against spent evidence. No specific
 cause of the remaining real-audio errors has been established. Automated

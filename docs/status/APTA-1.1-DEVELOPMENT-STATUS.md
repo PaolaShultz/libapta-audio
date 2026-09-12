@@ -7,15 +7,25 @@
 
 ## Current boundary
 
+The first complete offline PCM-to-key candidate **E1 is implemented and rejected**
+on its frozen 96-sequence synthetic pipeline screen: 85/96 versus the direct-peak
+comparator's 76/96, but 11 breaks and two new high-confidence errors. Missing
+fundamentals pass only 1/12 minor keys; all failures select an incorrect tonic.
+Resource, streaming, selector identity and deterministic replay checks pass.
+Stop E1 without threshold/weight/profile rescue or music transfer. A future
+complete design must handle competing fundamental explanations rather than
+trusting greedy harmonic allocation. See
+[E1 result and decision](APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md).
+
 The 2026-09-12 **two-experiment search checkpoint is complete**: S2 passes
 16/16 new quadratic/tone cases and S3 passes 36/36 new paired clean/40 dB/20 dB
 cases. All terminate within the frozen budget and deterministic replay passes.
 Retain unchanged S2 only as a bounded numerical reference for an offline
 end-to-end key candidate; supplied tone count and local frequency neighborhoods
 remain major assumptions. No complete key candidate or release gate is accepted.
-The next deliverable is a frozen PCM-to-key pipeline design and implementation
-with seed discovery, unknown component selection, harmonic attribution,
-confidence and whole-pipeline cost, followed by independent development evidence.
+The subsequent frozen PCM-to-key pipeline E1 now implements seed discovery,
+unknown component selection, harmonic attribution and whole-pipeline cost;
+its failed synthetic gate above prevents independent music transfer.
 The agreed two experiments are spent: do not start another solver-only probe.
 See the [decision](APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md),
 [S2 result](APTA-1.1-KEY-QUADRATIC-SEARCH-RESULT.md) and

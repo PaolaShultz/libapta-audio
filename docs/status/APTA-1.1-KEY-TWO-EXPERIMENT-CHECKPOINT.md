@@ -49,3 +49,12 @@ the complete candidate meets the existing development prerequisites.
 Remaining release work still includes transferable key and beat-lattice/
 downbeat candidates, independent acceptance, physical P4 validation and final
 freeze/package/tag. Neither search result closes those gates or changes 1.0.1.
+
+## Subsequent complete pipeline
+
+The proposed next deliverable was implemented as E1, without S2's supplied-seed
+assumptions. Its frozen 96-sequence screen is now rejected (85 matches, 11
+breaks, two new high-confidence errors); see
+[E1 result](APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md). Stop that allocation rule
+without a rescue variant or music transfer. This does not reopen S2/S3 or
+extend the two-experiment search allowance.
