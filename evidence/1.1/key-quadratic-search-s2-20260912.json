@@ -1,0 +1,1173 @@
+{
+  "acceptance_claim": false,
+  "artifact_sha256": {
+    "coverage-candidate.log": "0c1272eae41bcc2b8bacbbdfd1d238ccb06b36a9f3c8dca30d8ef6a42a9c4a3f",
+    "coverage-default.log": "7ff8c1bb94d096adef51cf9d1fc920002702b6098f08f757d6b345adae637bbc",
+    "coverage-sanitize.log": "d52ec9bc3fc1f1d89830c580b743d7d928e156df2f9f911c04e0305890d9e758",
+    "repeat-detail.json": "a84935bb9be36b7d1f406974f521daae114a43e4fd1da698ab8182d0a3405c8c",
+    "repeat.json": "eeeec88872582d1c3e4c5da38601b3472bd55a4197877a309b3f98f24635d201",
+    "result-detail.json": "a84935bb9be36b7d1f406974f521daae114a43e4fd1da698ab8182d0a3405c8c",
+    "result.json": "eeeec88872582d1c3e4c5da38601b3472bd55a4197877a309b3f98f24635d201",
+    "run.sh": "27c7da38a73b6169b5ea5ea475148041b59bb213c66e648967205b87d2620ac6",
+    "source.tar": "6af27ff149c1ea6e9d6d4fdf2cbcd3f46aa647b5c8324e922e67031dd38cff21",
+    "tests.log": "899ebc97c0374faeba2785b504ad3cd61fca03f41d7d527fa3dce72fc0edd5a1"
+  },
+  "baseline_commit": "f7d0e7018de6fbab4bad85f9a03b01b0a922355f",
+  "breaks": 0,
+  "candidate_retained": false,
+  "corpus_access": false,
+  "count": 16,
+  "decision": "finite-quadratic-search-passed-only",
+  "fixes": 4,
+  "format": "apta-quadratic-search-s2-1",
+  "input_sha256": {
+    "o1_evidence": "be5b0fb3c30edd8e521240317cf7eae6d327cb872c2878b8f9f1797f09be556c",
+    "s1_evidence": "aa393fb649e819611fd281db67a87b5d9d6cf2faddc8b9d2907006e2713fcb22"
+  },
+  "instrument_gates_pass": true,
+  "max_analytic_column_error": 3.7345557216442433e-13,
+  "max_prediction_error": 3.1656472545436414e-15,
+  "max_storage_bytes": 113792,
+  "model_status_counts": {
+    "curvature": 1,
+    "rank": 5,
+    "ready": 613
+  },
+  "numpy": "2.5.2",
+  "original_o1_rows_identical": 24,
+  "original_s1_quadratics_identical": 8,
+  "passes": 16,
+  "production_cpu_ram_state_delta": 0,
+  "rows": [
+    {
+      "accurate": true,
+      "center": [
+        0.137,
+        -0.263
+      ],
+      "condition": 1,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "score": 7.223661661004898e-16,
+          "shifts_hz": [
+            0.13700002431869507,
+            -0.2630000114440918
+          ]
+        },
+        "evaluations": 361,
+        "final_step": 5.960464477539063e-08,
+        "polls": 35,
+        "status": "poll_resolved"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            0.137,
+            -0.263
+          ]
+        },
+        "cycles": 22,
+        "evaluations": 594,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        0.137,
+        -0.263
+      ],
+      "condition": 64,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "score": 2.300915211456098e-14,
+          "shifts_hz": [
+            0.13700014352798462,
+            -0.262999951839447
+          ]
+        },
+        "evaluations": 593,
+        "final_step": 5.960464477539063e-08,
+        "polls": 64,
+        "status": "poll_resolved"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            0.137,
+            -0.263
+          ]
+        },
+        "cycles": 25,
+        "evaluations": 621,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        0.137,
+        -0.263
+      ],
+      "condition": 1024,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": false,
+      "old_result": {
+        "best": {
+          "score": 2.0115540807364575e-05,
+          "shifts_hz": [
+            0.1412353515625,
+            -0.26153564453125
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 3.0517578125e-05,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            0.137,
+            -0.263
+          ]
+        },
+        "cycles": 25,
+        "evaluations": 624,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        0.137,
+        -0.263
+      ],
+      "condition": 16384,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": false,
+      "old_result": {
+        "best": {
+          "score": 0.08807287035103514,
+          "shifts_hz": [
+            0.4176025390625,
+            -0.1663818359375
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 0.0001220703125,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            0.137,
+            -0.263
+          ]
+        },
+        "cycles": 35,
+        "evaluations": 711,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.317,
+        0.229
+      ],
+      "condition": 1,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "score": 1.5563728091373719e-15,
+          "shifts_hz": [
+            -0.31699997186660767,
+            0.22899997234344482
+          ]
+        },
+        "evaluations": 393,
+        "final_step": 5.960464477539063e-08,
+        "polls": 39,
+        "status": "poll_resolved"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            -0.317,
+            0.229
+          ]
+        },
+        "cycles": 22,
+        "evaluations": 594,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.317,
+        0.229
+      ],
+      "condition": 64,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "score": 8.888667749117137e-15,
+          "shifts_hz": [
+            -0.3169999122619629,
+            0.2290000319480896
+          ]
+        },
+        "evaluations": 537,
+        "final_step": 5.960464477539063e-08,
+        "polls": 57,
+        "status": "poll_resolved"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            -0.317,
+            0.229
+          ]
+        },
+        "cycles": 26,
+        "evaluations": 631,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.317,
+        0.229
+      ],
+      "condition": 1024,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": false,
+      "old_result": {
+        "best": {
+          "score": 5.837389245690065e-05,
+          "shifts_hz": [
+            -0.309814453125,
+            0.2314453125
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 6.103515625e-05,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            -0.317,
+            0.229
+          ]
+        },
+        "cycles": 29,
+        "evaluations": 671,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.317,
+        0.229
+      ],
+      "condition": 16384,
+      "error": 0.0,
+      "kind": "quadratic",
+      "old_pass": false,
+      "old_result": {
+        "best": {
+          "score": 0.0031741149549366484,
+          "shifts_hz": [
+            -0.26373291015625,
+            0.247344970703125
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 3.0517578125e-05,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "result": {
+        "best": {
+          "score": 0.0,
+          "shifts_hz": [
+            -0.317,
+            0.229
+          ]
+        },
+        "cycles": 27,
+        "evaluations": 661,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 1.3466833204134332e-10,
+      "error": 8.076312951743603e-10,
+      "frequencies_hz": [
+        329.37,
+        783.49
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.3200000001374679,
+            0.07999999992599986
+          ],
+          "coefficients": [
+            0.15113638369555404,
+            -0.2820599113865877,
+            -0.07303718609444844,
+            0.03264306106303276
+          ],
+          "condition": 1.005775289384753,
+          "max_column_error": 2.5549608651596904e-13,
+          "prediction_error": 6.165008652816324e-16,
+          "score": 1.393686332333373e-15,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.3100000023841858
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 385,
+        "final_step": 5.960464477539063e-08,
+        "polls": 38,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.3200000001346014,
+          0.07999999991934587
+        ],
+        "coefficients": [
+          0.15113636679411377,
+          -0.282059920439647,
+          -0.07303718584787275,
+          0.032643061598426004
+        ],
+        "condition": 1.005775289351535,
+        "max_column_error": 1.2327553208994458e-13,
+        "prediction_error": 5.509285073002858e-16,
+        "score": 2.45158207216664e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "998f1eea631b20b0acc63fa90086c3cfc4b61f4a7e17fd6b33dc896b28a2d65d",
+      "phase": 0,
+      "phase_sha256": [
+        "d40ab3039a1c9b5b47ab6a63f47855b635f6f7ca03640bc55f22c035f8c7e41b",
+        "6ee0113989da967f7666cae0441495362c4e3f3cec85f22d24380468997af6db"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.32000000013466834,
+            0.07999999991931868
+          ],
+          "coefficients": [
+            0.15113636665987223,
+            -0.2820599205116537,
+            -0.0730371857650716,
+            0.03264306178362276
+          ],
+          "condition": 1.005775289350759,
+          "max_column_error": 1.7318935191664076e-13,
+          "prediction_error": 1.285979610315663e-15,
+          "score": 2.4496199650470916e-16,
+          "shifts_hz": [
+            0.27000000015157205,
+            -0.30999999919231747
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 62,
+        "evaluations": 954,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.946767673263963e-08,
+      "rounding_relative_error": 3.9895534024097226e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 1.5022150190446837e-10,
+      "error": 9.118821253650822e-10,
+      "frequencies_hz": [
+        329.37,
+        783.49
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.3199999998527466,
+            0.08000000004839793
+          ],
+          "coefficients": [
+            -0.18780802660939472,
+            0.25909099761829374,
+            -0.05001369144187799,
+            0.062439015656080676
+          ],
+          "condition": 1.005775289384753,
+          "max_column_error": 2.5549608651596904e-13,
+          "prediction_error": 4.935963118639376e-16,
+          "score": 1.3686330172386324e-15,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.3100000023841858
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 385,
+        "final_step": 5.960464477539063e-08,
+        "polls": 38,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.3199999998496125,
+          0.08000000006009754
+        ],
+        "coefficients": [
+          -0.1878080110849276,
+          0.25909100886768677,
+          -0.05001369097907341,
+          0.06243901604177758
+        ],
+        "condition": 1.005775289351535,
+        "max_column_error": 1.2327553208994458e-13,
+        "prediction_error": 1.0108341072754832e-15,
+        "score": 2.306964438264583e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "988c630ff54637cea0a0a754a48da57c5ed0bf7103baeb620762443b86ae5dcb",
+      "phase": 1,
+      "phase_sha256": [
+        "598e31150976f765070819a8393f34e7ffee257310ef43cc5f571676186687f2",
+        "5b842a06c473488ee6aba60b42e37d22413d5f05d132f416e578b8b3c775d6d4"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.3199999998497785,
+            0.08000000006015488
+          ],
+          "coefficients": [
+            -0.1878080110253603,
+            0.25909100891107045,
+            -0.050013691157935365,
+            0.0624390158985825
+          ],
+          "condition": 1.005775289352005,
+          "max_column_error": 1.6796627484299539e-13,
+          "prediction_error": 8.619877207782803e-16,
+          "score": 2.3052021726259715e-16,
+          "shifts_hz": [
+            0.2700000000732886,
+            -0.31000000091184926
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 51,
+        "evaluations": 857,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.183606028274056e-08,
+      "rounding_relative_error": 3.9938575526196175e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 4.1059822208922014e-11,
+      "error": 7.735252438578755e-10,
+      "frequencies_hz": [
+        329.37,
+        783.49
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.07999999995910155,
+            0.3199999999603849
+          ],
+          "coefficients": [
+            0.03778409590497931,
+            -0.07051497777138963,
+            -0.2921487442133754,
+            0.13057224524834563
+          ],
+          "condition": 1.005775289384753,
+          "max_column_error": 2.5549608651596904e-13,
+          "prediction_error": 9.834290381257729e-16,
+          "score": 3.2808534196718655e-16,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.3100000023841858
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 385,
+        "final_step": 5.960464477539063e-08,
+        "polls": 38,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.07999999995939946,
+          0.31999999995901357
+        ],
+        "coefficients": [
+          0.03778409168070495,
+          -0.0705149800352237,
+          -0.2921487432352734,
+          0.13057224743343815
+        ],
+        "condition": 1.005775289351535,
+        "max_column_error": 1.2327553208994458e-13,
+        "prediction_error": 3.4068831557589713e-16,
+        "score": 2.341632970637419e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "0b9755cc6f0d42301930fb6e5db4c0ce0581d60f92c87241fceab246d20e9615",
+      "phase": 0,
+      "phase_sha256": [
+        "d40ab3039a1c9b5b47ab6a63f47855b635f6f7ca03640bc55f22c035f8c7e41b",
+        "6ee0113989da967f7666cae0441495362c4e3f3cec85f22d24380468997af6db"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.07999999995934866,
+            0.3199999999589402
+          ],
+          "coefficients": [
+            0.03778409150932217,
+            -0.07051498012699822,
+            -0.29214874325235834,
+            0.1305722473950316
+          ],
+          "condition": 1.0057752893502787,
+          "max_column_error": 3.2299862039788555e-13,
+          "prediction_error": 1.358005915070406e-15,
+          "score": 2.340407940240392e-16,
+          "shifts_hz": [
+            0.27000000077348507,
+            -0.31000000004169315
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 58,
+        "evaluations": 919,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.527246699748133e-08,
+      "rounding_relative_error": 3.9999310570644805e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 3.0390340244323966e-10,
+      "error": 7.378844202321488e-10,
+      "frequencies_hz": [
+        329.37,
+        783.49
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.07999999969876725,
+            0.31999999982683364
+          ],
+          "coefficients": [
+            -0.046952006455148444,
+            0.0647727492209375,
+            -0.20005476519930107,
+            0.24975606260955116
+          ],
+          "condition": 1.005775289384753,
+          "max_column_error": 2.5549608651596904e-13,
+          "prediction_error": 6.926652784706477e-16,
+          "score": 3.3277862725885627e-16,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.3100000023841858
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 385,
+        "final_step": 5.960464477539063e-08,
+        "polls": 38,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.0799999996962537,
+          0.31999999982963767
+        ],
+        "coefficients": [
+          -0.046952002572901705,
+          0.06477275203196807,
+          -0.20005476333005995,
+          0.24975606411040718
+        ],
+        "condition": 1.005775289351535,
+        "max_column_error": 1.2327553208994458e-13,
+        "prediction_error": 9.926902286414787e-16,
+        "score": 2.35851884573447e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "c9f572452cc0a346e2cf2260fa6ce1521c270f50f374052ff15245cd790b5a0a",
+      "phase": 1,
+      "phase_sha256": [
+        "598e31150976f765070819a8393f34e7ffee257310ef43cc5f571676186687f2",
+        "5b842a06c473488ee6aba60b42e37d22413d5f05d132f416e578b8b3c775d6d4"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.0799999996960966,
+            0.3199999998297421
+          ],
+          "coefficients": [
+            -0.04695200242267229,
+            0.06477275214067124,
+            -0.2000547631971279,
+            0.24975606421701957
+          ],
+          "condition": 1.0057752893502,
+          "max_column_error": 7.411909054016226e-14,
+          "prediction_error": 8.728942800966893e-16,
+          "score": 2.356561134319903e-16,
+          "shifts_hz": [
+            0.2700000007378463,
+            -0.3099999998303963
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 49,
+        "evaluations": 839,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.5231964729275376e-08,
+      "rounding_relative_error": 3.988891443022183e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 1.5017348475865333e-10,
+      "error": 9.374616638524458e-10,
+      "frequencies_hz": [
+        587.13,
+        587.83
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.3199999923731991,
+            0.07999999192110391
+          ],
+          "coefficients": [
+            -0.30579827004497134,
+            -0.09427307757971128,
+            -0.07703487225508647,
+            -0.021578395770288368
+          ],
+          "condition": 1.4710676807031622,
+          "max_column_error": 1.642957834552518e-13,
+          "prediction_error": 1.4450897316708003e-15,
+          "score": 5.309294910807257e-16,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.309999942779541
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 465,
+        "final_step": 5.960464477539063e-08,
+        "polls": 48,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.32000000001154044,
+          0.08000000004137599
+        ],
+        "coefficients": [
+          -0.3057982847487972,
+          -0.0942730558117187,
+          -0.07703487405496395,
+          -0.021578419449904084
+        ],
+        "condition": 1.4710678579693397,
+        "max_column_error": 1.3098663113304457e-13,
+        "prediction_error": 2.283830932258797e-15,
+        "score": 2.1736518726638106e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "0504bb4f5fc14767cc59e1bb675241c6adbe44b73fafd62779d30924aa7bd019",
+      "phase": 0,
+      "phase_sha256": [
+        "8c2f1aabb9092b488dfc69edc5763a02dc85136dd37a54816261ec2abe35e8e6",
+        "8b20abb0bbbe09928f09b74a6dbbe708c3d6547914d6ea8dd822033c8b7b380b"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.3199999998498265,
+            0.07999999985203164
+          ],
+          "coefficients": [
+            -0.3057982844147054,
+            -0.09427305634650822,
+            -0.07703487399332509,
+            -0.02157841896797791
+          ],
+          "condition": 1.471067854608877,
+          "max_column_error": 5.81838429117514e-14,
+          "prediction_error": 8.958167164651492e-16,
+          "score": 2.1714367233976316e-16,
+          "shifts_hz": [
+            0.2699999994909273,
+            -0.3099999990624671
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 50,
+        "evaluations": 869,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.2977767844565307e-08,
+      "rounding_relative_error": 3.934535025189171e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 5.837584998724665e-10,
+      "error": 5.214928933128249e-09,
+      "frequencies_hz": [
+        587.13,
+        587.83
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.3199999496657779,
+            0.07999994808462502
+          ],
+          "coefficients": [
+            -0.31809701638865084,
+            0.03484617555397949,
+            -0.06762005083420135,
+            -0.042749507818485154
+          ],
+          "condition": 1.4710669882012453,
+          "max_column_error": 4.636903563008483e-14,
+          "prediction_error": 5.528231243691424e-16,
+          "score": 1.682542707612869e-15,
+          "shifts_hz": [
+            0.2699999213218689,
+            -0.3099997043609619
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 633,
+        "final_step": 5.960464477539063e-08,
+        "polls": 69,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.32000000028426534,
+          0.08000000013618022
+        ],
+        "coefficients": [
+          -0.3180970570092964,
+          0.034846269584479776,
+          -0.06762004947156566,
+          -0.04274960738125963
+        ],
+        "condition": 1.4710678579693397,
+        "max_column_error": 1.3098663113304457e-13,
+        "prediction_error": 1.6801379229810297e-15,
+        "score": 2.501023359462507e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "2dce06f74b99183cfab2e49f1970002604094ec9cfa54d5f34f952e4d3425c24",
+      "phase": 1,
+      "phase_sha256": [
+        "7b8dee6f33b523bd255b7fdadcfa9a3ef470a156147e1b5297e483b70e88690b",
+        "96f84125b3c2b5baea0ecc1c8d4bea0b2f5c810d26abcfba38d3f1ee75b79096"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.3199999994671676,
+            0.0799999994162415
+          ],
+          "coefficients": [
+            -0.31809705632354857,
+            0.034846268340820045,
+            -0.06762004963390117,
+            -0.04274960577721605
+          ],
+          "condition": 1.4710678435714448,
+          "max_column_error": 1.0902847313895899e-13,
+          "prediction_error": 9.714406641058439e-16,
+          "score": 2.4965126591158493e-16,
+          "shifts_hz": [
+            0.2699999990190363,
+            -0.30999999478500834
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 46,
+        "evaluations": 831,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.635085759652213e-08,
+      "rounding_relative_error": 4.038390471342048e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 5.950387543807167e-10,
+      "error": 3.506784196360968e-09,
+      "frequencies_hz": [
+        587.13,
+        587.83
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.07999999968123968,
+            0.3199999991025773
+          ],
+          "coefficients": [
+            -0.07644956978393255,
+            -0.023568267412985115,
+            -0.3081394952076677,
+            -0.08631367747242152
+          ],
+          "condition": 1.4710678192481261,
+          "max_column_error": 1.642957834552518e-13,
+          "prediction_error": 2.170657674684872e-15,
+          "score": 2.80549532324346e-16,
+          "shifts_hz": [
+            0.26999998092651367,
+            -0.3100000023841858
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 489,
+        "final_step": 5.960464477539063e-08,
+        "polls": 51,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.07999999988654358,
+          0.3200000000252983
+        ],
+        "coefficients": [
+          -0.07644957110047006,
+          -0.023568263839348565,
+          -0.3081394962073351,
+          -0.08631367732451586
+        ],
+        "condition": 1.4710678579693397,
+        "max_column_error": 1.3098663113304457e-13,
+        "prediction_error": 1.4510003654941394e-15,
+        "score": 2.323139375749126e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "e9c360671984aaf3352402df39b3c7349972a6cf39dc2ff1285085d650b4a15a",
+      "phase": 0,
+      "phase_sha256": [
+        "8c2f1aabb9092b488dfc69edc5763a02dc85136dd37a54816261ec2abe35e8e6",
+        "8b20abb0bbbe09928f09b74a6dbbe708c3d6547914d6ea8dd822033c8b7b380b"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.07999999940496125,
+            0.3199999995672707
+          ],
+          "coefficients": [
+            -0.07644957024396648,
+            -0.02356826498295185,
+            -0.3081394961666951,
+            -0.08631367577150528
+          ],
+          "condition": 1.4710678472421084,
+          "max_column_error": 1.2047193735074199e-13,
+          "prediction_error": 1.1475517710456446e-15,
+          "score": 2.31163624340232e-16,
+          "shifts_hz": [
+            0.2699999964931669,
+            -0.3099999988860343
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 45,
+        "evaluations": 800,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.3723012321805754e-08,
+      "rounding_relative_error": 3.9829812684471303e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 2.529823572849921e-10,
+      "error": 2.021351974690333e-10,
+      "frequencies_hz": [
+        587.13,
+        587.83
+      ],
+      "kind": "tone",
+      "no_regression": true,
+      "old_pass": true,
+      "old_result": {
+        "best": {
+          "amplitudes": [
+            0.08000004036346688,
+            0.32000003799564813
+          ],
+          "coefficients": [
+            -0.07952429738361373,
+            0.008711634967036617,
+            -0.27048019246308,
+            -0.17099850818750273
+          ],
+          "condition": 1.471068511083155,
+          "max_column_error": 7.69908656183455e-14,
+          "prediction_error": 1.255502397255435e-15,
+          "score": 1.1310000497341557e-15,
+          "shifts_hz": [
+            0.2700002193450928,
+            -0.31000006198883057
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 905,
+        "final_step": 5.960464477539063e-08,
+        "polls": 103,
+        "status": "poll_resolved"
+      },
+      "oracle": {
+        "amplitudes": [
+          0.07999999998601662,
+          0.31999999977146354
+        ],
+        "coefficients": [
+          -0.0795242641581461,
+          0.008711567474803748,
+          -0.27048019739580215,
+          -0.17099842885378966
+        ],
+        "condition": 1.4710678579693397,
+        "max_column_error": 1.3098663113304457e-13,
+        "prediction_error": 1.4547309553495087e-15,
+        "score": 2.220073216658514e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "4355995fe7a5ce6c1a6d29c25b3dddf201d34b404cd15b10b8dbf906c6dda4ce",
+      "phase": 1,
+      "phase_sha256": [
+        "7b8dee6f33b523bd255b7fdadcfa9a3ef470a156147e1b5297e483b70e88690b",
+        "96f84125b3c2b5baea0ecc1c8d4bea0b2f5c810d26abcfba38d3f1ee75b79096"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.07999999997704842,
+            0.31999999974701765
+          ],
+          "coefficients": [
+            -0.07952426415475075,
+            0.008711567423441707,
+            -0.2704801973782829,
+            -0.170998428835754
+          ],
+          "condition": 1.4710678575023655,
+          "max_column_error": 1.8067834456177293e-13,
+          "prediction_error": 1.6751357097157967e-15,
+          "score": 2.2200394988989058e-16,
+          "shifts_hz": [
+            0.26999999979784695,
+            -0.31000000000080236
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "cycles": 47,
+        "evaluations": 803,
+        "final_step": 5.960464477539063e-08,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.7106704870181204e-08,
+      "rounding_relative_error": 4.031298309047808e-08,
+      "screen_pass": true,
+      "support": 1
+    }
+  ],
+  "source_commit": "142d6026351843d4d904bca729fcb2ddcf2b66f7",
+  "source_sha256": {
+    "apta_key_coherent.py": "19f5eda52fdd0ef1e18cbdf5c757264225f44a33bcceab71602667c9dad27e86",
+    "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+    "apta_key_independent_shift.py": "d0575275e7ec3cfadb3a7975313c28e1bdb936bc850333d285e5d79a0cb839ed",
+    "apta_key_local_shift.py": "1ac4a44b30bd1400290f4e01249a47491cd49c62714a48a5f75704e3b8a9aa9e",
+    "apta_key_observability.py": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+    "apta_key_phase_robustness.py": "a9f2156fffdd0750d316a64c9fb54cd69974944675addf41b26c22aad9cadee3",
+    "apta_key_search_convergence.py": "7f6a32f97bef7a418f8cc8e6c5eec6e01d8c7625f5025ae9a28bc73557f8efa3",
+    "apta_key_within_cell.py": "8a2d4a4a395e4b03da6eda6baf3c1247f04c24e3c1d48b0eee33a79cb71c8aa1"
+  },
+  "termination_counts": {
+    "poll_resolved": 16
+  },
+  "tool_sha256": "093bfc3094f49e55e885de5e3fc3048b7f754634b80aa17908b30f0f96825f91",
+  "validation": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "coverage_tests_per_reused_probe": 11,
+    "deterministic_summary_detail_replay": true,
+    "flags": "none; Python diagnostic only",
+    "full_native_build": false,
+    "new_tests": 5,
+    "physical_p4": false,
+    "platform": "WSL Ubuntu",
+    "production_and_predecessor_diff_empty": true,
+    "protocol_commit": "a95a640",
+    "repeat_resources": {
+      "cpu_seconds": 56.158609629000004,
+      "limit_seconds": 300
+    },
+    "resources": {
+      "cpu_seconds": 55.838303153,
+      "limit_seconds": 300
+    },
+    "reused_probe_variants": [
+      "default",
+      "candidate",
+      "sanitize"
+    ],
+    "stderr_empty": true,
+    "unchanged_diagnostic_tests": 93
+  }
+}
