@@ -313,7 +313,11 @@ Implementation order:
    supplied-frequency screen now passes 256/256 on a new phase bank (frozen F2
    255/256 there), with all old controls unchanged. This is not frequency
    discovery or a retained frontend; see `APTA-1.1-KEY-COHERENT-RESULT.md`.
-   Next preregister frequency uncertainty before selecting an estimator.
+   C2 frequency uncertainty is now **rejected**: 50/1024 perturbed cases pass
+   both gates. Quarter-Hz shifts keep rankings but fail the 10% residual ceiling;
+   nearest-Hz gives 32 reversals and exposes near-zero-column normalization.
+   See `APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. Next preregister physically
+   valid treatment of unobservable components before a frequency estimator.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
@@ -492,9 +496,12 @@ totals, without establishing phase robustness or selecting a frontend. See
 construction (252/256, four reversed scores); see
 `APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. The separately frozen coherent C1
 screen now passes 256/256 new-phase observations with supplied frequencies,
-not discovered notes; see `APTA-1.1-KEY-COHERENT-RESULT.md`. Resume with
-preregistered frequency uncertainty, without rescuing F2 or H1's dictionary,
-iterations or ranking/confidence. No specific
+not discovered notes; see `APTA-1.1-KEY-COHERENT-RESULT.md`. The subsequent
+C2 frequency-uncertainty screen is complete: 50/1024 combined-gate passes,
+with near-zero projected columns exposed by rounding. See
+`APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. Next preregister valid handling
+of unobservable components before frequency estimation, without tuning to C2
+verdicts or rescuing F2/H1's dictionary, iterations or confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is

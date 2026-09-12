@@ -7,13 +7,24 @@
 
 ## Current boundary
 
+The 2026-09-12 C2 frequency-uncertainty screen is **rejected**: only 50/1024
+perturbed cases pass both gates. Quarter-Hz perturbations preserve all 768
+family rankings but exceed the frozen 10% reconstruction ceiling; nearest-Hz
+rounding produces 32 reversals and 206 reconstruction failures. Rounded
+out-of-range columns expose normalization of near-roundoff energy, yielding
+unphysical fitted coefficients, so those reversals are not a clean physical
+ambiguity measure. Exact C1 controls remain 256/256 and all source signals are
+unchanged. Next preregister physically valid handling of unobservable components
+before frequency estimation. No production/corpus change. See
+[`APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`](APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md).
+
 The 2026-09-12 C1 coherent supplied-frequency screen passes 256/256 new-phase
 observations, versus unchanged F2 255/256 on that same bank. Correct-family
 residual is at most 3.309e-16; wrong-family residual is at least 0.105737.
 All old F2/F1 controls replay exactly. Frequencies are supplied, phases and
 amplitudes fitted; this is not note discovery or key accuracy. No frontend is
-retained or ported. Next preregister frequency uncertainty before choosing an
-estimator. Production/corpus boundaries and H1/F2 rejections remain. See
+retained or ported. Its separately frozen frequency-uncertainty screen above
+is now complete and rejected. Production/corpus and H1/F2 boundaries remain. See
 [`APTA-1.1-KEY-COHERENT-RESULT.md`](APTA-1.1-KEY-COHERENT-RESULT.md).
 
 The 2026-09-11 F2 unknown-phase screen **rejects the phase-marginal scoring
