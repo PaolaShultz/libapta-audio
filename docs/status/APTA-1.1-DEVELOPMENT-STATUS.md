@@ -7,12 +7,23 @@
 
 ## Current boundary
 
+The 2026-09-12 C3 observable frequency-uncertainty screen is **rejected**:
+50/1024 perturbed cases pass, with zero family/outcome changes from C2.
+Analytic removal of invisible columns eliminates the rounded unphysical
+amplitudes but leaves all 32 nearest-Hz reversals. Quarter-Hz rankings remain
+correct while reconstruction fails; noninteger fits still admit large physical
+coefficients. All 1280 rows/40 models complete without abstention and numerical
+controls pass. Next preregister bounded local frequency refinement, first on
+an independent analytic bank, with explicit amplitude/conditioning treatment.
+No estimator is selected or production/corpus changed. See
+[`APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`](APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md).
+
 The 2026-09-12 O1 numerical observability instrument passes its independent
 24-case bank: 12 ready fits, four exact invisible cases and eight weak-component
 abstentions. Analytic columns preserve structural zeros and prevent their
 normalization into fit directions; the precision guard is not a physical
-amplitude or noise model. No C2 family verdict was recomputed. Next separately
-preregister frequency-uncertainty reevaluation with explicit abstention accounting.
+amplitude or noise model. O1 did not recompute C2 family verdicts. Its separately
+preregistered follow-up C3 above is now complete and rejected.
 No production/corpus change. See
 [`APTA-1.1-KEY-OBSERVABILITY-RESULT.md`](APTA-1.1-KEY-OBSERVABILITY-RESULT.md).
 

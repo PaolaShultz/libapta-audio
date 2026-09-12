@@ -319,8 +319,12 @@ Implementation order:
    See `APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. O1 now passes its separate
    24-case numerical bank (12 ready, four invisible, eight weak abstentions),
    preserving structural zeros before normalization; see
-   `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`. Next preregister frequency-uncertainty
-   reevaluation with explicit abstention accounting before a frequency estimator.
+   `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`. C3 reevaluation is now rejected:
+   50/1024 pass, zero abstentions, zero changed outcomes and all 32 reversals
+   remain after structural-zero correction. Noninteger fits still admit large
+   physical coefficients. See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`.
+   Next preregister bounded local frequency refinement on an independent
+   analytic bank, explicitly addressing amplitude/conditioning limits first.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
@@ -505,8 +509,11 @@ with near-zero projected columns exposed by rounding. See
 `APTA-1.1-KEY-FREQUENCY-UNCERTAINTY-RESULT.md`. O1's separate analytic numerical
 screen now passes: structural zeros are omitted as unidentifiable and weak
 components cause abstention; see `APTA-1.1-KEY-OBSERVABILITY-RESULT.md`.
-Next preregister frequency-uncertainty reevaluation with explicit abstention
-accounting, before frequency estimation and without tuning to C2 verdicts or
+C3 reevaluation is now rejected with unchanged 50/1024 combined passes and
+32 reversals; numerical correction alone does not confer frequency robustness.
+See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`. Next preregister bounded
+local frequency refinement on an independent analytic bank, with explicit
+amplitude/conditioning treatment and without tuning to C2/C3 verdicts or
 rescuing F2/H1's dictionary, iterations or confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
