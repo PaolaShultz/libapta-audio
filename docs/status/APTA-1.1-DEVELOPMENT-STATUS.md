@@ -7,13 +7,21 @@
 
 ## Current boundary
 
+The 2026-09-12 C1 coherent supplied-frequency screen passes 256/256 new-phase
+observations, versus unchanged F2 255/256 on that same bank. Correct-family
+residual is at most 3.309e-16; wrong-family residual is at least 0.105737.
+All old F2/F1 controls replay exactly. Frequencies are supplied, phases and
+amplitudes fitted; this is not note discovery or key accuracy. No frontend is
+retained or ported. Next preregister frequency uncertainty before choosing an
+estimator. Production/corpus boundaries and H1/F2 rejections remain. See
+[`APTA-1.1-KEY-COHERENT-RESULT.md`](APTA-1.1-KEY-COHERENT-RESULT.md).
+
 The 2026-09-11 F2 unknown-phase screen **rejects the phase-marginal scoring
 construction**: 252/256 pass, but four harmonic observations prefer the wrong
 reference; the rule required 256/256. Original F1 rows replay 8/8 exactly,
 instrument/resource checks pass, and no production/corpus changes occur.
-F1 remains a fixed-phase finding, not robust frontend evidence. Next preregister
-a coherent harmonic representation with relative phase and a new phase bank
-before implementation; do not optimize F2 against its failures. See
+F1 remains a fixed-phase finding, not robust frontend evidence. This motivated
+the separately preregistered C1 diagnostic above; F2 was not optimized. See
 [`APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`](APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md).
 
 The 2026-09-11 F1 within-cell diagnostic is complete: all eight fixed-phase

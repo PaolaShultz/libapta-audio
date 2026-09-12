@@ -309,10 +309,13 @@ Implementation order:
    frontend acceptance is claimed; see `APTA-1.1-KEY-WITHIN-CELL-RESULT.md`.
    F2 phase robustness is now **rejected**: 252/256 pass, four harmonic
    observations prefer the wrong phase-marginal reference. F1 remains unchanged;
-   see `APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. Next preregister a coherent
-   harmonic representation retaining relative phase and a new frozen phase
-   bank before implementation. Do not optimize F2 or change H1's dictionary/
-   iterations or confidence against these failures or spent music.
+   see `APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. C1's separate coherent
+   supplied-frequency screen now passes 256/256 on a new phase bank (frozen F2
+   255/256 there), with all old controls unchanged. This is not frequency
+   discovery or a retained frontend; see `APTA-1.1-KEY-COHERENT-RESULT.md`.
+   Next preregister frequency uncertainty before selecting an estimator.
+   Do not optimize F2 or change H1's dictionary/iterations or confidence
+   against these failures or spent music.
    No fitted floor, gain workaround, parameter sweep or label rescue is justified.
 3. Replace fixed global accumulation in an experimental path with bounded
    per-window normalization and robust/adaptive aggregation.
@@ -487,9 +490,11 @@ within-cell separation for all eight fixed-phase pairs after removing cell
 totals, without establishing phase robustness or selecting a frontend. See
 `APTA-1.1-KEY-WITHIN-CELL-RESULT.md`. F2 subsequently rejects the phase-marginal
 construction (252/256, four reversed scores); see
-`APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. Resume with a separately preregistered
-coherent harmonic representation and a new frozen phase bank, without rescuing
-F2 or H1's dictionary, iterations or ranking/confidence. No specific
+`APTA-1.1-KEY-PHASE-ROBUSTNESS-RESULT.md`. The separately frozen coherent C1
+screen now passes 256/256 new-phase observations with supplied frequencies,
+not discovered notes; see `APTA-1.1-KEY-COHERENT-RESULT.md`. Resume with
+preregistered frequency uncertainty, without rescuing F2 or H1's dictionary,
+iterations or ranking/confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.
 WP6 and WP7 remain gated: WP5 proved the unchanged production baseline is
