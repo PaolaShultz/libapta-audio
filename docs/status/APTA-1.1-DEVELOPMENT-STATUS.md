@@ -7,6 +7,15 @@
 
 ## Current boundary
 
+The researched joint PCM candidate **E2 is implemented but rejected**: 126/144
+new synthetic keys versus direct peaks 130/144, three fixes and seven breaks.
+Five breaks are fail-closed numerical abstentions (projected KKT failures), two
+occur with valid numerical solutions. Confidence/resource/replay gates pass,
+but accuracy, no-regression and numerical gates fail. Stop E2 unchanged; no
+music transfer or production promotion. Counts do not establish a clean test
+of the joint-model hypothesis while its instrument gate fails. See
+[E2 design, findings and handoff](APTA-1.1-KEY-JOINT-PCM-RESULT.md).
+
 The first complete offline PCM-to-key candidate **E1 is implemented and rejected**
 on its frozen 96-sequence synthetic pipeline screen: 85/96 versus the direct-peak
 comparator's 76/96, but 11 breaks and two new high-confidence errors. Missing
@@ -14,7 +23,8 @@ fundamentals pass only 1/12 minor keys; all failures select an incorrect tonic.
 Resource, streaming, selector identity and deterministic replay checks pass.
 Stop E1 without threshold/weight/profile rescue or music transfer. A future
 complete design must handle competing fundamental explanations rather than
-trusting greedy harmonic allocation. See
+trusting greedy harmonic allocation. E2 above is the subsequent separately
+researched implementation; its rejection preserves E1's historical result. See
 [E1 result and decision](APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md).
 
 The 2026-09-12 **two-experiment search checkpoint is complete**: S2 passes

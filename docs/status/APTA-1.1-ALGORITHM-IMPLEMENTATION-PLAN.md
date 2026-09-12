@@ -338,7 +338,10 @@ Implementation order:
    the subsequent end-to-end PCM-to-key candidate E1 is implemented but rejected:
    85/96 synthetic keys, 11 breaks and two new high-confidence errors. Stop E1
    without music transfer or allocation-rule tuning; see
-   `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. No further
+   `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. Subsequent joint candidate E2 is
+   implemented but rejected: 126/144, seven breaks (five numerical abstentions,
+   two valid-solve breaks). See `APTA-1.1-KEY-JOINT-PCM-RESULT.md`; resolve
+   optimality separately before interpreting joint-model acceptance. No further
    solver-only probe is scheduled. See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md`.
    These screens do not establish the amplitude rule for music or discover tones.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
@@ -542,7 +545,11 @@ a bounded two-component numerical reference. The subsequent complete offline
 PCM-to-key E1 is now implemented and rejected at its synthetic gate (85/96,
 11 breaks, two new high-confidence errors). Stop E1; competing fundamental
 explanations remain a design issue, not permission to tune the observed bank.
-See `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. No further local-search
+See `APTA-1.1-KEY-PCM-CANDIDATE-RESULT.md`. Subsequent E2 implements joint
+attribution but fails accuracy, no-regression and numerical gates: 126/144,
+seven breaks including five KKT-driven abstentions. See
+`APTA-1.1-KEY-JOINT-PCM-RESULT.md` for the researched design and exact handoff.
+No transfer or automatic rescue is authorized by these results. No further local-search
 microexperiment is planned.
 See `APTA-1.1-KEY-TWO-EXPERIMENT-CHECKPOINT.md` for the concrete scope. Do not
 rescue F2/H1's dictionary, iterations or confidence against spent evidence. No specific
