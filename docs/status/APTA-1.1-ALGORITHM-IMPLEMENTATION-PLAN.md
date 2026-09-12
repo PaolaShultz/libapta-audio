@@ -327,8 +327,10 @@ Implementation order:
    an explicit synthetic amplitude budget and raw-rank guard; see
    `APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`. R2 now passes 32/32 independent
    two-tone cases and six constraint stresses, with 742 amplitude rejections;
-   see `APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`. Next preregister noise and
-   unequal-amplitude robustness, including quality/abstention criteria.
+   see `APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`. R3 noise/unequal-amplitude
+   robustness is now rejected (30/36, including four clean failures); see
+   `APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`. Next preregister search convergence
+   diagnostics that distinguish exhausted budget from sufficiently minimized fits.
    Neither screen establishes the amplitude rule for music or discovers tones.
    Do not optimize F2 or change H1's dictionary/iterations or confidence
    against these failures or spent music.
@@ -520,9 +522,11 @@ See `APTA-1.1-KEY-OBSERVABLE-FREQUENCY-RESULT.md`. R1's bounded common-shift
 instrument now passes 48/48 analytic cases under supplied-spacing and synthetic
 amplitude assumptions; see `APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`. R2 now passes
 32/32 independent two-tone recovery cases and six constraint stresses; see
-`APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`. Next preregister noise and unequal
-amplitude robustness with explicit quality/abstention accounting, without
-tuning to C2/C3 verdicts or
+`APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`. R3 is now rejected at 30/36 with
+unequal-amplitude close-tone failures already present without noise; see
+`APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`. Next preregister search convergence
+diagnostics with explicit budget/termination accounting, without tuning to
+C2/C3/R3 outcomes or
 rescuing F2/H1's dictionary, iterations or confidence. No specific
 cause of the remaining real-audio errors has been established. Automated
 agreements are not corrected truth.

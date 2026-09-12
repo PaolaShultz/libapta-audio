@@ -1,0 +1,4063 @@
+{
+  "acceptance_claim": false,
+  "artifact_sha256": {
+    "coverage-candidate.log": "58656563a927565c7b536727ff3f61adcb3f86c951283c163e312b4c1de0e25d",
+    "coverage-default.log": "7db59565ffb283b27891a1ab47a6fc3a52b619cd9da7851cba00410479d37b72",
+    "coverage-sanitize.log": "adcd7e18f880516aea6f66ea87329029de9ace7f3c6195be5a249c207f7894c6",
+    "repeat-detail.json": "59bc0e4745a78f1eaa8521a7498c9b70235f1dc9e5c864fa21dadaff8704b26f",
+    "repeat.json": "27f5b6af59b6bcf4a0ef706f9a72a75842134a1c03e016d983820aa5749e9105",
+    "result-detail.json": "59bc0e4745a78f1eaa8521a7498c9b70235f1dc9e5c864fa21dadaff8704b26f",
+    "result.json": "27f5b6af59b6bcf4a0ef706f9a72a75842134a1c03e016d983820aa5749e9105",
+    "run.sh": "0cf17694033215aa54e7cce6278b7b7176963e35ff585ed9cd684eb042ac846b",
+    "source.tar": "4271e8d8ae54ea8e62dfcfdfcfa4252cdee7e20b8910fcd43cb3bc3f1332bb47",
+    "tests.log": "0e6bd6818c7ca14fd72e179a882935b9e9ac89456f6d07548e1cdc3c0a8112c7"
+  },
+  "baseline_commit": "948da5344c642e2a99d11acf72fbea90cf7e3cf9",
+  "candidate_retained": false,
+  "candidate_status_counts": {
+    "ready": 9828
+  },
+  "corpus_access": false,
+  "decision": "finite-noise-screen-rejected",
+  "format": "apta-key-noise-robustness-r3-1",
+  "groups": [
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 3.27827365254052e-09,
+      "max_relative_amplitude_error": 3.727765318650711e-10,
+      "max_residual": 2.667152159541071e-16,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.00021412551404864644,
+      "max_relative_amplitude_error": 0.000890572646777138,
+      "max_residual": 9.981509674787591e-05,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.002144421935099672,
+      "max_relative_amplitude_error": 0.008910518958354652,
+      "max_residual": 0.009853510802280346,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 4.0,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 4.172306944383308e-09,
+      "max_relative_amplitude_error": 2.7016009221392245e-09,
+      "max_residual": 2.5478960492681754e-16,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 4.0,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.000625472068804811,
+      "max_relative_amplitude_error": 0.0026015420522575855,
+      "max_residual": 9.982093471864588e-05,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 4.0,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.006280686259287904,
+      "max_relative_amplitude_error": 0.02605549017147997,
+      "max_residual": 0.009859211421929186,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 0.25,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 3.27827365254052e-09,
+      "max_relative_amplitude_error": 1.8499087678369719e-09,
+      "max_residual": 2.777773292018364e-16,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 0.25,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.00015580981971652363,
+      "max_relative_amplitude_error": 0.0006479560371626045,
+      "max_residual": 9.981897853215252e-05,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 0.25,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.0015597599744978652,
+      "max_relative_amplitude_error": 0.006482112363288654,
+      "max_residual": 0.009857281243464045,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 5.066340236226097e-09,
+      "max_relative_amplitude_error": 1.0981690834466207e-08,
+      "max_residual": 2.2941109391984123e-16,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.0021464651822498126,
+      "max_relative_amplitude_error": 0.005369294558951604,
+      "max_residual": 9.935802846300643e-05,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 1.0,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.02149969846004751,
+      "max_relative_amplitude_error": 0.052132849999264874,
+      "max_residual": 0.009857177747009536,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 1,
+      "amplitude_ratio": 4.0,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 2,
+      "max_frequency_error_hz": 0.004375007450562407,
+      "max_relative_amplitude_error": 0.009960871709051473,
+      "max_residual": 2.118798703736756e-07,
+      "no_regression_failures": 0,
+      "passes": 0,
+      "residual_failures": 2,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 4.0,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.004375007450562407,
+      "max_relative_amplitude_error": 0.009929322999684652,
+      "max_residual": 9.9394629388849e-05,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 4.0,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.04933593004943759,
+      "max_relative_amplitude_error": 0.1486976465872463,
+      "max_residual": 0.009852145370126252,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 2,
+      "amplitude_ratio": 0.25,
+      "condition": "clean",
+      "count": 2,
+      "frequency_failures": 2,
+      "max_frequency_error_hz": 0.03375000745063517,
+      "max_relative_amplitude_error": 0.08356582988342294,
+      "max_residual": 2.3042561667267204e-05,
+      "no_regression_failures": 0,
+      "passes": 0,
+      "residual_failures": 2,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 0.25,
+      "condition": "40db",
+      "count": 2,
+      "frequency_failures": 2,
+      "max_frequency_error_hz": 0.03375000745063517,
+      "max_relative_amplitude_error": 0.08221239981191247,
+      "max_residual": 0.00011965868134506294,
+      "no_regression_failures": 0,
+      "passes": 0,
+      "residual_failures": 2,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "amplitude_ratio": 0.25,
+      "condition": "20db",
+      "count": 2,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.03375000745063517,
+      "max_relative_amplitude_error": 0.11253852539149216,
+      "max_residual": 0.009953560706149391,
+      "no_regression_failures": 0,
+      "passes": 2,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0,
+      "support": 1
+    }
+  ],
+  "input_sha256": {
+    "o1_evidence": "be5b0fb3c30edd8e521240317cf7eae6d327cb872c2878b8f9f1797f09be556c",
+    "r1_evidence": "3ac972b4485b1fb3e7cc05e26ec4303918028b58a773036a57f1b4b6c59dd9c5",
+    "r2_evidence": "543106ef35f93b1e29afd4f9b69918d5f24efe2bc120b158e12a3b8cffda5cca"
+  },
+  "instrument_gates_pass": true,
+  "max_analytic_column_error": 3.5262726909901587e-13,
+  "max_prediction_error": 4.0642398731348165e-15,
+  "max_storage_bytes": 113792,
+  "noisy_paired_breaks": 0,
+  "noisy_paired_fixes": 6,
+  "numpy": "2.5.2",
+  "original_o1_rows_identical": 24,
+  "original_r1_rows_identical": 48,
+  "original_r2_rows_identical": 32,
+  "original_r2_stresses_identical": 6,
+  "overall": {
+    "abstentions": 0,
+    "amplitude_failures": 3,
+    "count": 36,
+    "frequency_failures": 6,
+    "max_frequency_error_hz": 0.04933593004943759,
+    "max_relative_amplitude_error": 0.1486976465872463,
+    "max_residual": 0.009953560706149391,
+    "no_regression_failures": 0,
+    "passes": 30,
+    "residual_failures": 6,
+    "residual_pass_inaccurate": 0
+  },
+  "production_cpu_ram_state_delta": 0,
+  "r1_tool_sha256": "1ac4a44b30bd1400290f4e01249a47491cd49c62714a48a5f75704e3b8a9aa9e",
+  "r2_tool_sha256": "d0575275e7ec3cfadb3a7975313c28e1bdb936bc850333d285e5d79a0cb839ed",
+  "rows": [
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 7.455530637301422e-11,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 3.727765318650711e-10,
+      "baseline": {
+        "amplitudes": [
+          0.16991301923785007,
+          0.17685299231481102
+        ],
+        "coefficients": [
+          0.0418991868337832,
+          -0.16466600210483565,
+          -0.05770670694086605,
+          -0.16717331385344855
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 7.255023417759648e-16,
+        "score": 0.24813156163308964,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.20000000002691465,
+          0.20000000007455532
+        ],
+        "coefficients": [
+          -0.13257994402393702,
+          -0.1497416390099146,
+          0.09860913372278035,
+          -0.17400068613733957
+        ],
+        "condition": 1.0041616618217548,
+        "max_column_error": 2.4922712514322332e-14,
+        "prediction_error": 8.223230440937276e-16,
+        "score": 2.667152159541071e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "64ff61e8eebde34f2016231487063e72be8ad7d004e66db20f69c78900e3870e",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 3.27827365254052e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "362a8ddd067269412412379648d0ff54fd2cacb387dbca4feb08551fbdd212fe",
+      "oracle": {
+        "amplitudes": [
+          0.2000000000259894,
+          0.20000000007470847
+        ],
+        "coefficients": [
+          -0.13257994290300656,
+          -0.14974164000114087,
+          0.09860913193262441,
+          -0.17400068715202727
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 5.530101683000143e-16,
+        "score": 2.374308438400997e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.80666865754209e-08,
+      "rounding_relative_error": 4.0465974135203556e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.0001781145293554276,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.000890572646777138,
+      "baseline": {
+        "amplitudes": [
+          0.16988502477366527,
+          0.17700833602232596
+        ],
+        "coefficients": [
+          0.0419217275568131,
+          -0.16463137732826388,
+          -0.0577081381897699,
+          -0.16733715011336567
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 8.297168852960686e-16,
+        "score": 0.2481554065013001,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.1999594557256758,
+          0.20017811452935544
+        ],
+        "coefficients": [
+          -0.13254040787231927,
+          -0.14972249067908186,
+          0.09871629059938238,
+          -0.17414468555435747
+        ],
+        "condition": 1.0041616066583596,
+        "max_column_error": 3.33348101617578e-13,
+        "prediction_error": 7.82254769542529e-16,
+        "score": 9.944630607435546e-05,
+        "shifts_hz": [
+          0.31000879406929016,
+          -0.2699374556541443
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "64ff61e8eebde34f2016231487063e72be8ad7d004e66db20f69c78900e3870e",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 6.2544345837523e-05,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.03548845357306898,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "633ab5b63055373024de00240307851b9e9796fd849318fbbe080e417378e516",
+      "oracle": {
+        "amplitudes": [
+          0.19995945442689364,
+          0.2001781195220456
+        ],
+        "coefficients": [
+          -0.13253624324946725,
+          -0.14972617553393594,
+          0.09875050884454424,
+          -0.1741252897724106
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 8.307130745520836e-16,
+        "score": 9.945285751156944e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010991400554034205,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.2052102910972167e-08,
+      "rounding_relative_error": 4.0442932420192874e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0017821037916709304,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.008910518958354652,
+      "baseline": {
+        "amplitudes": [
+          0.16963331863367295,
+          0.17840711436271728
+        ],
+        "coefficients": [
+          0.04212459345528951,
+          -0.1643197535809368,
+          -0.05772102056851137,
+          -0.16881167684660078
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 1.1331089237817842e-15,
+        "score": 0.2549895442925777,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.19959467269398304,
+          0.20178210379167094
+        ],
+        "coefficients": [
+          -0.13218442104980405,
+          -0.14955036676500108,
+          0.0996830510621256,
+          -0.1754403224505083
+        ],
+        "condition": 1.004161115023519,
+        "max_column_error": 3.4084917246917653e-13,
+        "prediction_error": 8.272655530273219e-16,
+        "score": 0.00978767252441042,
+        "shifts_hz": [
+          0.3100876063108444,
+          -0.26938311755657196
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "64ff61e8eebde34f2016231487063e72be8ad7d004e66db20f69c78900e3870e",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0006168824434098497,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.3548845357306898,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "8ac54518d945f9b6141d36e18d832956b65ca4db8da07e1b8d69195f93daf7da",
+      "oracle": {
+        "amplitudes": [
+          0.19959465744238708,
+          0.20178203915975154
+        ],
+        "coefficients": [
+          -0.1321429465242359,
+          -0.14958699463334632,
+          0.10002290024922536,
+          -0.17524671395835362
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 1.0190769735744131e-15,
+        "score": 0.009788312920239559,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010817906438302431,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.6869756187284395e-08,
+      "rounding_relative_error": 3.954757158774474e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 2.440467272712965e-11,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 1.2202336363564825e-10,
+      "baseline": {
+        "amplitudes": [
+          0.16985898402746813,
+          0.17686227864594603
+        ],
+        "coefficients": [
+          -0.14608144475529206,
+          0.0866734443359108,
+          0.17130963481661463,
+          -0.04396901894327868
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 1.096591868890042e-15,
+        "score": 0.24789965982787562,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999998338222,
+          0.19999999997559534
+        ],
+        "coefficients": [
+          -0.012442384668056588,
+          0.19961259243125168,
+          0.16542834945442772,
+          0.11239867075291361
+        ],
+        "condition": 1.0041616618217548,
+        "max_column_error": 2.4922712514322332e-14,
+        "prediction_error": 6.74129801408109e-16,
+        "score": 2.526714241394355e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "5b9141d0105de24c03d383caa0118097faa012d5f73e4899472c459101257027",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 3.27827365254052e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "c6e7b0ab54e50bcccc7ab8926055f76dace7cb44c0f5a1f34f13cc8ee8696c34",
+      "oracle": {
+        "amplitudes": [
+          0.19999999998196324,
+          0.19999999997470258
+        ],
+        "coefficients": [
+          -0.012442386163676645,
+          0.19961259233660397,
+          0.16542835061171152,
+          0.1123986690480349
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 3.278827392036352e-16,
+        "score": 2.269158351874078e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 3.92237316515498e-08,
+      "rounding_relative_error": 3.9880964342912666e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 3.6379574575140516e-05,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.00018189787287570258,
+      "baseline": {
+        "amplitudes": [
+          0.1698982235587518,
+          0.17686635106129586
+        ],
+        "coefficients": [
+          -0.14612558183183635,
+          0.0866759522747048,
+          0.17130750117726976,
+          -0.043993706119594814
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.99620471584199e-16,
+        "score": 0.248047953483941,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.20003239412988347,
+          0.20003637957457515
+        ],
+        "coefficients": [
+          -0.012444524820415335,
+          0.1996449160467832,
+          0.16541111593258703,
+          0.11248873667723253
+        ],
+        "condition": 1.0041618413619953,
+        "max_column_error": 1.0360368767493158e-13,
+        "prediction_error": 8.236798761765593e-16,
+        "score": 9.981509674787591e-05,
+        "shifts_hz": [
+          0.30997462570667267,
+          -0.27021412551403046
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "5b9141d0105de24c03d383caa0118097faa012d5f73e4899472c459101257027",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.00021412551404864644,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.03511521521976806,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "8b72d653ae1f78ff4f2fd4b570edaf617323fda06fe11c9f619857d3fcdf622a",
+      "oracle": {
+        "amplitudes": [
+          0.20003232043765226,
+          0.20003640202642692
+        ],
+        "coefficients": [
+          -0.012428613612540428,
+          0.19964583337335584,
+          0.1654867700785267,
+          0.1123774490930237
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 1.0860023547249456e-15,
+        "score": 9.989130312105677e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010995131205472488,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.2902121133447935e-08,
+      "rounding_relative_error": 4.0127580662927887e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0003657263586717696,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.001828631793358848,
+      "baseline": {
+        "amplitudes": [
+          0.17025148976530913,
+          0.17690315502555762
+        ],
+        "coefficients": [
+          -0.14652281593483615,
+          0.08669852465776616,
+          0.1712882987634655,
+          -0.04421589040960569
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 7.484699106331265e-16,
+        "score": 0.2560398894726282,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.20032401826125282,
+          0.20036572635867178
+        ],
+        "coefficients": [
+          -0.012463501984252943,
+          0.1999359232619873,
+          0.1652545346939785,
+          0.1133020876344068
+        ],
+        "condition": 1.0041634446881336,
+        "max_column_error": 7.730908998279782e-14,
+        "prediction_error": 9.902112282217544e-16,
+        "score": 0.009853510802280346,
+        "shifts_hz": [
+          0.30974749475717545,
+          -0.2721444219350815
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "5b9141d0105de24c03d383caa0118097faa012d5f73e4899472c459101257027",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.002144421935099672,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 3.3306690738754696e-16,
+      "noise_scale": 0.3511521521976806,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "97cac69ece524895b3e6c4c4966992944fd78fd5db2ecfbd887442d6dca23707",
+      "oracle": {
+        "amplitudes": [
+          0.20032326186578348,
+          0.20036459195066153
+        ],
+        "coefficients": [
+          -0.012304659524950764,
+          0.1999450039348878,
+          0.16601254593776146,
+          0.1121864711042189
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 3.563215234542332e-16,
+        "score": 0.00986106296134593,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010854156487174254,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.846907197819661e-08,
+      "rounding_relative_error": 3.9346710345990164e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 1.0759937385529383e-10,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 9.750594429092097e-10,
+      "baseline": {
+        "amplitudes": [
+          0.2718875886759327,
+          0.0707701306898967
+        ],
+        "coefficients": [
+          0.0670010510825171,
+          -0.2635027894156931,
+          -0.023061092177729364,
+          -0.06690737945425249
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 1.0541279489026444e-15,
+        "score": 0.27451927855254216,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.31999999989240063,
+          0.07999999992199525
+        ],
+        "coefficients": [
+          -0.21212791040340392,
+          -0.23958662224552907,
+          0.03944365185597587,
+          -0.0696002752565233
+        ],
+        "condition": 1.0041616618172111,
+        "max_column_error": 7.828815730053099e-14,
+        "prediction_error": 9.814548006179429e-16,
+        "score": 2.5478960492681754e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.26999999582767487
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fb0a369a0f0e69ef757a6420dc5430fff03b867a39a453c8d962a08e8fc29467",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 4.172306944383308e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "5d1e05fe14e7c118234286e28fdf8f47c672f7ab0d89c3f90c0ed599f4aae29b",
+      "oracle": {
+        "amplitudes": [
+          0.319999999891118,
+          0.07999999992276946
+        ],
+        "coefficients": [
+          -0.21212790860711853,
+          -0.23958662383423138,
+          0.039443652770875456,
+          -0.06960027473892415
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 8.061657322195642e-16,
+        "score": 2.3455697909319656e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.581316898066845e-08,
+      "rounding_relative_error": 4.0335077856455724e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.00020812336418060684,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.0026015420522575855,
+      "baseline": {
+        "amplitudes": [
+          0.27185487466488156,
+          0.07095167120222164
+        ],
+        "coefficients": [
+          0.0670273862831141,
+          -0.26346233576568906,
+          -0.02306276444160925,
+          -0.06709879687966849
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 5.667559650106284e-16,
+        "score": 0.27453887606238087,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3199526298489351,
+          0.08020812336418061
+        ],
+        "coefficients": [
+          -0.21208172053464122,
+          -0.23956424850614919,
+          0.03956890880920826,
+          -0.06976850657174895
+        ],
+        "condition": 1.0041615382192364,
+        "max_column_error": 2.5170457858580144e-13,
+        "prediction_error": 1.6282515760920473e-15,
+        "score": 9.951181394566196e-05,
+        "shifts_hz": [
+          0.31000642478466034,
+          -0.26981785148382187
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fb0a369a0f0e69ef757a6420dc5430fff03b867a39a453c8d962a08e8fc29467",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0001821485161599412,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 1.1102230246251565e-16,
+      "noise_scale": 0.04146276320821927,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "c71a8d05e63850abe5239d921725cff6417f39f70c22eb06bbb7463dafc55fea",
+      "oracle": {
+        "amplitudes": [
+          0.3199526283222425,
+          0.08020812631186461
+        ],
+        "coefficients": [
+          -0.21207685238243137,
+          -0.23956855606250055,
+          0.03960882972573144,
+          -0.06974585388550376
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 9.30932428262929e-16,
+        "score": 9.95183605097543e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010998639849052769,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.5371868928612e-08,
+      "rounding_relative_error": 3.9521997278138274e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0020844392137183976,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.02605549017147997,
+      "baseline": {
+        "amplitudes": [
+          0.27156065634607657,
+          0.0725878209055663
+        ],
+        "coefficients": [
+          0.06726440378637993,
+          -0.2630982517204832,
+          -0.023077815654019763,
+          -0.06882155308083107
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.164835471619069e-16,
+        "score": 0.28114469266347814,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.31952639867689026,
+          0.0820844392137184
+        ],
+        "coefficients": [
+          -0.2116658668673261,
+          -0.23936307203644924,
+          0.040703984055523196,
+          -0.07128142004083775
+        ],
+        "condition": 1.0041604620127982,
+        "max_column_error": 1.4258277788040892e-13,
+        "prediction_error": 5.8249435972369e-16,
+        "score": 0.00985150056021154,
+        "shifts_hz": [
+          0.31006405502557755,
+          -0.2682495340704918
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fb0a369a0f0e69ef757a6420dc5430fff03b867a39a453c8d962a08e8fc29467",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0017504659294900193,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 3.3306690738754696e-16,
+      "noise_scale": 0.41462763208219267,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "706cb55c3cf3f89522d1669f67842d8b1c614454abb48391bc44b413370678c6",
+      "oracle": {
+        "amplitudes": [
+          0.31952638010864526,
+          0.08208409107717246
+        ],
+        "coefficients": [
+          -0.211617346147661,
+          -0.23940594477739163,
+          0.04109542215396618,
+          -0.07105606438547557
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 7.798319872618316e-16,
+        "score": 0.00985213642692281,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010888443283966863,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.7026984417719575e-08,
+      "rounding_relative_error": 3.9840672528621226e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 2.1612807377113796e-10,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 2.7016009221392245e-09,
+      "baseline": {
+        "amplitudes": [
+          0.271712248763697,
+          0.07074934011871048
+        ],
+        "coefficients": [
+          -0.23371042778210857,
+          0.1385892567053052,
+          0.06854278499855848,
+          -0.01753156444457715
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.415716162818001e-16,
+        "score": 0.27486678367733564,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.32000000015726837,
+          0.08000000021612808
+        ],
+        "coefficients": [
+          -0.019907815633864467,
+          0.3193801480639331,
+          0.06617133990958432,
+          0.04495946851499409
+        ],
+        "condition": 1.0041616618217548,
+        "max_column_error": 2.4922712514322332e-14,
+        "prediction_error": 5.099111249597469e-16,
+        "score": 2.3429539806062074e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "d4a29f3230845883a0c8de36c8ff2f5706266c065fcb60fb1a6e93042c4061bf",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 3.27827365254052e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "a395bfdd23cdd37c67aca5438f5005960073e22f269b04431a0a3068c5a0bbd3",
+      "oracle": {
+        "amplitudes": [
+          0.32000000015639785,
+          0.08000000021425742
+        ],
+        "coefficients": [
+          -0.01990781802666761,
+          0.31938014791391106,
+          0.06617134037153988,
+          0.044959467831759345
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 8.731903006667324e-16,
+        "score": 2.117496557868803e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.0691919001023535e-08,
+      "rounding_relative_error": 3.960924432403056e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 4.254116499417815e-05,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.0005317645624272269,
+      "baseline": {
+        "amplitudes": [
+          0.2717580876133805,
+          0.0707540767781552
+        ],
+        "coefficients": [
+          -0.23376198169979046,
+          0.13859218626989267,
+          0.06854029270733925,
+          -0.0175604002323791
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.180447437542741e-16,
+        "score": 0.27491018114495946,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3200378377655851,
+          0.08004254116499418
+        ],
+        "coefficients": [
+          -0.019910317210975186,
+          0.3194179031773725,
+          0.0661511726355395,
+          0.04506473959863563
+        ],
+        "condition": 1.0041620780534617,
+        "max_column_error": 2.593101358282692e-13,
+        "prediction_error": 2.618115802756271e-16,
+        "score": 9.982093471864588e-05,
+        "shifts_hz": [
+          0.30998147279024124,
+          -0.2706254720687866
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "d4a29f3230845883a0c8de36c8ff2f5706266c065fcb60fb1a6e93042c4061bf",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.000625472068804811,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 1.1102230246251565e-16,
+      "noise_scale": 0.04101623271451877,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "1b9b74fb947e10680ccd10a822725427934d4c7a0669c77d1bbb1e8d7ed2d2a8",
+      "oracle": {
+        "amplitudes": [
+          0.3200377517469189,
+          0.08004253360348611
+        ],
+        "coefficients": [
+          -0.019891730803682225,
+          0.31941897499813054,
+          0.06623957700377457,
+          0.04493468175058351
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 8.931218494811856e-16,
+        "score": 9.989721114207311e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010995781525751104,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.183889390496631e-08,
+      "rounding_relative_error": 3.954168700262193e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0004320089208202371,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.005400111510252964,
+      "baseline": {
+        "amplitudes": [
+          0.2721707335103455,
+          0.07079722598963324
+        ],
+        "coefficients": [
+          -0.23422597053112082,
+          0.13861855181870147,
+          0.06851786331917782,
+          -0.017819921829280473
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 5.792874535614239e-16,
+        "score": 0.28173599591797127,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3203784436596896,
+          0.08043200892082024
+        ],
+        "coefficients": [
+          -0.019932599118299102,
+          0.31975778122540516,
+          0.06596467314198003,
+          0.046021407587237544
+        ],
+        "condition": 1.0041657410442049,
+        "max_column_error": 1.2364547556698752e-13,
+        "prediction_error": 7.823184916734607e-16,
+        "score": 0.009859211421929186,
+        "shifts_hz": [
+          0.3098153620958328,
+          -0.2762806862592697
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "d4a29f3230845883a0c8de36c8ff2f5706266c065fcb60fb1a6e93042c4061bf",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.006280686259287904,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.41016232714518774,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "0d58b2922b2d199405480b6526362ca91a328eb3161b32391b9c00136c0eb367",
+      "oracle": {
+        "amplitudes": [
+          0.32037756594892586,
+          0.08042727394900495
+        ],
+        "coefficients": [
+          -0.019746946787149885,
+          0.31976842066711936,
+          0.06685370809092323,
+          0.04471161045368325
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 6.451768665615292e-16,
+        "score": 0.00986683188993259,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.01086050639957201,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.915175533248828e-08,
+      "rounding_relative_error": 3.970834416589992e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 1.4799270142695775e-10,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 1.8499087678369719e-09,
+      "baseline": {
+        "amplitudes": [
+          0.06793846883250557,
+          0.28293586316932257
+        ],
+        "coefficients": [
+          0.016797322621801274,
+          -0.06582921463943234,
+          -0.09235232154559109,
+          -0.2674392480031855
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 9.691374346331855e-16,
+        "score": 0.22151371155675909,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.0799999998520073,
+          0.31999999988226474
+        ],
+        "coefficients": [
+          -0.0530319775087436,
+          -0.059896655481197617,
+          0.1577746138547821,
+          -0.2784010976049194
+        ],
+        "condition": 1.0041616618217548,
+        "max_column_error": 2.4922712514322332e-14,
+        "prediction_error": 5.292213131285171e-16,
+        "score": 2.777773292018364e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "3f8e093f990a524afe60c8cd4237a05a70eee9e886df1a32a38a9c6d04b90b5b",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 3.27827365254052e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "4f8f169d76e9271778591846fe17b446fd3e7675a049fa094de62572f4c6770e",
+      "oracle": {
+        "amplitudes": [
+          0.07999999985152423,
+          0.31999999988202504
+        ],
+        "coefficients": [
+          -0.0530319770619624,
+          -0.05989665587612859,
+          0.15777461098850915,
+          -0.27840109922900924
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 5.259965745939886e-16,
+        "score": 2.4373954840119734e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.22809148803438e-08,
+      "rounding_relative_error": 3.9674570468314476e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.00020734593189203343,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.0006479560371626045,
+      "baseline": {
+        "amplitudes": [
+          0.06790590919590879,
+          0.2831166950548162
+        ],
+        "coefficients": [
+          0.016823563218075665,
+          -0.06578890654487594,
+          -0.0923539879898793,
+          -0.2676299757522072
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.151236151792261e-16,
+        "score": 0.2215862729134426,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.07995280359000542,
+          0.32020734593189204
+        ],
+        "coefficients": [
+          -0.052985949890629616,
+          -0.0598743677719412,
+          0.15789934823184085,
+          -0.278568735174474
+        ],
+        "condition": 1.0041615845691807,
+        "max_column_error": 2.9028462766971993e-14,
+        "prediction_error": 2.7087796166185836e-16,
+        "score": 9.940003899037015e-05,
+        "shifts_hz": [
+          0.31002558022737503,
+          -0.26995447278022766
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "3f8e093f990a524afe60c8cd4237a05a70eee9e886df1a32a38a9c6d04b90b5b",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 4.552721975414897e-05,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 1.1102230246251565e-16,
+      "noise_scale": 0.0413133882751002,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "199555df7f5d74f6d5df9d3dd8d6f12a2ff487d5614ec2f08acd00abff36c5fa",
+      "oracle": {
+        "amplitudes": [
+          0.0799528020364099,
+          0.32020735215117424
+        ],
+        "coefficients": [
+          -0.05298110456210289,
+          -0.059878653231789314,
+          0.15793919280141752,
+          -0.2785461537140708
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 8.368051310144536e-16,
+        "score": 9.940658841964697e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010986286873355205,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.3892022572045164e-08,
+      "rounding_relative_error": 3.988961473415602e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0020742759562523694,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.006482112363288654,
+      "baseline": {
+        "amplitudes": [
+          0.06761370665687179,
+          0.28474476344327376
+        ],
+        "coefficients": [
+          0.01705972642105241,
+          -0.06542613439842182,
+          -0.09236898469135164,
+          -0.2693465258277054
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 1.8736852982265026e-16,
+        "score": 0.2290525544393647,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.07952843055679241,
+          0.3220742759562524
+        ],
+        "coefficients": [
+          -0.05257107960395592,
+          -0.05967455786263593,
+          0.15902398338729545,
+          -0.28007715354948426
+        ],
+        "condition": 1.0041608972399851,
+        "max_column_error": 1.1858769093319438e-13,
+        "prediction_error": 2.7122093308536667e-16,
+        "score": 0.009743024758890224,
+        "shifts_hz": [
+          0.31025270372629166,
+          -0.26954929530620575
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "3f8e093f990a524afe60c8cd4237a05a70eee9e886df1a32a38a9c6d04b90b5b",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0004507046937760606,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.41313388275100205,
+      "noise_uint32_sha256": "759507f929cc88bdb65455470d31c245045b56b3ef72355ec969d5762e51a65f",
+      "observed_pcm_sha256": "665b4bc2e3f16425bf5f9fd403159bf51c677373928b166930f618adafde7320",
+      "oracle": {
+        "amplitudes": [
+          0.07952840902906576,
+          0.3220742403199354
+        ],
+        "coefficients": [
+          -0.05252325402088263,
+          -0.05971662774933147,
+          0.15942042984686916,
+          -0.2798516443137381
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 6.091156331116023e-16,
+        "score": 0.009743663121446963,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010768560113467746,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "a2794297710f0d90fba2bf2687381bded22a743d6536e38167f2cf7d40a95ae4",
+        "d501c49408b1420ca9867a472f9ac5a780b8f2141f1b429e5a974e8dbcce08dc"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.411505283297146e-08,
+      "rounding_relative_error": 3.933430492522447e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 6.199518676197613e-11,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 1.937349586311754e-10,
+      "baseline": {
+        "amplitudes": [
+          0.0680057592489229,
+          0.2829752480347422
+        ],
+        "coefficients": [
+          -0.05845246185413594,
+          0.03475763217213228,
+          0.27407648479614477,
+          -0.07040647329693854
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 6.452639113043757e-16,
+        "score": 0.22137904764664953,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.07999999999153048,
+          0.3199999999380048
+        ],
+        "coefficients": [
+          -0.004976953854181116,
+          0.07984503697148765,
+          0.26468535904540147,
+          0.17983787328404988
+        ],
+        "condition": 1.0041616618217548,
+        "max_column_error": 2.4922712514322332e-14,
+        "prediction_error": 9.840162981299124e-16,
+        "score": 2.6066023642689633e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "1b738799edf43a36a3ca1ec0d8db9c3f24882748579d10a23f23a217df8f2e0e",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 3.27827365254052e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "785a5a3f8bfd38913eb3c6e23ae5dc9452516e88daaef6be5371dd9ee6c6bf5d",
+      "oracle": {
+        "amplitudes": [
+          0.0799999999895634,
+          0.31999999993809036
+        ],
+        "coefficients": [
+          -0.004976954452618401,
+          0.07984503693221456,
+          0.264685360898014,
+          0.1798378705575272
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 3.18121026615908e-16,
+        "score": 2.268175505073692e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.35222197170404e-08,
+      "rounding_relative_error": 3.9793853619431636e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 4.234971584526903e-05,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.000471474790162546,
+      "baseline": {
+        "amplitudes": [
+          0.06805142515524557,
+          0.2829799950980028
+        ],
+        "coefficients": [
+          -0.058503850080523986,
+          0.034760552231165184,
+          0.27407400082162264,
+          -0.0704352163288712
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 4.815428781036387e-16,
+        "score": 0.22161205068098042,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.080037717983213,
+          0.3200423497158453
+        ],
+        "coefficients": [
+          -0.004979439614746093,
+          0.07988267322194116,
+          0.2646652988234107,
+          0.1799427275839569
+        ],
+        "condition": 1.0041618994791324,
+        "max_column_error": 2.0437883735184742e-13,
+        "prediction_error": 7.007413746411386e-16,
+        "score": 9.981897853215252e-05,
+        "shifts_hz": [
+          0.30992621183395386,
+          -0.27015580981969833
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "1b738799edf43a36a3ca1ec0d8db9c3f24882748579d10a23f23a217df8f2e0e",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.00015580981971652363,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 1.1102230246251565e-16,
+      "noise_scale": 0.04088408153237394,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "87c6210ef94deef47a2092ab71a25038197890dd5826f90b0ea39e5a77904785",
+      "oracle": {
+        "amplitudes": [
+          0.08003763170960305,
+          0.3200423806204358
+        ],
+        "coefficients": [
+          -0.004960919109863801,
+          0.079883739091679,
+          0.2647533780065332,
+          0.1798131647775702
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 9.898043383546821e-16,
+        "score": 9.98951771657754e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010995557648927377,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.207215648088791e-08,
+      "rounding_relative_error": 3.98789792594155e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.00042513055967807745,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.004717914974383154,
+      "baseline": {
+        "amplitudes": [
+          0.06846278829012471,
+          0.28302284561853736
+        ],
+        "coefficients": [
+          -0.05896634330751194,
+          0.03478683281644191,
+          0.2740516436080019,
+          -0.07069390198430951
+        ],
+        "condition": 1.0041257812097701,
+        "max_column_error": 1.4517007321388022e-13,
+        "prediction_error": 5.760704155093617e-16,
+        "score": 0.23059445349876526,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08037743319795065,
+          0.3204251305596781
+        ],
+        "coefficients": [
+          -0.005000836691635285,
+          0.08022171401730714,
+          0.2644835067406639,
+          0.18088874745640746
+        ],
+        "condition": 1.0041640099138298,
+        "max_column_error": 3.0521608313395814e-14,
+        "prediction_error": 6.337360683475087e-16,
+        "score": 0.009857281243464045,
+        "shifts_hz": [
+          0.30927278101444244,
+          -0.2715597599744797
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "1b738799edf43a36a3ca1ec0d8db9c3f24882748579d10a23f23a217df8f2e0e",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0015597599744978652,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.4088408153237394,
+      "noise_uint32_sha256": "d1a79679ce1ab1d6fa58c667c86913a7b03938b61f4439b9dff32d38d5e32fb9",
+      "observed_pcm_sha256": "bf592258369ee6db8e97e916eb06ba6db723713696ba07ba87ea2d9a7f9f27cd",
+      "oracle": {
+        "amplitudes": [
+          0.08037650698230352,
+          0.3204242879778588
+        ],
+        "coefficients": [
+          -0.0048166013403945305,
+          0.08023205859383141,
+          0.2653655302267081,
+          0.17959081182960293
+        ],
+        "condition": 1.004161661824368,
+        "max_column_error": 1.3801759790691022e-13,
+        "prediction_error": 9.633171806542627e-16,
+        "score": 0.009864825278902457,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010858297704294114,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "428950335f4432e940a831b325426fbc8be30d9e837f54f16632ca83f89f06c1",
+        "1850c8ddf6a609ae461a5c74690cad31260155767df316cff99a51309a6b6cc6"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 5.213243747803631e-08,
+      "rounding_relative_error": 4.003718169026029e-08,
+      "screen_pass": true,
+      "support": 0,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        277.31,
+        659.47
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 1.7696277776479974e-09,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 8.848138888239987e-09,
+      "baseline": {
+        "amplitudes": [
+          0.2143017667089562,
+          0.2273978943225013
+        ],
+        "coefficients": [
+          -0.19054948174246195,
+          -0.09806193054523782,
+          0.21483316903492608,
+          0.07454201382253058
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 9.045770962256375e-16,
+        "score": 0.22961783985204254,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.2000000017696278,
+          0.19999999866593368
+        ],
+        "coefficients": [
+          -0.16013135295626185,
+          0.11982466569220297,
+          0.04502462416345216,
+          0.19486606345208843
+        ],
+        "condition": 1.742688967528149,
+        "max_column_error": 1.7460576307463542e-13,
+        "prediction_error": 1.41837833159654e-15,
+        "score": 2.248257844642804e-16,
+        "shifts_hz": [
+          0.3100000023841858,
+          -0.26999999582767487
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fc44f69c4e5292eab491bdfde6a8a36f9444cf30131ab07eda9a548559763798",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 4.172306944383308e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "a1d5e6e149eccef02c7d2f5632b97a50d7100b14e18cd0195523c5ebe152df81",
+      "oracle": {
+        "amplitudes": [
+          0.2000000002006772,
+          0.2000000000786928
+        ],
+        "coefficients": [
+          -0.16013135199122755,
+          0.11982466436311212,
+          0.04502462248991582,
+          0.19486606528874567
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.1282129549480759e-15,
+        "score": 2.211039951665529e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.820675181260725e-08,
+      "rounding_relative_error": 4.005708909606707e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.000614736021827933,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.003073680109139665,
+      "baseline": {
+        "amplitudes": [
+          0.21442111678578143,
+          0.22752521476341192
+        ],
+        "coefficients": [
+          -0.1906788647002969,
+          -0.09807133057253574,
+          0.21492643867685515,
+          0.07466156515115888
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 7.212553837119419e-16,
+        "score": 0.2295178462097897,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.20061473602182794,
+          0.19965623257258688
+        ],
+        "coefficients": [
+          -0.16041979036872647,
+          0.12046477977882816,
+          0.045406189045998205,
+          0.19442450771802916
+        ],
+        "condition": 1.7414360643366247,
+        "max_column_error": 2.005527370528548e-13,
+        "prediction_error": 9.990454779012105e-16,
+        "score": 9.934542652108372e-05,
+        "shifts_hz": [
+          0.31081706285476685,
+          -0.268789179623127
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fc44f69c4e5292eab491bdfde6a8a36f9444cf30131ab07eda9a548559763798",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0012108203768548265,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.042343870595980264,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "5e0565f260bab0cdaf628ae23a0a4c0ff59b63ec099516951613041a31a9c67f",
+      "oracle": {
+        "amplitudes": [
+          0.20013680914170096,
+          0.2000999452160301
+        ],
+        "coefficients": [
+          -0.1601699008006866,
+          0.12000143853687693,
+          0.04495921478083458,
+          0.19498373542875067
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 8.149287057106989e-16,
+        "score": 9.956293229701314e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010988709600821505,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.838317385624791e-08,
+      "rounding_relative_error": 4.0016233341176464e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 19.999999999999996,
+      "amplitude_absolute_error": 0.006045935142316078,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.03022967571158039,
+      "baseline": {
+        "amplitudes": [
+          0.21549580630138201,
+          0.22867243171868026
+        ],
+        "coefficients": [
+          -0.19184331057607035,
+          -0.09815593064454216,
+          0.2157658641641527,
+          0.07573752629727809
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 5.595373014242464e-16,
+        "score": 0.23540690019231147,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.2060459351423161,
+          0.19667720520177462
+        ],
+        "coefficients": [
+          -0.16293959876749908,
+          0.12611746327197493,
+          0.04877558841064941,
+          0.1905331074148949
+        ],
+        "condition": 1.7294407056399643,
+        "max_column_error": 4.295287456897263e-14,
+        "prediction_error": 1.0886983656994615e-15,
+        "score": 0.009756600895213002,
+        "shifts_hz": [
+          0.3178693652153015,
+          -0.2579392269253731
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "fc44f69c4e5292eab491bdfde6a8a36f9444cf30131ab07eda9a548559763798",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.012060773074608733,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 4.440892098500626e-16,
+      "noise_scale": 0.4234387059598026,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "2e11045a06817dd0ae728b2d5c18a43c325242787184a9ad24983b02f8acee75",
+      "oracle": {
+        "amplitudes": [
+          0.2013712219510262,
+          0.20100127179644178
+        ],
+        "coefficients": [
+          -0.16051683975058656,
+          0.12159240595750201,
+          0.04437054536000438,
+          0.1960427656615843
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 5.153644130704655e-16,
+        "score": 0.009777965404451956,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010791880262262061,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 5.154204296697884e-08,
+      "rounding_relative_error": 3.936423270864135e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 2.1963381668932414e-09,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 1.0981690834466207e-08,
+      "baseline": {
+        "amplitudes": [
+          0.21984983230904798,
+          0.23375810013039428
+        ],
+        "coefficients": [
+          0.1493263908442235,
+          0.16135543921341705,
+          -0.20216812769673095,
+          -0.11734946748992825
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 8.96523584788886e-16,
+        "score": 0.2356975990143139,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.19999999821428197,
+          0.20000000219633818
+        ],
+        "coefficients": [
+          0.19403892282170024,
+          -0.048465407415052675,
+          -0.01801603079347875,
+          -0.19918690597773664
+        ],
+        "condition": 1.7426889675693298,
+        "max_column_error": 4.37035904773522e-14,
+        "prediction_error": 9.83902660907299e-16,
+        "score": 2.2941109391984123e-16,
+        "shifts_hz": [
+          0.3099999949336052,
+          -0.27000000327825546
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "b7f86f09c030a76ddffa19ef00135f0e22b6d43730e2be014ea18030375bb7b8",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 5.066340236226097e-09,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "8c62af13bdc55b588e2b9feb478c1750cf72516782bfd0965901dc93ef6bafac",
+      "oracle": {
+        "amplitudes": [
+          0.20000000020893666,
+          0.19999999994992876
+        ],
+        "coefficients": [
+          0.1940389241160725,
+          -0.04846541046407974,
+          -0.018016031813449983,
+          -0.199186903629903
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.7160838089788785e-15,
+        "score": 2.2747794478032243e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.3613045730417355e-08,
+      "rounding_relative_error": 3.9551259557762224e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.0010738589117903208,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.005369294558951604,
+      "baseline": {
+        "amplitudes": [
+          0.2198440334711518,
+          0.23373449450961473
+        ],
+        "coefficients": [
+          0.14950219781714608,
+          0.16118465156679104,
+          -0.2021879805406327,
+          -0.11726821584967449
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.1287543139982473e-15,
+        "score": 0.23568552552519892,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.1989421022855745,
+          0.20107385891179033
+        ],
+        "coefficients": [
+          0.19320715704932204,
+          -0.04742314336610962,
+          -0.01713558546287823,
+          -0.20034237806445984
+        ],
+        "condition": 1.7422779442619951,
+        "max_column_error": 5.926260991663823e-14,
+        "prediction_error": 7.489248071012222e-16,
+        "score": 9.935802846300643e-05,
+        "shifts_hz": [
+          0.3078535348176956,
+          -0.2720131352543831
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "b7f86f09c030a76ddffa19ef00135f0e22b6d43730e2be014ea18030375bb7b8",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.0021464651822498126,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 1.1102230246251565e-16,
+      "noise_scale": 0.04295079142341412,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "f895edb228d8601ac4d59fd5b43b392c437c0d30db7218336ae7dc8615317e5e",
+      "oracle": {
+        "amplitudes": [
+          0.19998964088042334,
+          0.20000890176723002
+        ],
+        "coefficients": [
+          0.19398015671810645,
+          -0.048657530343201326,
+          -0.01795526939788933,
+          -0.19920132802514817
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 9.221540877444487e-16,
+        "score": 9.973114292159602e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00011001267430353004,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.404024311899235e-08,
+      "rounding_relative_error": 4.030193689301447e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.010426569999852975,
+      "amplitude_pass": true,
+      "amplitude_ratio": 1.0,
+      "amplitude_relative_error": 0.052132849999264874,
+      "baseline": {
+        "amplitudes": [
+          0.2198041357091614,
+          0.2335232834498333
+        ],
+        "coefficients": [
+          0.15108445969748202,
+          0.15964756218862655,
+          -0.20236665494474265,
+          -0.11653695070520188
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 7.835937445605271e-16,
+        "score": 0.24235584575795402,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.1897757097347376,
+          0.21042656999985299
+        ],
+        "coefficients": [
+          0.1858217944065514,
+          -0.03853674517720357,
+          -0.00924043477169196,
+          -0.2102235850877183
+        ],
+        "condition": 1.7353121914365899,
+        "max_column_error": 1.769011712384051e-13,
+        "prediction_error": 7.344049339183741e-16,
+        "score": 0.009857177747009536,
+        "shifts_hz": [
+          0.2885003015398979,
+          -0.2891276553273201
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": true,
+      "clean_source_sha256": "b7f86f09c030a76ddffa19ef00135f0e22b6d43730e2be014ea18030375bb7b8",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.02149969846004751,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.4295079142341412,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "83d43356f672b1bb13650aa8a3f5fa70bf9487f66dff788ca616548ba2073f1b",
+      "oracle": {
+        "amplitudes": [
+          0.1999054687416758,
+          0.20008987670680498
+        ],
+        "coefficients": [
+          0.19345124987027898,
+          -0.05038660890014341,
+          -0.017408406937332574,
+          -0.19933114690998155
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 2.9864683046149473e-16,
+        "score": 0.009894232779009854,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.01091424399685314,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 5.0346146085455956e-08,
+      "rounding_relative_error": 3.9707083413685276e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.2,
+        0.2
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 7.5226190012323e-05,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.0008811507760513385,
+      "baseline": {
+        "amplitudes": [
+          0.29841355635168487,
+          0.15064308384784345
+        ],
+        "coefficients": [
+          -0.27793545032246336,
+          -0.10863947748636182,
+          0.14993538188948766,
+          0.014584922654641898
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 5.642036151439103e-16,
+        "score": 0.22435199221263902,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.32007522619001233,
+          0.0799295079379159
+        ],
+        "coefficients": [
+          -0.25624750299648735,
+          0.19179511888641157,
+          0.018077248894841705,
+          0.077858456904766
+        ],
+        "condition": 1.741466127549331,
+        "max_column_error": 1.1195385472705127e-13,
+        "prediction_error": 7.061098284378116e-16,
+        "score": 4.4762377682285125e-09,
+        "shifts_hz": [
+          0.31008321046829224,
+          -0.2695312425494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "c11ebcd4f9a899198945e9bbf608b3c5c6bbc5e6daab6963151e0c70af2c9411",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 0.00046875745056240703,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "1e1a43caf56b4415e6c2c71e3fe979a44c84522b7ee30358cd601ef68d07d6a5",
+      "oracle": {
+        "amplitudes": [
+          0.3200000002255575,
+          0.08000000011003677
+        ],
+        "coefficients": [
+          -0.25621016328961566,
+          0.1917194626830184,
+          0.018009849087972925,
+          0.07794642617486913
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.4411642058934195e-15,
+        "score": 2.376969643726574e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.394642216798417e-08,
+      "rounding_relative_error": 4.0272930440083336e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.0008356231554794702,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.006648217124988892,
+      "baseline": {
+        "amplitudes": [
+          0.2985472100786696,
+          0.15075572915919178
+        ],
+        "coefficients": [
+          -0.2780749859471805,
+          -0.10864961498428165,
+          0.15003597015349524,
+          0.014713855185473128
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 6.094728835695792e-16,
+        "score": 0.22434924031560957,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3208356231554795,
+          0.07946814263000089
+        ],
+        "coefficients": [
+          -0.25660670300064736,
+          0.19258374038506573,
+          0.01857892752157127,
+          0.07726583426851978
+        ],
+        "condition": 1.7312354650447095,
+        "max_column_error": 1.025269963161549e-13,
+        "prediction_error": 1.1111210377927173e-15,
+        "score": 9.937132606992293e-05,
+        "shifts_hz": [
+          0.31074436008930206,
+          -0.2656249925494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "c11ebcd4f9a899198945e9bbf608b3c5c6bbc5e6daab6963151e0c70af2c9411",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.004375007450562407,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.04566658540959323,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "928e2e875ecb4ff358de06eab1eacfdb942ba5680dd8b38bdbdf7b515af32470",
+      "oracle": {
+        "amplitudes": [
+          0.32014753225217485,
+          0.08010782502713483
+        ],
+        "coefficients": [
+          -0.2562517368964343,
+          0.19191010850061527,
+          0.017939308633711275,
+          0.07807332986572624
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.133216066943443e-15,
+        "score": 9.956311554928647e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010988729839227877,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.721899826698461e-08,
+      "rounding_relative_error": 4.053904181756462e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.0044685190161851684,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.020522982896235137,
+      "baseline": {
+        "amplitudes": [
+          0.299750349797459,
+          0.15177370391963932
+        ],
+        "coefficients": [
+          -0.27933080562113904,
+          -0.10874085356821736,
+          0.15094126504915278,
+          0.01587424665449494
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 4.1877610473293265e-16,
+        "score": 0.23114267241731612,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3244685190161852,
+          0.07835816136830119
+        ],
+        "coefficients": [
+          -0.2582551304391581,
+          0.19642837736541524,
+          0.02030559829024132,
+          0.07568146491113975
+        ],
+        "condition": 1.690647963170584,
+        "max_column_error": 8.810150542119823e-14,
+        "prediction_error": 1.2019866122163215e-15,
+        "score": 0.0097597104397617,
+        "shifts_hz": [
+          0.3131425157189369,
+          -0.2500000074505806
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "c11ebcd4f9a899198945e9bbf608b3c5c6bbc5e6daab6963151e0c70af2c9411",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.019999992549401213,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.4566658540959323,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "eaab6a057b6bc20641423ac0e9f6fb87e833cff50d46b060cd5bd99a8bb252ad",
+      "oracle": {
+        "amplitudes": [
+          0.3214776026301072,
+          0.08108349550233279
+        ],
+        "coefficients": [
+          -0.25662590009762176,
+          0.19362591869862508,
+          0.01730444643863819,
+          0.07921546172515265
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 8.1548017183736e-16,
+        "score": 0.00977814669880633,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010792080349447057,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 6.064209845391133e-08,
+      "rounding_relative_error": 3.9834375010326485e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 0.0008333936442146972,
+      "amplitude_pass": false,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.009960871709051473,
+      "baseline": {
+        "amplitudes": [
+          0.30098721768012027,
+          0.1567539099232551
+        ],
+        "coefficients": [
+          0.21881377764561977,
+          0.2066732588393413,
+          -0.14577694550768777,
+          -0.05762699397571081
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 8.026834051429003e-16,
+        "score": 0.22793371432480722,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3208333936442147,
+          0.07920313026327588
+        ],
+        "coefficients": [
+          0.3111139287455395,
+          -0.07837212398409903,
+          -0.007977822866478418,
+          -0.07880031843725342
+        ],
+        "condition": 1.7317989065592507,
+        "max_column_error": 1.1307752703640274e-13,
+        "prediction_error": 8.020183836865097e-16,
+        "score": 2.118798703736756e-07,
+        "shifts_hz": [
+          0.31092436611652374,
+          -0.2656249925494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7630d5a605080bcac728a29c318292f7ed95eb41c50837a86244a56fee598155",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 0.004375007450562407,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "3247bf6e14117e78c71e33a0cb4514c5fa011bb36df19567b27bd98a2298b3e0",
+      "oracle": {
+        "amplitudes": [
+          0.3200000000615118,
+          0.080000000010621
+        ],
+        "coefficients": [
+          0.31046227835597306,
+          -0.07754465653664246,
+          -0.007206412501171829,
+          -0.07967476150301496
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.0311186838933922e-15,
+        "score": 2.306027677942343e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.242475204474516e-08,
+      "rounding_relative_error": 4.002454445438562e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 39.99999999999999,
+      "amplitude_absolute_error": 0.0007943458399747721,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.009929322999684652,
+      "baseline": {
+        "amplitudes": [
+          0.3009985645690574,
+          0.1567417737149466
+        ],
+        "coefficients": [
+          0.21900119426308468,
+          0.20649119299373433,
+          -0.14579810934295617,
+          -0.05754037660049609
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.4361540069244218e-15,
+        "score": 0.22785435206378593,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3192391158877836,
+          0.08079434583997477
+        ],
+        "coefficients": [
+          0.30986432014283594,
+          -0.07679658986720564,
+          -0.006609964057223928,
+          -0.0805235039902739
+        ],
+        "condition": 1.7503974523602877,
+        "max_column_error": 3.698831819502378e-14,
+        "prediction_error": 1.8436392948893227e-15,
+        "score": 9.9394629388849e-05,
+        "shifts_hz": [
+          0.30898071825504303,
+          -0.2734374925494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7630d5a605080bcac728a29c318292f7ed95eb41c50837a86244a56fee598155",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.003437492549437593,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 6.661338147750939e-16,
+      "noise_scale": 0.04578709166322566,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "8ca8424ab7258bdc1b56a1d3c681b3770331c930a1b393748701ed0224bdbf82",
+      "oracle": {
+        "amplitudes": [
+          0.3199889208355308,
+          0.08000950652017155
+        ],
+        "coefficients": [
+          0.31039963018520494,
+          -0.07774946326744389,
+          -0.00714163757621082,
+          -0.07969013832546301
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 8.626424077333212e-16,
+        "score": 9.9725755882633e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00011000673160953808,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 4.458803792850574e-08,
+      "rounding_relative_error": 3.987505682572687e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 19.999999999999996,
+      "amplitude_absolute_error": 0.011895811726979705,
+      "amplitude_pass": true,
+      "amplitude_ratio": 4.0,
+      "amplitude_relative_error": 0.1486976465872463,
+      "baseline": {
+        "amplitudes": [
+          0.3011108697236309,
+          0.15663478900242725
+        ],
+        "coefficients": [
+          0.22068794261573643,
+          0.20485260030020325,
+          -0.14598858274269108,
+          -0.05676082129969004
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.3000089507706314e-16,
+        "score": 0.23399043639733147,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.3083542236117838,
+          0.0918958117269797
+        ],
+        "coefficients": [
+          0.30108627994368764,
+          -0.06655358178864075,
+          0.0027319947534711567,
+          -0.09185519265467526
+        ],
+        "condition": 1.8601321626168428,
+        "max_column_error": 1.5112350825050427e-13,
+        "prediction_error": 8.351962065288143e-16,
+        "score": 0.009852145370126252,
+        "shifts_hz": [
+          0.2955200597643852,
+          -0.3193359300494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7630d5a605080bcac728a29c318292f7ed95eb41c50837a86244a56fee598155",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.04933593004943759,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 4.440892098500626e-16,
+      "noise_scale": 0.45787091663225654,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "392b1c850fedfb29158c92d7b3f3335af2bfc26c4a3feaa0e26eb2214f11c041",
+      "oracle": {
+        "amplitudes": [
+          0.31989564305634083,
+          0.0800975044537389
+        ],
+        "coefficients": [
+          0.30983579654869053,
+          -0.07959272343291347,
+          -0.006558662766177454,
+          -0.07982852975244051
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 9.719326591302271e-16,
+        "score": 0.009888930875630938,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010908395513778283,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 5.7684004906022324e-08,
+      "rounding_relative_error": 3.91548651963832e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.32,
+        0.08
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 0.00582712701179855,
+      "amplitude_pass": false,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.06825349603942713,
+      "baseline": {
+        "amplitudes": [
+          0.1352635496619637,
+          0.31038591650884556
+        ],
+        "coefficients": [
+          -0.10316351292148145,
+          -0.08748438414285058,
+          0.27973095639820533,
+          0.13449910482817867
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 6.538335339932424e-16,
+        "score": 0.19503844292533473,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08546027968315417,
+          0.31417287298820146
+        ],
+        "coefficients": [
+          -0.06432171136671751,
+          0.056268791086885976,
+          0.07346618556704347,
+          0.3054624587406598
+        ],
+        "condition": 1.8338764397856446,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 5.991226611318693e-16,
+        "score": 2.3042561667267204e-05,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.2637440636754036
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7747d99a9bc0061705bc45bf16f75124781c657f49ba6e638cad48991430e4f9",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "ef7f947a9fe19ebda273f7a621d93ffaf9b10983af6ccda60483e2ba5ee56a6f",
+      "oracle": {
+        "amplitudes": [
+          0.07999999995478578,
+          0.31999999988061234
+        ],
+        "coefficients": [
+          -0.06405254095535165,
+          0.04792986532349872,
+          0.07203939628633124,
+          0.31178570414034834
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.2487616775604827e-15,
+        "score": 2.3781099181692646e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.517333340725571e-08,
+      "rounding_relative_error": 4.028458721717085e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.005865866589864488,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.07269622919318097,
+      "baseline": {
+        "amplitudes": [
+          0.13537656636754833,
+          0.3105324659806635
+        ],
+        "coefficients": [
+          -0.10330306486169423,
+          -0.0874945227522718,
+          0.27983155643825725,
+          0.13462805223791352
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 7.362244511707755e-16,
+        "score": 0.19490324030577136,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08581569833545448,
+          0.3141341334101355
+        ],
+        "coefficients": [
+          -0.06461475139130454,
+          0.05647360430715957,
+          0.07379267755872104,
+          0.3053438954884336
+        ],
+        "condition": 1.8322737597151753,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 1.4713272318759155e-15,
+        "score": 0.00011965868134506294,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.2632833570241928
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7747d99a9bc0061705bc45bf16f75124781c657f49ba6e638cad48991430e4f9",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 2.220446049250313e-16,
+      "noise_scale": 0.045671855258279284,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "f19ffc88e6dceb70a901a602168b8eba41fa8fb3601a11b3e4e72a17e8d5997a",
+      "oracle": {
+        "amplitudes": [
+          0.08014762554075763,
+          0.32010779307233983
+        ],
+        "coefficients": [
+          -0.06409411951563254,
+          0.04812053328192985,
+          0.0719688477822951,
+          0.31191262259570834
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 3.429492623836079e-16,
+        "score": 9.957617661473583e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00010990171313393056,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.670251674276926e-08,
+      "rounding_relative_error": 4.099860247296004e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.009003082031319373,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.11253852539149216,
+      "baseline": {
+        "amplitudes": [
+          0.13639596074357083,
+          0.311852170568897
+        ],
+        "coefficients": [
+          -0.10455902962566538,
+          -0.0875857718519449,
+          0.2807369558603945,
+          0.13578857795400673
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.2273877561135202e-15,
+        "score": 0.20079474587160082,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08900308203131937,
+          0.3138027399780065
+        ],
+        "coefficients": [
+          -0.06724163365832886,
+          0.05831047345059772,
+          0.07672238610202098,
+          0.3042792058102505
+        ],
+        "condition": 1.8179799905731515,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 9.1398997615702e-16,
+        "score": 0.00977281631116246,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.259141743183136
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "7747d99a9bc0061705bc45bf16f75124781c657f49ba6e638cad48991430e4f9",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.4567185525827928,
+      "noise_uint32_sha256": "fc6dcdd9c4fb1f59c889ab7883888bacd50a03d810e774833450272d3466c81e",
+      "observed_pcm_sha256": "cbf7bd8f5ca7f454015028e0b3c391a28aa700223949b33384d9f92fef824c02",
+      "oracle": {
+        "amplitudes": [
+          0.0814852498386586,
+          0.32107925657684616
+        ],
+        "coefficients": [
+          -0.06446832586900898,
+          0.04983654182340383,
+          0.07133391200880645,
+          0.3130548865637782
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 7.737890592405748e-16,
+        "score": 0.009790770983862494,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010806013700777859,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 0,
+      "phase_sha256": [
+        "65d3772490b16abada596d6f72336c82e0320f4958848db4060c737ce254c1a7",
+        "36bf949107708381657d89e53bd4e909779e0a5d2f23d3c3926570179a4fbb08"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 6.723518064521983e-08,
+      "rounding_relative_error": 3.950411480108596e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": null,
+      "amplitude_absolute_error": 0.006989673043500122,
+      "amplitude_pass": false,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.08356582988342294,
+      "baseline": {
+        "amplitudes": [
+          0.14085096956758572,
+          0.31338058169604754
+        ],
+        "coefficients": [
+          0.0798390034104238,
+          0.1160376196005386,
+          -0.2585593097552682,
+          -0.17707194109466468
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.2846926427729832e-15,
+        "score": 0.19947029766869648,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08668526639067384,
+          0.3130103269564999
+        ],
+        "coefficients": [
+          0.08209486124719191,
+          -0.027834675604834956,
+          -0.0333170066123578,
+          -0.31123213499220653
+        ],
+        "condition": 1.8293982782259903,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 1.1071362530314248e-15,
+        "score": 1.2587469874032208e-05,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.26245492696762085
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "b170f3aeedf1c9480343d7635daa9827fbb6d25d5f12bf8a500a40b57c647fef",
+      "condition": "clean",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.0,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "408e8bd2bc04bd449571473693a62b2082fb919be6f6b8bede3092b8b336ef8e",
+      "oracle": {
+        "amplitudes": [
+          0.07999999985251136,
+          0.3199999998852741
+        ],
+        "coefficients": [
+          0.07761556947624598,
+          -0.01938616391346803,
+          -0.028825651251904987,
+          -0.3186990457414
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 4.772651524181188e-16,
+        "score": 2.2798971396192037e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 1e-10,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.377178042247465e-08,
+      "rounding_relative_error": 3.9556919863423695e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 40.0,
+      "amplitude_absolute_error": 0.00692116610325233,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.08221239981191247,
+      "baseline": {
+        "amplitudes": [
+          0.14080744409661453,
+          0.3133491099705235
+        ],
+        "coefficients": [
+          0.0800264348779418,
+          0.11585553950393467,
+          -0.2585804751819005,
+          -0.1769853173967314
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 7.378679258002537e-16,
+        "score": 0.19953081703281408,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.086576991984953,
+          0.3130788338967477
+        ],
+        "coefficients": [
+          0.08191113224399044,
+          -0.02803822311898752,
+          -0.033093579118517874,
+          -0.31132486449892455
+        ],
+        "condition": 1.829971372684811,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 1.0144303994410936e-15,
+        "score": 0.00011670055229836547,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.2626202255487442
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "b170f3aeedf1c9480343d7635daa9827fbb6d25d5f12bf8a500a40b57c647fef",
+      "condition": "40db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": false,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.04579067841309429,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "17733933a9fa62b86a0f2203980892fe4a510b132b93efd6fe48e8385c364ccb",
+      "oracle": {
+        "amplitudes": [
+          0.07998913449862682,
+          0.3200094869673675
+        ],
+        "coefficients": [
+          0.07755291656212229,
+          -0.019590986972276528,
+          -0.028760870850794908,
+          -0.318714423986461
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 8.641767855823266e-16,
+        "score": 9.973386988265366e-05,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.00011001568241559481,
+      "paired_break": false,
+      "paired_fix": false,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": false,
+      "rounding_absolute_error": 4.701327077638595e-08,
+      "rounding_relative_error": 4.092565156175076e-08,
+      "screen_pass": false,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    },
+    {
+      "abstained": false,
+      "achieved_band_snr_db": 20.0,
+      "amplitude_absolute_error": 0.006295118821464163,
+      "amplitude_pass": true,
+      "amplitude_ratio": 0.25,
+      "amplitude_relative_error": 0.07032165125082819,
+      "baseline": {
+        "amplitudes": [
+          0.14043698779401667,
+          0.3130668629519916
+        ],
+        "coefficients": [
+          0.08171331539673676,
+          0.11421681849679675,
+          -0.25877096343383865,
+          -0.17620570127587823
+        ],
+        "condition": 1.156825957400776,
+        "max_column_error": 1.4898347678237586e-13,
+        "prediction_error": 1.5578905265579867e-15,
+        "score": 0.20717431712823828,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "best": {
+        "amplitudes": [
+          0.08562573210006626,
+          0.31370488117853584
+        ],
+        "coefficients": [
+          0.08024439129167424,
+          -0.029876473418075835,
+          -0.031055141195783374,
+          -0.312163948399794
+        ],
+        "condition": 1.8352102668709713,
+        "max_column_error": 1.773475545405977e-13,
+        "prediction_error": 2.9410005086782547e-16,
+        "score": 0.009953560706149391,
+        "shifts_hz": [
+          0.3437500074505806,
+          -0.2641269266605377
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "candidate_status_counts": {
+        "ready": 273
+      },
+      "clean_pair_pass": false,
+      "clean_source_sha256": "b170f3aeedf1c9480343d7635daa9827fbb6d25d5f12bf8a500a40b57c647fef",
+      "condition": "20db",
+      "evaluations": 273,
+      "frequency_error_hz": 0.03375000745063517,
+      "frequency_pass": true,
+      "no_regression": true,
+      "noise_energy_ratio_relative_error": 0.0,
+      "noise_scale": 0.4579067841309429,
+      "noise_uint32_sha256": "48f7578b222b9e507f57726e7949a9a0f592e8d42a352e5ee4ee25db899ed400",
+      "observed_pcm_sha256": "398ecbeb441cac11e1db15fcbf418d61b222a5d3e126439d950875055010053e",
+      "oracle": {
+        "amplitudes": [
+          0.07991711471906049,
+          0.32009547966298446
+        ],
+        "coefficients": [
+          0.07698903871083018,
+          -0.021434391603256792,
+          -0.028177850053991073,
+          -0.3188528263431436
+        ],
+        "condition": 1.7426889732140638,
+        "max_column_error": 1.4964629971069884e-13,
+        "prediction_error": 1.8638703144477086e-15,
+        "score": 0.00989693014987858,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_residual_ceiling": 0.010917219448768022,
+      "paired_break": false,
+      "paired_fix": true,
+      "phase_index": 1,
+      "phase_sha256": [
+        "f60705b1f6b5a8f3ae06f3a237bc0cf466eaef1f6ad7f1352b40c39647610776",
+        "bc53278df2de61d00c98ead30d394c472cc3bf3bb7601b0db784ae1eb76e7006"
+      ],
+      "residual_pass": true,
+      "rounding_absolute_error": 6.459073909059754e-08,
+      "rounding_relative_error": 3.995611882772872e-08,
+      "screen_pass": true,
+      "support": 1,
+      "true_amplitudes": [
+        0.08,
+        0.32
+      ],
+      "true_frequencies_hz": [
+        523.17,
+        523.77
+      ]
+    }
+  ],
+  "source_commit": "8275a96d003fee73fd1292ae280ec8ade6263d45",
+  "source_sha256": {
+    "apta_key_coherent.py": "19f5eda52fdd0ef1e18cbdf5c757264225f44a33bcceab71602667c9dad27e86",
+    "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+    "apta_key_observability.py": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+    "apta_key_phase_robustness.py": "a9f2156fffdd0750d316a64c9fb54cd69974944675addf41b26c22aad9cadee3",
+    "apta_key_within_cell.py": "8a2d4a4a395e4b03da6eda6baf3c1247f04c24e3c1d48b0eee33a79cb71c8aa1"
+  },
+  "tool_sha256": "99f169f4238ebd003168e4c37ebe3b5d8c2b34b8f3de8d63c20195118433066e",
+  "totals": [
+    {
+      "abstentions": 0,
+      "amplitude_failures": 3,
+      "condition": "clean",
+      "count": 12,
+      "frequency_failures": 4,
+      "max_frequency_error_hz": 0.03375000745063517,
+      "max_relative_amplitude_error": 0.08356582988342294,
+      "max_residual": 2.3042561667267204e-05,
+      "no_regression_failures": 0,
+      "passes": 8,
+      "residual_failures": 4,
+      "residual_pass_inaccurate": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "condition": "40db",
+      "count": 12,
+      "frequency_failures": 2,
+      "max_frequency_error_hz": 0.03375000745063517,
+      "max_relative_amplitude_error": 0.08221239981191247,
+      "max_residual": 0.00011965868134506294,
+      "no_regression_failures": 0,
+      "passes": 10,
+      "residual_failures": 2,
+      "residual_pass_inaccurate": 0
+    },
+    {
+      "abstentions": 0,
+      "amplitude_failures": 0,
+      "condition": "20db",
+      "count": 12,
+      "frequency_failures": 0,
+      "max_frequency_error_hz": 0.04933593004943759,
+      "max_relative_amplitude_error": 0.1486976465872463,
+      "max_residual": 0.009953560706149391,
+      "no_regression_failures": 0,
+      "passes": 12,
+      "residual_failures": 0,
+      "residual_pass_inaccurate": 0
+    }
+  ],
+  "validation": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "coverage_tests_per_reused_probe": 11,
+    "deterministic_summary_detail_replay": true,
+    "flags": "none; Python diagnostic only",
+    "full_native_build": false,
+    "new_tests": 7,
+    "physical_p4": false,
+    "platform": "WSL Ubuntu",
+    "production_and_predecessor_diff_empty": true,
+    "protocol_commit": "edf2fe3",
+    "repeat_resources": {
+      "cpu_seconds": 103.958388399,
+      "limit_seconds": 300
+    },
+    "resources": {
+      "cpu_seconds": 104.599552189,
+      "limit_seconds": 300
+    },
+    "reused_probe_variants": [
+      "default",
+      "candidate",
+      "sanitize"
+    ],
+    "stderr_empty": true,
+    "unchanged_diagnostic_tests": 79
+  }
+}

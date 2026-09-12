@@ -7,12 +7,21 @@
 
 ## Current boundary
 
+The 2026-09-12 R3 noise/unequal-amplitude screen is **rejected**: 30/36 pass,
+including only 8/12 new clean cases, 10/12 at 40 dB and 12/12 at 20 dB under
+different noise-specific tolerances. All failures concern unequal-amplitude
+close tones. True-frequency fits remain feasible, exposing a bounded-search
+limitation rather than proving unavoidable ambiguity. Next preregister a local
+search convergence diagnostic with explicit budget/termination accounting.
+Numerical controls and replay pass; no production/corpus change. See
+[`APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`](APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md).
+
 The 2026-09-12 R2 independent two-tone refinement screen passes 32/32 recovery
 cases and six constraint stresses. Maximum sorted frequency error is 5.067e-9
 Hz on noiseless synthetic signals; 742 search candidates reject for amplitude.
 Over-budget sources yield poor admissible fits, never successful reconstruction.
-Tone count and local seed neighborhoods remain supplied. Next preregister
-noise/unequal-amplitude robustness with explicit quality and abstention criteria.
+Tone count and local seed neighborhoods remain supplied. The subsequent R3
+noise/unequal-amplitude screen above is complete and rejected.
 No music applicability, native port or C3 rescue is claimed. See
 [`APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`](APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md).
 
