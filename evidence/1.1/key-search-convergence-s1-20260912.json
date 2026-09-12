@@ -1,0 +1,1070 @@
+{
+  "acceptance_claim": false,
+  "accuracy_breaks": 0,
+  "accuracy_fixes": 7,
+  "accurate_but_budget_exhausted": 0,
+  "artifact_sha256": {
+    "coverage-candidate.log": "0a86c4de65d143b1e39cd34be6bef7f75070cc55066c613a595caaa3501c7c15",
+    "coverage-default.log": "37418d9000ca6d998dd36d75d40c4c66fe33f39cf5952c37adec4020bf75b4b2",
+    "coverage-sanitize.log": "3d3caaa915350609bce639bb6967b6128fa17f379311066ca249a4780f848af5",
+    "repeat-detail.json": "d1f2ecd93e8f15f2d4b8a91e87954ed89642b3ce5110fa31d1c96b0bab880048",
+    "repeat.json": "7a574bf475229a259bc1a3b2df4d0bf0b611a3afb9988adbe69c55048c087af7",
+    "result-detail.json": "d1f2ecd93e8f15f2d4b8a91e87954ed89642b3ce5110fa31d1c96b0bab880048",
+    "result.json": "7a574bf475229a259bc1a3b2df4d0bf0b611a3afb9988adbe69c55048c087af7",
+    "run.sh": "d21f4a63432aeb129c8e2a4b1daf934da555325eeceb0955ecea581aef1d8a79",
+    "source.tar": "4601da2f8461840440cb5149092e23f902ab2b179649ccc2fd2f02b970fe3dad",
+    "tests.log": "c322f5e3c7f0e56801f501dc07d49cdbab696c894a7036dc4e3c0f327aa68e2c"
+  },
+  "baseline_commit": "03b5c9f158cf7be94141c4dca4e0e3e3c4ab233d",
+  "candidate_retained": false,
+  "corpus_access": false,
+  "decision": "finite-termination-screen-rejected",
+  "format": "apta-search-convergence-s1-1",
+  "input_sha256": {
+    "o1_evidence": "be5b0fb3c30edd8e521240317cf7eae6d327cb872c2878b8f9f1797f09be556c",
+    "r1_evidence": "3ac972b4485b1fb3e7cc05e26ec4303918028b58a773036a57f1b4b6c59dd9c5",
+    "r2_evidence": "543106ef35f93b1e29afd4f9b69918d5f24efe2bc120b158e12a3b8cffda5cca"
+  },
+  "instrument_gates_pass": true,
+  "max_analytic_column_error": 3.5846433488288157e-13,
+  "max_prediction_error": 4.140850367118533e-15,
+  "max_storage_bytes": 113792,
+  "numpy": "2.5.2",
+  "original_o1_rows_identical": 24,
+  "original_r1_rows_identical": 48,
+  "production_cpu_ram_state_delta": 0,
+  "quadratic_passes": 6,
+  "quadratics": [
+    {
+      "accurate": true,
+      "center": [
+        0.173,
+        -0.287
+      ],
+      "condition": 1,
+      "error": 2.1934509264465163e-08,
+      "old_accurate": true,
+      "old_error": 4.768371808516747e-10,
+      "old_result": {
+        "score": 4.0145667805052796e-19,
+        "shifts_hz": [
+          0.1730000004172325,
+          -0.28700000047683716
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 4.813500703699506e-16,
+          "shifts_hz": [
+            0.17299997806549072,
+            -0.28700000047683716
+          ]
+        },
+        "evaluations": 401,
+        "final_step": 5.960464477539063e-08,
+        "polls": 40,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        0.173,
+        -0.287
+      ],
+      "condition": 16,
+      "error": 2.1934509264465163e-08,
+      "old_accurate": false,
+      "old_error": 0.01450000745058061,
+      "old_result": {
+        "score": 0.0002606059791709291,
+        "shifts_hz": [
+          0.1875000074505806,
+          -0.28018422424793243
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 1.844576826048319e-15,
+          "shifts_hz": [
+            0.17299997806549072,
+            -0.28700000047683716
+          ]
+        },
+        "evaluations": 425,
+        "final_step": 5.960464477539063e-08,
+        "polls": 43,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        0.173,
+        -0.287
+      ],
+      "condition": 256,
+      "error": 9.727478028631609e-08,
+      "old_accurate": false,
+      "old_error": 0.06137500745058061,
+      "old_result": {
+        "score": 0.004740030558514105,
+        "shifts_hz": [
+          0.2343750074505806,
+          -0.25588158518075943
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 3.147527367135926e-14,
+          "shifts_hz": [
+            0.17300009727478027,
+            -0.2869999408721924
+          ]
+        },
+        "evaluations": 897,
+        "final_step": 5.960464477539063e-08,
+        "polls": 102,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": false,
+      "center": [
+        0.173,
+        -0.287
+      ],
+      "condition": 4096,
+      "error": 0.03146777343750001,
+      "old_accurate": false,
+      "old_error": 0.06430469495058061,
+      "old_result": {
+        "score": 0.005208300945338945,
+        "shifts_hz": [
+          0.2373046949505806,
+          -0.25424519926309586
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 0.0012492183061835484,
+          "shifts_hz": [
+            0.2044677734375,
+            -0.27099609375
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 6.103515625e-05,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "screen_pass": false
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.219,
+        0.341
+      ],
+      "condition": 1,
+      "error": 2.050399777742129e-08,
+      "old_accurate": true,
+      "old_error": 3.2186508180931384e-09,
+      "old_result": {
+        "score": 1.3773871027683111e-17,
+        "shifts_hz": [
+          -0.21899999678134918,
+          0.340999998152256
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 7.487415122045711e-16,
+          "shifts_hz": [
+            -0.218999981880188,
+            0.3410000205039978
+          ]
+        },
+        "evaluations": 377,
+        "final_step": 5.960464477539063e-08,
+        "polls": 37,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.219,
+        0.341
+      ],
+      "condition": 16,
+      "error": 2.050399777742129e-08,
+      "old_accurate": true,
+      "old_error": 9.406864643096702e-06,
+      "old_result": {
+        "score": 1.0968263101137098e-10,
+        "shifts_hz": [
+          -0.2190094068646431,
+          0.34099557995796204
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 2.261661197089505e-15,
+          "shifts_hz": [
+            -0.218999981880188,
+            0.3410000205039978
+          ]
+        },
+        "evaluations": 417,
+        "final_step": 5.960464477539063e-08,
+        "polls": 42,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": true,
+      "center": [
+        -0.219,
+        0.341
+      ],
+      "condition": 256,
+      "error": 1.0108947753884046e-07,
+      "old_accurate": false,
+      "old_error": 0.0471250074505806,
+      "old_result": {
+        "score": 0.0027944792526650624,
+        "shifts_hz": [
+          -0.1718749925494194,
+          0.3648933619260788
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 4.29107469832008e-14,
+          "shifts_hz": [
+            -0.21900010108947754,
+            0.340999960899353
+          ]
+        },
+        "evaluations": 905,
+        "final_step": 5.960464477539063e-08,
+        "polls": 103,
+        "status": "poll_resolved"
+      },
+      "screen_pass": true
+    },
+    {
+      "accurate": false,
+      "center": [
+        -0.219,
+        0.341
+      ],
+      "condition": 4096,
+      "error": 0.0574892578125,
+      "old_accurate": false,
+      "old_error": 0.1149843824505806,
+      "old_result": {
+        "score": 0.01665284424445637,
+        "shifts_hz": [
+          -0.3339843824505806,
+          0.2824305444955826
+        ]
+      },
+      "result": {
+        "best": {
+          "score": 0.004171181944282053,
+          "shifts_hz": [
+            -0.2764892578125,
+            0.311767578125
+          ]
+        },
+        "evaluations": 2049,
+        "final_step": 0.0001220703125,
+        "polls": 246,
+        "status": "budget_exhausted"
+      },
+      "screen_pass": false
+    }
+  ],
+  "resolved_but_inaccurate": 0,
+  "source_commit": "ab851aba8e12b0a0c5240dec7d7146835ed957ab",
+  "source_sha256": {
+    "apta_key_coherent.py": "19f5eda52fdd0ef1e18cbdf5c757264225f44a33bcceab71602667c9dad27e86",
+    "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+    "apta_key_independent_shift.py": "d0575275e7ec3cfadb3a7975313c28e1bdb936bc850333d285e5d79a0cb839ed",
+    "apta_key_local_shift.py": "1ac4a44b30bd1400290f4e01249a47491cd49c62714a48a5f75704e3b8a9aa9e",
+    "apta_key_observability.py": "0dc3ad51f49dae03a779331b3da2a8529e4c6f939fb682382037b5f9762d0df6",
+    "apta_key_phase_robustness.py": "a9f2156fffdd0750d316a64c9fb54cd69974944675addf41b26c22aad9cadee3",
+    "apta_key_within_cell.py": "8a2d4a4a395e4b03da6eda6baf3c1247f04c24e3c1d48b0eee33a79cb71c8aa1"
+  },
+  "termination_counts": {
+    "budget_exhausted": 2,
+    "poll_resolved": 14
+  },
+  "tone_passes": 8,
+  "tones": [
+    {
+      "accurate": true,
+      "amplitude_error": 3.545735927090732e-11,
+      "error_hz": 2.1457651655509835e-08,
+      "frequencies_hz": [
+        293.27,
+        698.43
+      ],
+      "no_regression": true,
+      "old_accurate": true,
+      "old_result": {
+        "amplitudes": [
+          0.3200000000205346,
+          0.08000000001876885
+        ],
+        "coefficients": [
+          0.3199904738335139,
+          -0.0024691433626632723,
+          0.04018292521549868,
+          -0.06917609792499614
+        ],
+        "condition": 1.0047500380523344,
+        "max_column_error": 1.105471819007967e-13,
+        "prediction_error": 1.3404220127330002e-15,
+        "score": 2.411530592023426e-16,
+        "shifts_hz": [
+          0.28999999910593033,
+          -0.32999999821186066
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.3200000000210779,
+          0.08000000001946739
+        ],
+        "coefficients": [
+          0.3199904738271211,
+          -0.002469144261562198,
+          0.04018292560490573,
+          -0.0691760976996057
+        ],
+        "condition": 1.0047500380515226,
+        "max_column_error": 1.5345309523720545e-13,
+        "prediction_error": 7.892482350982457e-16,
+        "score": 2.3903896262622664e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "b3effdf3c1691f302cec2f4147ba3a4eae187ed1cbcc154997449a24681e41fa",
+      "phase": 0,
+      "phase_sha256": [
+        "ffaf84821c16bf3348eb2bdc2af5338fa0b5905f33eef93f3502c40af1baeb71",
+        "d570e4cc473cfb392b7756360ffe07cd4c81699fe282e4a368d5e04690e5a522"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.3200000000250113,
+            0.08000000003545736
+          ],
+          "coefficients": [
+            0.319990473664646,
+            -0.0024691658273004787,
+            0.040182921997963306,
+            -0.06917609981329371
+          ],
+          "condition": 1.0047500380173615,
+          "max_column_error": 2.6465411752733466e-13,
+          "prediction_error": 5.5309000037547805e-16,
+          "score": 1.7429428995156198e-15,
+          "shifts_hz": [
+            0.2900000214576721,
+            -0.32999998331069946
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 369,
+        "final_step": 5.960464477539063e-08,
+        "polls": 36,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.361258743035279e-08,
+      "rounding_relative_error": 3.9732213768689745e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 2.9232466447481897e-10,
+      "error_hz": 2.1457651655509835e-08,
+      "frequencies_hz": [
+        293.27,
+        698.43
+      ],
+      "no_regression": true,
+      "old_accurate": true,
+      "old_result": {
+        "amplitudes": [
+          0.31999999989662387,
+          0.07999999971641239
+        ],
+        "coefficients": [
+          0.29995225966205513,
+          -0.11148381881450924,
+          -0.07520433772825245,
+          -0.027282000320374717
+        ],
+        "condition": 1.0047500380523344,
+        "max_column_error": 1.105471819007967e-13,
+        "prediction_error": 1.5963222180909013e-15,
+        "score": 2.435547718207901e-16,
+        "shifts_hz": [
+          0.28999999910593033,
+          -0.32999999821186066
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.3199999998967539,
+          0.07999999971590456
+        ],
+        "coefficients": [
+          0.29995225934900605,
+          -0.11148381965715509,
+          -0.0752043375742728,
+          -0.027282000743339006
+        ],
+        "condition": 1.0047500380515226,
+        "max_column_error": 1.5345309523720545e-13,
+        "prediction_error": 6.583207539857689e-16,
+        "score": 2.394700361197626e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "5fcad98fd2367193670b99f24ed5f22ef246f7a4def444298b6550d3839797a2",
+      "phase": 1,
+      "phase_sha256": [
+        "f1805a6d77225645aa68ba0d18c2029c1ee372850d062697fddbe8427ee89cb5",
+        "8e2dd86441abb19ec567689ff162f170ae2ba2394e535adee3e6812215deb56a"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.3199999999020243,
+            0.07999999970767534
+          ],
+          "coefficients": [
+            0.29995225184024615,
+            -0.11148383987493939,
+            -0.07520433899125675,
+            -0.027281996813213517
+          ],
+          "condition": 1.0047500380173615,
+          "max_column_error": 2.6465411752733466e-13,
+          "prediction_error": 9.173255537876794e-16,
+          "score": 1.7058294970247255e-15,
+          "shifts_hz": [
+            0.2900000214576721,
+            -0.32999998331069946
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 369,
+        "final_step": 5.960464477539063e-08,
+        "polls": 36,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.625770255728412e-08,
+      "rounding_relative_error": 3.9702361823710404e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 1.0452801124660738e-10,
+      "error_hz": 2.1457651655509835e-08,
+      "frequencies_hz": [
+        293.27,
+        698.43
+      ],
+      "no_regression": true,
+      "old_accurate": true,
+      "old_result": {
+        "amplitudes": [
+          0.08000000011193419,
+          0.31999999992919326
+        ],
+        "coefficients": [
+          0.0799976185633444,
+          -0.0006172860788358036,
+          0.16073170065775247,
+          -0.27670439164991645
+        ],
+        "condition": 1.0047500380523344,
+        "max_column_error": 1.105471819007967e-13,
+        "prediction_error": 5.283009566462268e-16,
+        "score": 2.4247183986799097e-16,
+        "shifts_hz": [
+          0.28999999910593033,
+          -0.32999999821186066
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.08000000011309297,
+          0.31999999992945494
+        ],
+        "coefficients": [
+          0.07999761856276283,
+          -0.0006172863043838455,
+          0.1607317022122923,
+          -0.2767043907472199
+        ],
+        "condition": 1.0047500380515226,
+        "max_column_error": 1.5345309523720545e-13,
+        "prediction_error": 9.648454773303128e-16,
+        "score": 2.327124706330597e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "a563f41c7152a3e3a091b27f7c7c9c1b44505eafe3407b5916b66a676bc8986e",
+      "phase": 0,
+      "phase_sha256": [
+        "ffaf84821c16bf3348eb2bdc2af5338fa0b5905f33eef93f3502c40af1baeb71",
+        "d570e4cc473cfb392b7756360ffe07cd4c81699fe282e4a368d5e04690e5a522"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.08000000010452801,
+            0.3199999999326385
+          ],
+          "coefficients": [
+            0.07999761851265474,
+            -0.0006172916881352173,
+            0.1607316877104111,
+            -0.27670439917473577
+          ],
+          "condition": 1.0047500380173615,
+          "max_column_error": 2.6465411752733466e-13,
+          "prediction_error": 8.035156602028367e-16,
+          "score": 1.1574793228630188e-15,
+          "shifts_hz": [
+            0.2900000214576721,
+            -0.32999998331069946
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 369,
+        "final_step": 5.960464477539063e-08,
+        "polls": 36,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.41243218074483e-08,
+      "rounding_relative_error": 4.005572373851339e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 6.04071237475523e-11,
+      "error_hz": 2.1457651655509835e-08,
+      "frequencies_hz": [
+        293.27,
+        698.43
+      ],
+      "no_regression": true,
+      "old_accurate": true,
+      "old_result": {
+        "amplitudes": [
+          0.0800000000186795,
+          0.31999999993806794
+        ],
+        "coefficients": [
+          0.07498806500043008,
+          -0.027870954602955293,
+          -0.30081735168188944,
+          -0.1091280023067312
+        ],
+        "condition": 1.0047500380523344,
+        "max_column_error": 1.105471819007967e-13,
+        "prediction_error": 7.803982390425246e-16,
+        "score": 2.4140404069634626e-16,
+        "shifts_hz": [
+          0.28999999910593033,
+          -0.32999999821186066
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.08000000001846906,
+          0.3199999999374956
+        ],
+        "coefficients": [
+          0.07498806492169058,
+          -0.027870954814203427,
+          -0.3008173510682355,
+          -0.10912800399662391
+        ],
+        "condition": 1.0047500380515226,
+        "max_column_error": 1.5345309523720545e-13,
+        "prediction_error": 7.746092446950935e-16,
+        "score": 2.3077812428300523e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "4b0117a6954032d6b957de270d733174f8ee85f999899337a6df7759ca33435e",
+      "phase": 1,
+      "phase_sha256": [
+        "f1805a6d77225645aa68ba0d18c2029c1ee372850d062697fddbe8427ee89cb5",
+        "8e2dd86441abb19ec567689ff162f170ae2ba2394e535adee3e6812215deb56a"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.08000000002205404,
+            0.3199999999395929
+          ],
+          "coefficients": [
+            0.07498806304895492,
+            -0.02787095986317316,
+            -0.30081735679052096,
+            -0.10912798822897753
+          ],
+          "condition": 1.0047500380173615,
+          "max_column_error": 2.6465411752733466e-13,
+          "prediction_error": 8.17874711892445e-16,
+          "score": 1.195536156219211e-15,
+          "shifts_hz": [
+            0.2900000214576721,
+            -0.32999998331069946
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 369,
+        "final_step": 5.960464477539063e-08,
+        "polls": 36,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.861537339362343e-08,
+      "rounding_relative_error": 3.960722711957271e-08,
+      "screen_pass": true,
+      "support": 0
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 2.4273675638952774e-08,
+      "error_hz": 1.3589857417173334e-07,
+      "frequencies_hz": [
+        466.21,
+        466.91
+      ],
+      "no_regression": true,
+      "old_accurate": false,
+      "old_result": {
+        "amplitudes": [
+          0.30952672600146836,
+          0.07023409446891736
+        ],
+        "coefficients": [
+          -0.14217691911976635,
+          0.2749409350729707,
+          -0.07022004398269083,
+          0.0014047949806907328
+        ],
+        "condition": 1.275942967963354,
+        "max_column_error": 7.430426063055006e-14,
+        "prediction_error": 8.493111766729932e-16,
+        "score": 0.0001393991269946176,
+        "shifts_hz": [
+          0.27372875809669495,
+          -0.2499999925494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.32000000002786455,
+          0.07999999991596464
+        ],
+        "coefficients": [
+          -0.1355356206086882,
+          0.2898794500547616,
+          -0.07852239998077692,
+          -0.015304662290074454
+        ],
+        "condition": 1.4712375381518796,
+        "max_column_error": 6.44495601296097e-14,
+        "prediction_error": 1.5186329999713204e-15,
+        "score": 2.39020957149205e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "68b32766382c48046f1c52e4ec726483406460fdf116f2c228b7b4eafe149c9d",
+      "phase": 0,
+      "phase_sha256": [
+        "51d1d2b53fc859b5d7b09debf0ff42060fe4af1026b8758efb12a5479c04ea40",
+        "87d7cb592c4fd15dcaf5c6c07e44ead2b2961911ab8c0980ca6a9194abc21228"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.31999997701634525,
+            0.07999997572632436
+          ],
+          "coefficients": [
+            -0.13553563977995992,
+            0.28987941568848663,
+            -0.07852238139366667,
+            -0.015304631210193775
+          ],
+          "condition": 1.4712371341444848,
+          "max_column_error": 6.739594403872923e-14,
+          "prediction_error": 8.274789009667581e-16,
+          "score": 7.017312275669594e-16,
+          "shifts_hz": [
+            0.28999996185302734,
+            -0.3299998641014099
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 713,
+        "final_step": 5.960464477539063e-08,
+        "polls": 79,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 3.924357816487145e-08,
+      "rounding_relative_error": 3.982630351908125e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 6.536552796254647e-08,
+      "error_hz": 3.7431715327329584e-07,
+      "frequencies_hz": [
+        466.21,
+        466.91
+      ],
+      "no_regression": true,
+      "old_accurate": false,
+      "old_result": {
+        "amplitudes": [
+          0.3090315067978893,
+          0.06955669596331496
+        ],
+        "coefficients": [
+          -0.24517394327397904,
+          -0.188122858082854,
+          -0.03662172781540411,
+          -0.05913529407339995
+        ],
+        "condition": 1.2745253488881667,
+        "max_column_error": 4.574259195864354e-14,
+        "prediction_error": 1.3313271023365137e-15,
+        "score": 9.898299901515713e-05,
+        "shifts_hz": [
+          0.27292729169130325,
+          -0.2499999925494194
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.32000000011049684,
+          0.07999999996785939
+        ],
+        "coefficients": [
+          -0.26524903026890106,
+          -0.17900545246479393,
+          -0.021860882046280103,
+          -0.07695519365849281
+        ],
+        "condition": 1.4712375381518796,
+        "max_column_error": 6.44495601296097e-14,
+        "prediction_error": 2.4923700148221603e-15,
+        "score": 2.493003285360009e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "8f649804a6f206e018e4d7ef81c14271c0bcece69d0bf7a22fe48abc67dda2d3",
+      "phase": 1,
+      "phase_sha256": [
+        "98300446437cbc9f8d14f5434fc7a3f920e70efb6c7dbfebacb2f92c439b99c8",
+        "b4b9108ec471dc6ec0ec3b97ec5219664bc13e29b698f1d218d7535946c4da15"
+      ],
+      "ratio": 4.0,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.31999993604944377,
+            0.07999993463447204
+          ],
+          "coefficients": [
+            -0.26524891585617516,
+            -0.17900550748167443,
+            -0.021860966080337496,
+            -0.07695510186825909
+          ],
+          "condition": 1.471236442381703,
+          "max_column_error": 1.3027925642148496e-13,
+          "prediction_error": 2.017700738662919e-15,
+          "score": 2.3510368122007088e-15,
+          "shifts_hz": [
+            0.28999990224838257,
+            -0.3299996256828308
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 801,
+        "final_step": 5.960464477539063e-08,
+        "polls": 90,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.275378195917057e-08,
+      "rounding_relative_error": 4.021363772848691e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 4.83551841207186e-08,
+      "error_hz": 2.765655722214433e-07,
+      "frequencies_hz": [
+        466.21,
+        466.91
+      ],
+      "no_regression": true,
+      "old_accurate": false,
+      "old_result": {
+        "amplitudes": [
+          0.1042656535077503,
+          0.3453170974345528
+        ],
+        "coefficients": [
+          -0.014021027623418458,
+          0.10331862022782524,
+          -0.333438275596704,
+          -0.08979317428246361
+        ],
+        "condition": 1.8957732333485686,
+        "max_column_error": 6.003473445859289e-14,
+        "prediction_error": 1.13595995244946e-15,
+        "score": 0.00022017488960746285,
+        "shifts_hz": [
+          0.4062500074505806,
+          -0.3583400100469589
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.08000000024240568,
+          0.32000000014038466
+        ],
+        "coefficients": [
+          -0.03388390509036374,
+          0.0724698628024928,
+          -0.3140896004236934,
+          -0.061218649082863695
+        ],
+        "condition": 1.4712375381518796,
+        "max_column_error": 6.44495601296097e-14,
+        "prediction_error": 9.93131023758147e-16,
+        "score": 2.464291468689997e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "ee8ac29e9ae160177ccb2c1872b38658e46127c4746164cda35b02071d7bc785",
+      "phase": 0,
+      "phase_sha256": [
+        "51d1d2b53fc859b5d7b09debf0ff42060fe4af1026b8758efb12a5479c04ea40",
+        "87d7cb592c4fd15dcaf5c6c07e44ead2b2961911ab8c0980ca6a9194abc21228"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.07999995164481588,
+            0.3199999535664321
+          ],
+          "coefficients": [
+            -0.03388393440400039,
+            0.07246979544940277,
+            -0.31408956688448764,
+            -0.06121857770998688
+          ],
+          "condition": 1.4712367180157824,
+          "max_column_error": 1.6944653073678827e-13,
+          "prediction_error": 8.542606879337312e-16,
+          "score": 2.103708025895625e-15,
+          "shifts_hz": [
+            0.28999972343444824,
+            -0.3299999237060547
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 617,
+        "final_step": 5.960464477539063e-08,
+        "polls": 67,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.409210246913986e-08,
+      "rounding_relative_error": 3.968611066733194e-08,
+      "screen_pass": true,
+      "support": 1
+    },
+    {
+      "accurate": true,
+      "amplitude_error": 6.801498479702683e-08,
+      "error_hz": 3.790855203078536e-07,
+      "frequencies_hz": [
+        466.21,
+        466.91
+      ],
+      "no_regression": true,
+      "old_accurate": false,
+      "old_result": {
+        "amplitudes": [
+          0.10568082808706027,
+          0.3464699980564942
+        ],
+        "coefficients": [
+          -0.10383642234137441,
+          -0.019657945480403286,
+          -0.05936999838781505,
+          -0.3413453717932879
+        ],
+        "condition": 1.9001444848259983,
+        "max_column_error": 1.8701127954232512e-13,
+        "prediction_error": 1.5202307701015159e-15,
+        "score": 0.00015749522789060383,
+        "shifts_hz": [
+          0.4062500074505806,
+          -0.359521821141243
+        ],
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle": {
+        "amplitudes": [
+          0.08000000012165528,
+          0.32000000015243013
+        ],
+        "coefficients": [
+          -0.06631225758777692,
+          -0.04475136325384029,
+          -0.0874435279265127,
+          -0.30782077499954497
+        ],
+        "condition": 1.4712375381518796,
+        "max_column_error": 6.44495601296097e-14,
+        "prediction_error": 1.3063952966709754e-15,
+        "score": 2.3244919104118123e-16,
+        "status": "ready",
+        "storage_bytes": 113792
+      },
+      "oracle_pass": true,
+      "pcm_sha256": "b22cdf97d7f92388cfffb2e2414a30c66f744bb551d791d0bc658d8daf9b3031",
+      "phase": 1,
+      "phase_sha256": [
+        "98300446437cbc9f8d14f5434fc7a3f920e70efb6c7dbfebacb2f92c439b99c8",
+        "b4b9108ec471dc6ec0ec3b97ec5219664bc13e29b698f1d218d7535946c4da15"
+      ],
+      "ratio": 0.25,
+      "result": {
+        "best": {
+          "amplitudes": [
+            0.0800000680149848,
+            0.3200000656879614
+          ],
+          "coefficients": [
+            -0.06631237410527709,
+            -0.04475131196874535,
+            -0.08744343564528882,
+            -0.3078208693426225
+          ],
+          "condition": 1.4712386575366843,
+          "max_column_error": 1.573110612993924e-13,
+          "prediction_error": 4.006540403328625e-16,
+          "score": 2.5610610720495202e-15,
+          "shifts_hz": [
+            0.29000037908554077,
+            -0.330000102519989
+          ],
+          "status": "ready",
+          "storage_bytes": 113792
+        },
+        "evaluations": 921,
+        "final_step": 5.960464477539063e-08,
+        "polls": 105,
+        "status": "poll_resolved"
+      },
+      "rounding_absolute_error": 4.323800251171406e-08,
+      "rounding_relative_error": 4.005561840917041e-08,
+      "screen_pass": true,
+      "support": 1
+    }
+  ],
+  "tool_sha256": "7f6a32f97bef7a418f8cc8e6c5eec6e01d8c7625f5025ae9a28bc73557f8efa3",
+  "validation": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "coverage_tests_per_reused_probe": 11,
+    "deterministic_summary_detail_replay": true,
+    "flags": "none; Python diagnostic only",
+    "full_native_build": false,
+    "new_tests": 7,
+    "physical_p4": false,
+    "platform": "WSL Ubuntu",
+    "poll_trace_contract_pass": true,
+    "production_and_predecessor_diff_empty": true,
+    "protocol_commit": "f0d88ec",
+    "repeat_resources": {
+      "cpu_seconds": 46.085946266,
+      "limit_seconds": 300
+    },
+    "resources": {
+      "cpu_seconds": 45.858551426,
+      "limit_seconds": 300
+    },
+    "reused_probe_variants": [
+      "default",
+      "candidate",
+      "sanitize"
+    ],
+    "stderr_empty": true,
+    "unchanged_diagnostic_tests": 86
+  }
+}

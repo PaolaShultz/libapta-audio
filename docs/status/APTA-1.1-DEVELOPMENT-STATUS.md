@@ -7,12 +7,22 @@
 
 ## Current boundary
 
+The 2026-09-12 S1 search-termination screen is **rejected overall**: all eight
+new tone cases and six/eight quadratics pass, while two high-curvature-ratio
+quadratics explicitly exhaust the evaluation budget. Keeping poll step after
+improvement fixes four tone and three quadratic results versus R2, with zero
+accuracy breaks. Finite poll resolution is not a global convergence guarantee.
+Next preregister search directions that adapt to correlated parameters on
+independent objectives, retaining explicit budget and termination accounting.
+No production/corpus change. See
+[`APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md`](APTA-1.1-KEY-SEARCH-CONVERGENCE-RESULT.md).
+
 The 2026-09-12 R3 noise/unequal-amplitude screen is **rejected**: 30/36 pass,
 including only 8/12 new clean cases, 10/12 at 40 dB and 12/12 at 20 dB under
 different noise-specific tolerances. All failures concern unequal-amplitude
 close tones. True-frequency fits remain feasible, exposing a bounded-search
-limitation rather than proving unavoidable ambiguity. Next preregister a local
-search convergence diagnostic with explicit budget/termination accounting.
+limitation rather than proving unavoidable ambiguity. Its subsequent S1
+termination diagnostic above is now complete and rejected under its full bank.
 Numerical controls and replay pass; no production/corpus change. See
 [`APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md`](APTA-1.1-KEY-NOISE-ROBUSTNESS-RESULT.md).
 
