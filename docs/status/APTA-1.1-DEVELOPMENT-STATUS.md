@@ -7,14 +7,23 @@
 
 ## Current boundary
 
+The 2026-09-12 R2 independent two-tone refinement screen passes 32/32 recovery
+cases and six constraint stresses. Maximum sorted frequency error is 5.067e-9
+Hz on noiseless synthetic signals; 742 search candidates reject for amplitude.
+Over-budget sources yield poor admissible fits, never successful reconstruction.
+Tone count and local seed neighborhoods remain supplied. Next preregister
+noise/unequal-amplitude robustness with explicit quality and abstention criteria.
+No music applicability, native port or C3 rescue is claimed. See
+[`APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md`](APTA-1.1-KEY-INDEPENDENT-SHIFT-RESULT.md).
+
 The 2026-09-12 R1 bounded common-frequency refinement screen passes 48/48
 synthetic cases with supplied tone count/spacing. Maximum shift error is
 9.278e-8 Hz, with 48 reconstruction fixes and zero breaks. A raw-matrix rank
 guard and explicit synthetic amplitude budget replace unconstrained acceptance;
 none of the 2832 bank candidates triggers rejection, so active-constraint
-behavior is covered only by targeted tests. Next preregister independent
-per-tone refinement on a new analytic bank with constraint/abstention stress
-cases. No music applicability, C3 rescue or native port is claimed. See
+behavior is covered only by targeted tests in R1. Its subsequent R2 independent
+per-tone screen above now passes a new analytic bank and constraint stresses.
+No music applicability, C3 rescue or native port is claimed. See
 [`APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md`](APTA-1.1-KEY-LOCAL-SHIFT-RESULT.md).
 
 The 2026-09-12 C3 observable frequency-uncertainty screen is **rejected**:
