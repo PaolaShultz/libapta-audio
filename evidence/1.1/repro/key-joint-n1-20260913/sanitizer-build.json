@@ -1,0 +1,24 @@
+{
+  "ASAN_OPTIONS": "detect_leaks=0:halt_on_error=1",
+  "LD_PRELOAD": "cc -print-file-name=libasan.so",
+  "UBSAN_OPTIONS": "halt_on_error=1",
+  "artifact_sha256": "afe713a0fd50ff7255c0dbcc76282315e5ce78ea02c78eee6d16c413e70873f3",
+  "compiler": "cc",
+  "flags": [
+    "-std=c99",
+    "-shared",
+    "-fPIC",
+    "-O1",
+    "-g",
+    "-fsanitize=address,undefined",
+    "-fno-omit-frame-pointer"
+  ],
+  "scope": "experimental kernel under Python; not a full native build or leak test",
+  "source_sha256": "e28b61062f700b77bcb33faac27c3cb707246e26ee63d3ae8f2ef535c156f176",
+  "test_count": 8,
+  "test_exit": 0,
+  "tests": [
+    "test_apta_key_joint_a1",
+    "test_apta_key_joint_n1"
+  ]
+}

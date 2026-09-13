@@ -1,5 +1,12 @@
 # APTA 1.1 algorithm and release implementation plan
 
+> 2026-09-13 continuation: N1 resolves E2's numerical blocker under unchanged
+> objective/gates; A1 passes the fixed regression and fresh synthetic screens.
+> This does not confer music/production eligibility. Earlier E2 stop/rejection
+> records below are historical and remain intact. Follow the
+> [current handoff](APTA-1.1-HANDOFF-20260913.md) and
+> [N1/A1 result](APTA-1.1-KEY-JOINT-N1-A1-RESULT.md) for immediate state.
+
 - **Plan baseline:** `4f21c2c2e1d03bb16686671a368f273a034b403e`
 - **Development branch:** `1.1.0`
 - **Plan status:** active

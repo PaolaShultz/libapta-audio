@@ -1,0 +1,8 @@
+Using CPython 3.13.13
+Creating virtual environment at: /home/shome/p/libapta-audio/build/e2-repair-20260913/clean-replay/venv
+Activate with: source /home/shome/p/libapta-audio/build/e2-repair-20260913/clean-replay/venv/bin/activate
+Using Python 3.13.13 environment at: /home/shome/p/libapta-audio/build/e2-repair-20260913/clean-replay/venv
+Resolved 2 packages in 135ms
+Installed 2 packages in 22ms
+ + numpy==2.5.2
+ + scipy==1.18.1

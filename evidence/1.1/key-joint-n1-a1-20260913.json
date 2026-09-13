@@ -1,0 +1,739 @@
+{
+  "acceptance_claim": false,
+  "active_threshold": 1e-10,
+  "artifact_sha256": {
+    "evidence/1.1/repro/key-joint-n1-20260913/README.md": "b02c271d47c6eeafbfbde058c8ec8337db7e9dc7c21e9f3b8dfdc47f3dc1f9ef",
+    "evidence/1.1/repro/key-joint-n1-20260913/a1-fresh-manifest.json": "fdac4fc3555081ce20c5239da36190265ba495bf9f3edd45a2c24c9806648bd7",
+    "evidence/1.1/repro/key-joint-n1-20260913/a1-fresh-result.json.gz": "75dfaacebb52d84cac081f9803e2ada0317feb02f90200b4657b83fb39db3acd",
+    "evidence/1.1/repro/key-joint-n1-20260913/a1-regression-result.json.gz": "ebcf84565978fafc3f98dfa52644628bdf0b520fbd8b499b492d1fcc9246418d",
+    "evidence/1.1/repro/key-joint-n1-20260913/attribution-complete.json.gz": "ebacc53b2b9adadc842e57a0c521b47c358d89e64deadcb16cc2d988d4722c05",
+    "evidence/1.1/repro/key-joint-n1-20260913/clean-replay-tests.log": "7136e116bebd97a30a58053efe4bd83fb9c35545907cc959aecfeca611800826",
+    "evidence/1.1/repro/key-joint-n1-20260913/clean-replay.log": "98bb980759f7cc07cf1e8501569df1ba190736d2d670fe56f744665bc61053cf",
+    "evidence/1.1/repro/key-joint-n1-20260913/cli-smoke.json": "da4d86f7bbbb600b687b2d18f9ab0e403f3fc72baf829e155d1cb88433ed0b82",
+    "evidence/1.1/repro/key-joint-n1-20260913/detuned-11-1-7.npz": "ae14cdb730a2f624ddc99cd076869d2627dc43ff5e0f03656f83b33972af7094",
+    "evidence/1.1/repro/key-joint-n1-20260913/kernel-build.json": "cf033d15f5bdcfd61d78771c26e0dd3dae622e8f445419813ed0f364a5788a3b",
+    "evidence/1.1/repro/key-joint-n1-20260913/missing-10-0-4.npz": "29e1d291602a41d8575ef6c12acf461bb2b0cd90da037ae0346c5dfd5af9750a",
+    "evidence/1.1/repro/key-joint-n1-20260913/missing-11-1-1.npz": "7d11b74e04b8a9704fbeb7cfbffe5ec7a7ca14b8151467170a3b1362260481f1",
+    "evidence/1.1/repro/key-joint-n1-20260913/missing-8-1-6.npz": "533925d1a4fcb2ecb97a1c7486999c54fbe49c049b236f63b947bd37379fa83b",
+    "evidence/1.1/repro/key-joint-n1-20260913/missing-9-0-4.npz": "cf6783e38c9574bcda38e9b07917980612444e5f80823f158e1b6bd21a854af7",
+    "evidence/1.1/repro/key-joint-n1-20260913/n1-fresh-result.json.gz": "0513a13eec3b648b6a465f58ef83d018c0d5c1d36276aede795f5b633c9afcbe",
+    "evidence/1.1/repro/key-joint-n1-20260913/n1-result.json.gz": "57f60a2bb64accc1cc17f39a527a147c0a9f55ad1e6ef5317cfde8cb84e2eec9",
+    "evidence/1.1/repro/key-joint-n1-20260913/numerical-cause.json": "9276f7f6972844afa4c065939ac2b00be5922153a1c7f04c7f5ab5fa4c6c3b22",
+    "evidence/1.1/repro/key-joint-n1-20260913/reduce.py": "37d804366281c1fa91aaecdaee27ae4eaa43dd6d93eef3cf7e937d437f86e33b",
+    "evidence/1.1/repro/key-joint-n1-20260913/reduced.npz": "c7cfe87a3d2e9132351b579db7b933361c0b7c74a1cd5d7527e3daa438d7726a",
+    "evidence/1.1/repro/key-joint-n1-20260913/run.sh": "7788cb3b484c6b24cb3c8d4bc1b528052c63d9cb2fb9922e7bb3184d78679ca6",
+    "evidence/1.1/repro/key-joint-n1-20260913/sanitize-tests.log": "3150ca0c9d649d46168f65f47f22cf6fcc0deee0ed8b4fd401fcc4ebbe14a965",
+    "evidence/1.1/repro/key-joint-n1-20260913/sanitizer-build.json": "76fd894d4612c331ee9070dfb5c0f91d37480cb5f8b4249544dfd782122a49d9",
+    "evidence/1.1/repro/key-joint-n1-20260913/tests.log": "6b34bd1613ef4b71058e6af450eb05e45cf6ef8d84477efa04ab7f2e0c27bda2"
+  },
+  "attribution_decision": "A1 retained as frozen synthetic candidate only",
+  "corpus_access": false,
+  "date": "2026-09-13",
+  "fixed_objective": "||Ax-b||^2 + 1e-3||x||^2, x>=0",
+  "format": "apta-joint-n1-a1-result-1",
+  "kkt_limit": 1e-08,
+  "maxiter": "30*n",
+  "numerical_cause": "SciPy 1.18.1 rejected Householder trial column tail not restored",
+  "numerical_decision": "N1 repair verified; original E2 rejected unchanged",
+  "numerical_report": "evidence/1.1/repro/key-joint-n1-20260913/numerical-cause.json",
+  "physical_p4": false,
+  "probe": {
+    "path": "/home/shome/p/libapta-audio-review/release-build/tests/apta_key_chroma_probe",
+    "scope": "one reused review Release probe; no new native build",
+    "sha256": "f733727bcac3d1551d5e752182eb8ba9757fe4e90ac6f023d55ebee27b278b06"
+  },
+  "production_delta": 0,
+  "protocols": {
+    "a1_commit": "2051899d51dff6e87a53aa2f1ac41d15937d66b0",
+    "fresh_manifest_commit": "e0395327d7b824bf0aa13772f9c1c28ca7b8e83b",
+    "n1_commit": "e9db26f5d995f67a38f0b576640cae4c4f7ed8c4"
+  },
+  "pushed": false,
+  "remaining": [
+    "physical attribution / coherent interference unresolved",
+    "one spent A1 unequal-major error fixture tonic 5, expected tonic 4, confidence 65",
+    "confidence uncalibrated",
+    "music transfer and production qualification not performed",
+    "formal holdouts untouched",
+    "no device or release work"
+  ],
+  "runs": {
+    "a1-fresh-result": {
+      "breaks": 0,
+      "byte_identical_replay": true,
+      "clean_reproduction_rows_and_gates_identical": true,
+      "comparator_matches": 132,
+      "compressed_sha256": "75dfaacebb52d84cac081f9803e2ada0317feb02f90200b4657b83fb39db3acd",
+      "decision": "synthetic-only-pass",
+      "fixes": 12,
+      "full_report": "evidence/1.1/repro/key-joint-n1-20260913/a1-fresh-result.json.gz",
+      "gates": {
+        "accuracy": true,
+        "availability": true,
+        "confidence_safety": true,
+        "no_breaks": true,
+        "no_breaks_vs_n1": true,
+        "no_new_high_confidence_errors": true,
+        "numeric_memory": true,
+        "numerical": true
+      },
+      "groups": [
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "pure",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "full",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "missing",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "detuned",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "unequal",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "steep",
+          "matches": 24,
+          "mode": "all"
+        }
+      ],
+      "high_confidence_errors": 0,
+      "matches": 144,
+      "max_kkt": 4.482633882141318e-16,
+      "numeric_bound_bytes": 13031808,
+      "relative_to_n1": {
+        "breaks": 0,
+        "fixes": 6
+      },
+      "replay_resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.067135773,
+        "process_peak_rss_kib": 95964
+      },
+      "report_sha256": "aa78a84beb04edd530bbf65401e1d4309d8a6c8faf2faba364cebd4851e61c9b",
+      "resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.138057705999991,
+        "process_peak_rss_kib": 95184
+      },
+      "source_commit": "7de02b397343811a03b79ba4fa996aa59d2d6ac1",
+      "source_sha256": {
+        "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+        "apta_key_joint_a1.py": "0e07aafca71c4bd94cd4bf4a87dd97714c71bcd5435d5c2d114e60c984acb521",
+        "apta_key_joint_a1_fixtures.py": "701ee5440e239c09e63a995defd7bf16bd6e551c28b70dea625d680ab0b01348",
+        "apta_key_joint_a1_screen.py": "60c5f6fa1fdcf0e0e61cdcafdadcaff52a6a86dfe15eaf4247c7b03b36abdbfd",
+        "apta_key_joint_n1.py": "d3bc89a44f911c3d55e0c6db6eec99262058f4239caef50c10bd2b3e5eb29ac9",
+        "apta_key_joint_pcm.py": "7e59fd63005fb30510cf00b641bf41afea30d1908c9369c46ad98abd60f16b1b",
+        "apta_key_joint_pcm_screen.py": "db638a8d2f17f42619ee5a4aaa22df6225fec8c1e00438124ff9483b42b1804b",
+        "apta_key_pcm_candidate.py": "3e23db713d5d116d0fa76e2d1bb73d954cae0baa70ad24f1c8e5318daa002724",
+        "apta_nnls_n1.py": "0043f8bcaa0d2d5f98ec2f330cb5895adb89b6f1cd19ba9644829978ceef6faf"
+      }
+    },
+    "a1-regression-result": {
+      "breaks": 0,
+      "byte_identical_replay": true,
+      "clean_reproduction_rows_and_gates_identical": true,
+      "comparator_matches": 130,
+      "compressed_sha256": "ebcf84565978fafc3f98dfa52644628bdf0b520fbd8b499b492d1fcc9246418d",
+      "decision": "synthetic-only-pass",
+      "fixes": 13,
+      "full_report": "evidence/1.1/repro/key-joint-n1-20260913/a1-regression-result.json.gz",
+      "gates": {
+        "accuracy": true,
+        "availability": true,
+        "confidence_safety": true,
+        "no_breaks": true,
+        "no_breaks_vs_n1": true,
+        "no_new_high_confidence_errors": true,
+        "numeric_memory": true,
+        "numerical": true
+      },
+      "groups": [
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "pure",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "full",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "missing",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "detuned",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 11,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "unequal",
+          "matches": 23,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "steep",
+          "matches": 24,
+          "mode": "all"
+        }
+      ],
+      "high_confidence_errors": 0,
+      "matches": 143,
+      "max_kkt": 5.053466325954936e-16,
+      "numeric_bound_bytes": 13031808,
+      "relative_to_n1": {
+        "breaks": 0,
+        "fixes": 13
+      },
+      "replay_resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 3.068387087000027,
+        "process_peak_rss_kib": 103836
+      },
+      "report_sha256": "72936dbd540f6aefecc675ac8b3a850e277903dbe30927b3ba28d9b9907eb8ff",
+      "resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 3.088708831999998,
+        "process_peak_rss_kib": 104144
+      },
+      "source_commit": "7de02b397343811a03b79ba4fa996aa59d2d6ac1",
+      "source_sha256": {
+        "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+        "apta_key_joint_a1.py": "0e07aafca71c4bd94cd4bf4a87dd97714c71bcd5435d5c2d114e60c984acb521",
+        "apta_key_joint_a1_fixtures.py": "701ee5440e239c09e63a995defd7bf16bd6e551c28b70dea625d680ab0b01348",
+        "apta_key_joint_a1_screen.py": "60c5f6fa1fdcf0e0e61cdcafdadcaff52a6a86dfe15eaf4247c7b03b36abdbfd",
+        "apta_key_joint_n1.py": "d3bc89a44f911c3d55e0c6db6eec99262058f4239caef50c10bd2b3e5eb29ac9",
+        "apta_key_joint_pcm.py": "7e59fd63005fb30510cf00b641bf41afea30d1908c9369c46ad98abd60f16b1b",
+        "apta_key_joint_pcm_screen.py": "db638a8d2f17f42619ee5a4aaa22df6225fec8c1e00438124ff9483b42b1804b",
+        "apta_key_pcm_candidate.py": "3e23db713d5d116d0fa76e2d1bb73d954cae0baa70ad24f1c8e5318daa002724",
+        "apta_nnls_n1.py": "0043f8bcaa0d2d5f98ec2f330cb5895adb89b6f1cd19ba9644829978ceef6faf"
+      }
+    },
+    "n1-fresh-result": {
+      "breaks": 4,
+      "byte_identical_replay": true,
+      "clean_reproduction_rows_and_gates_identical": true,
+      "comparator_matches": 132,
+      "compressed_sha256": "0513a13eec3b648b6a465f58ef83d018c0d5c1d36276aede795f5b633c9afcbe",
+      "decision": "rejected",
+      "fixes": 10,
+      "full_report": "evidence/1.1/repro/key-joint-n1-20260913/n1-fresh-result.json.gz",
+      "gates": {
+        "accuracy": true,
+        "availability": true,
+        "confidence_safety": true,
+        "no_breaks": false,
+        "no_new_high_confidence_errors": false,
+        "numeric_memory": true,
+        "numerical": true
+      },
+      "groups": [
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "pure",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 11,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "full",
+          "matches": 23,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 10,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "missing",
+          "matches": 22,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 11,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "detuned",
+          "matches": 23,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 10,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "unequal",
+          "matches": 22,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "steep",
+          "matches": 24,
+          "mode": "all"
+        }
+      ],
+      "high_confidence_errors": 2,
+      "matches": 138,
+      "max_kkt": 4.482633882141318e-16,
+      "numeric_bound_bytes": 13031712,
+      "relative_to_n1": null,
+      "replay_resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.066705610000018,
+        "process_peak_rss_kib": 87312
+      },
+      "report_sha256": "f9a6c329950a14c079c199b7977bbd231410d94567b565589d97884ea6861efb",
+      "resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.030759989000005,
+        "process_peak_rss_kib": 87340
+      },
+      "source_commit": "7de02b397343811a03b79ba4fa996aa59d2d6ac1",
+      "source_sha256": {
+        "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+        "apta_key_joint_a1.py": "0e07aafca71c4bd94cd4bf4a87dd97714c71bcd5435d5c2d114e60c984acb521",
+        "apta_key_joint_a1_fixtures.py": "701ee5440e239c09e63a995defd7bf16bd6e551c28b70dea625d680ab0b01348",
+        "apta_key_joint_a1_screen.py": "60c5f6fa1fdcf0e0e61cdcafdadcaff52a6a86dfe15eaf4247c7b03b36abdbfd",
+        "apta_key_joint_n1.py": "d3bc89a44f911c3d55e0c6db6eec99262058f4239caef50c10bd2b3e5eb29ac9",
+        "apta_key_joint_pcm.py": "7e59fd63005fb30510cf00b641bf41afea30d1908c9369c46ad98abd60f16b1b",
+        "apta_key_joint_pcm_screen.py": "db638a8d2f17f42619ee5a4aaa22df6225fec8c1e00438124ff9483b42b1804b",
+        "apta_key_pcm_candidate.py": "3e23db713d5d116d0fa76e2d1bb73d954cae0baa70ad24f1c8e5318daa002724",
+        "apta_nnls_n1.py": "0043f8bcaa0d2d5f98ec2f330cb5895adb89b6f1cd19ba9644829978ceef6faf"
+      }
+    },
+    "n1-result": {
+      "breaks": 3,
+      "byte_identical_replay": true,
+      "clean_reproduction_rows_and_gates_identical": true,
+      "comparator_matches": 130,
+      "compressed_sha256": "57f60a2bb64accc1cc17f39a527a147c0a9f55ad1e6ef5317cfde8cb84e2eec9",
+      "decision": "pipeline-rejected",
+      "fixes": 3,
+      "full_report": "evidence/1.1/repro/key-joint-n1-20260913/n1-result.json.gz",
+      "gates": {
+        "accuracy": false,
+        "availability": true,
+        "confidence_safety": true,
+        "no_breaks": false,
+        "no_new_high_confidence_errors": true,
+        "numeric_memory": true,
+        "numerical": true
+      },
+      "groups": [
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "pure",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "pure",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "full",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "full",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 9,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "missing",
+          "matches": 11,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "missing",
+          "matches": 20,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "detuned",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "detuned",
+          "matches": 24,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 2,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "unequal",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "unequal",
+          "matches": 14,
+          "mode": "all"
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 0
+        },
+        {
+          "count": 12,
+          "family": "steep",
+          "matches": 12,
+          "mode": 1
+        },
+        {
+          "count": 24,
+          "family": "steep",
+          "matches": 24,
+          "mode": "all"
+        }
+      ],
+      "high_confidence_errors": 0,
+      "matches": 130,
+      "max_kkt": 5.053466325954936e-16,
+      "numeric_bound_bytes": 13031712,
+      "relative_to_n1": null,
+      "replay_resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.117913899000001,
+        "process_peak_rss_kib": 87036
+      },
+      "report_sha256": "bc25ecd00d1d4b8e71f1c4c7c7e2475ca9ca34142f61cd419f1280bfaca186d4",
+      "resources": {
+        "cpu_gate": true,
+        "cpu_limit_seconds": 120,
+        "pipeline_cpu_seconds": 4.16009145399999,
+        "process_peak_rss_kib": 139060
+      },
+      "source_commit": "76aa1e257f45199199386c564c6c2377452ec31d",
+      "source_sha256": {
+        "apta_key_coverage_diagnostic.py": "b332a8266d6366e10a5d3aca009bcfbd366853917458d5413af28435d3a26997",
+        "apta_key_joint_n1.py": "d3bc89a44f911c3d55e0c6db6eec99262058f4239caef50c10bd2b3e5eb29ac9",
+        "apta_key_joint_n1_screen.py": "c522df6ca6ce43ac5dccf812733325b9c162b46b41dda8f225165efa343dc3b2",
+        "apta_key_joint_pcm_screen.py": "db638a8d2f17f42619ee5a4aaa22df6225fec8c1e00438124ff9483b42b1804b",
+        "apta_key_pcm_candidate.py": "3e23db713d5d116d0fa76e2d1bb73d954cae0baa70ad24f1c8e5318daa002724",
+        "apta_nnls_n1.py": "0043f8bcaa0d2d5f98ec2f330cb5895adb89b6f1cd19ba9644829978ceef6faf"
+      }
+    }
+  },
+  "validation": {
+    "all_e2_pcm_hashes_verified": 1152,
+    "all_four_paired_reports_byte_identical": true,
+    "asan_leak_detection": false,
+    "asan_ubsan_kernel_tests": 8,
+    "clean_kernel_hash_identical": true,
+    "clean_replay_eight_stderr_streams_empty": true,
+    "clean_reproduction_commit": "aec654e1d59e6ccbf9a212dfbbab92a341ad5432",
+    "clean_reproduction_script_exit": 0,
+    "cli_smoke": true,
+    "excluded_output": "local invalid-metadata-n1-repeat: truncated source SHA; excluded from evidence, correctly pinned replay passed",
+    "fresh_disjoint_from_e2": true,
+    "fresh_manifest_frozen_before_execution": true,
+    "fresh_pcm_count": 1152,
+    "knowledge_validation": "PASS: 11 projects, 76 notes, 0 broken links",
+    "original_comparator_selections_identical": true,
+    "protected_baseline": "e9ea7815815ade3a0a107e8c9a5b717f218045c8",
+    "protected_diff_empty": true,
+    "protected_paths": [
+      "src",
+      "include",
+      "CMakeLists.txt",
+      "VERSION",
+      "tests",
+      "tools/apta_key_joint_pcm.py",
+      "tools/apta_key_joint_pcm_screen.py",
+      "tools/test_apta_key_joint_pcm.py",
+      "docs/status/APTA-1.1-KEY-JOINT-PCM-PROTOCOL.md",
+      "docs/status/APTA-1.1-KEY-JOINT-PCM-RESULT.md",
+      "docs/status/APTA-1.1-HANDOFF-20260912.md",
+      "evidence/1.1/key-joint-pcm-e2-20260912.json",
+      "evidence/1.1/repro/key-joint-e2-20260912"
+    ],
+    "tests": 27
+  },
+  "version": "1.0.1"
+}

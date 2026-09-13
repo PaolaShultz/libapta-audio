@@ -7,6 +7,17 @@
 
 ## Current boundary
 
+The separately authorized **N1 numerical repair is verified; A1 passes synthetic
+gates only** (2026-09-13). The five E2 failures are traced to rejected Householder
+column workspace corruption in SciPy 1.18.1. N1 preserves the fixed objective and
+gates and repairs every recorded solve; N1 alone still fails scientific gates.
+The single preregistered A1 amplitude-folding candidate scores 143/144 on spent
+E2 regression cases and 144/144 on a separately frozen fresh synthetic bank,
+with zero breaks versus direct peaks or N1 and zero high-confidence errors.
+No production/music/holdout/hardware/release qualification is claimed. All old
+rejections remain frozen. Use the [current handoff](APTA-1.1-HANDOFF-20260913.md)
+and [separate numerical/attribution result](APTA-1.1-KEY-JOINT-N1-A1-RESULT.md).
+
 The researched joint PCM candidate **E2 is implemented but rejected**: 126/144
 new synthetic keys versus direct peaks 130/144, three fixes and seven breaks.
 Five breaks are fail-closed numerical abstentions (projected KKT failures), two
