@@ -1,0 +1,28 @@
+{
+  "artifact_sha256": "f79f2a7b44423436c63e07e938d9c40ac8ddd30bac2492480df632770796c784",
+  "blas_sha256": "2a5b4c1a6311873c59132b2ceaaf3c26258a17350b7cd27ea8782a47e3322981",
+  "command": [
+    "cc",
+    "-std=c99",
+    "-shared",
+    "-fPIC",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/home/shome/p/libapta-audio/build/e2-repair-20260913/n1-kernel/nnls_n1.c",
+    "/home/shome/p/libapta-audio/build/e2-repair-20260913/pyenv/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+    "-lm",
+    "-o",
+    "/home/shome/p/libapta-audio/build/e2-repair-20260913/n1-kernel/libapta_nnls_n1.so"
+  ],
+  "revision": "E2-N1",
+  "scipy": "1.18.1",
+  "source_sha256": {
+    "LICENSE.txt": "221e59f5e910fd7f94e44f0dac77436a11338c285c6346232e4a850a50da0e94",
+    "blaslapack_declarations.h": "20ad670b784e23456bb8e26c6426b5d6be14d6e3b522d04cbf3d1e5ffb2c7e84",
+    "nnls.h": "1492be021b175ee35c18ddb37eea4cdf70672af7b8038b8ef4c75c933a3a66a2",
+    "restore-rejected-column.patch": "1ee35127d00ea1d6bb323fb7cd38370f9ad32378837d9fb1b0dfa39a52f332fc",
+    "upstream_nnls.c": "eb668dcbcc6ff0ff35dc66807e88503fb3ce5194bf9379ba688b2d4f4ae041a0"
+  }
+}
