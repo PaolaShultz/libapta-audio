@@ -1,0 +1,28 @@
+--- upstream_nnls.c
++++ nnls_n1.c
+@@ -3,7 +3,7 @@
+ void
+ __nnls(const CBLAS_INT m, const CBLAS_INT n, double* restrict a, double* restrict b,
+        double* restrict x, double* restrict w, double* restrict zz,
+-       CBLAS_INT* restrict indices, const int64_t maxiter, double* rnorm, int64_t* info)
++       CBLAS_INT* restrict indices, double* restrict saved, const int64_t maxiter, double* rnorm, int64_t* info)
+ {
+     CBLAS_INT i = 0, ii = 0, ip = 0, indz = 0, iteration = 0, iz = 0, izmax = 0;
+     CBLAS_INT j = 0, jj = 0, k = 0, one = 1, tmpint = 0;
+@@ -54,6 +54,8 @@
+             // The sign of wmax is OK for j to be moved to set p. Begin the
+             // transformation and check new diagonal element to avoid near-linear
+             // dependence.
++            // N1: dlarfgp modifies the tail even if this trial is rejected.
++            for (i = indz; i < m; i++) { saved[i] = a[i + j*m]; }
+             pivot = a[indz + j*m];
+             tmpint = m - indz;
+             BLAS_FUNC(dlarfgp)(&tmpint, &pivot, &a[indz + 1 + j*m], &one, &tau);
+@@ -86,6 +88,7 @@
+             // Reject j as a candidate to be moved from set z to set p.
+             // a(indz,j) is restored, set w(j)=0., and loop back to test dual
+             // coeffs again.
++            for (i = indz; i < m; i++) { a[i + j*m] = saved[i]; }
+             w[j] = 0.0;
+         }
+         // ====================================================================
